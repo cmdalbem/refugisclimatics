@@ -41,6 +41,24 @@ for known gaps.
 - v1 app is planned to read the static `data/shelters.json` directly,
   filtering client-side — no backend/database yet.
 
+## Design principles (app)
+
+- **Typography**: Climate Crisis variable font for shelter names, YEAR axis
+  tied to distance (1990 = legible/clean = close; 2050 = degraded = far).
+  Archivo bold for distances and numbers. Helvetica Neue for all body text.
+- **Distance color gradient**: blue `#3A84B3` (close) → green `#839C7A` →
+  yellow `#C7B640` → orange `#F39619` → red `#E84D26` (far). Applied to
+  map markers, list distance labels, and the detail drawer distance.
+- **No icons in content areas**: Lucide icons only for interactive controls
+  (filter pills, close button). Shelter properties, section labels, and
+  detail content use text only.
+- **Minimal, editorial aesthetic**: prefer typographic hierarchy and
+  whitespace over boxes, borders and labels to create structure. Avoid
+  form/database-UI patterns (bordered cards per field, heavy section
+  headers, etc.)
+- **`.pill` class** for tag-style interactive elements (filter buttons).
+  White background, border, shadow; `.active` = dark fill.
+
 ## Where to look for more
 
 - `pipeline/README.md` — pipeline stages, data sources, how to re-run.
