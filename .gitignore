@@ -1,3 +1,16 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# TypeScript incremental build cache
+*.tsbuildinfo
+
+# Lock files (using npm)
+yarn.lock
+
+# Python (pipeline)
 pipeline/.venv/
 pipeline/raw/
 __pycache__/
