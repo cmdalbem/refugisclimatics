@@ -136,6 +136,7 @@ def main():
             "characteristics": cms["characteristics"],
             "opening_hours_raw": cms["opening_hours_raw"],
             "notice": cms["notice"],
+            "image_url": cms["image_url"],
             "detail_url": detail_url,
             "address": cms.get("address"),
             "district": (ckan["district"] if ckan else cms.get("district")),

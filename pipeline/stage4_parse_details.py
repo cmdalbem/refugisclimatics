@@ -61,6 +61,11 @@ def parse_notice(soup):
     return notice.get_text(" ", strip=True) if notice else None
 
 
+def parse_image_url(soup):
+    img = soup.select_one("div.gallery img")
+    return img.get("src") if img and img.get("src") else None
+
+
 def parse_detail_page(html, detail_url):
     soup = BeautifulSoup(html, "lxml")
     name_el = soup.select_one("div.title-content h2")
@@ -78,6 +83,7 @@ def parse_detail_page(html, detail_url):
         "lat": lat,
         "lon": lon,
         "notice": parse_notice(soup),
+        "image_url": parse_image_url(soup),
     }
 
 
@@ -103,8 +109,9 @@ def main():
 
     missing_name = sum(1 for r in parsed.values() if not r["name"])
     missing_coords = sum(1 for r in parsed.values() if r["lat"] is None)
+    missing_image = sum(1 for r in parsed.values() if not r["image_url"])
     print(f"Parsed {len(parsed)} detail pages ({len(failures)} missing from cache).")
-    print(f"  missing name: {missing_name}, missing coordinates: {missing_coords}")
+    print(f"  missing name: {missing_name}, missing coordinates: {missing_coords}, missing image: {missing_image}")
 
     write_json(RAW_DIR / "parsed_details.json", parsed)
     if failures:
