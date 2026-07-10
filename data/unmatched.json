@@ -1,0 +1,394 @@
+[
+  {
+    "name": "Bibliomercat de Santa Eulàlia",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/bibliomercat-de-santa-eulalia-99400781290",
+    "district": null,
+    "address": "C. Muns, 2",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Biblioteca Font de la Mina",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/biblioteca-font-de-la-mina-99400781293",
+    "district": null,
+    "address": "C. Ponent, 21-25",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Biblioteca Josep Janés",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/biblioteca-josep-janes-95328120348",
+    "district": null,
+    "address": "c. Dr. Martí i Julià, 33",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Biblioteca Pública Can Peixauet",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/biblioteca-publica-can-peixauet-99400781311",
+    "district": null,
+    "address": "Av. de la Generalitat, 98",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Biblioteca Sant Adrià",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/biblioteca-sant-adria-96089122940",
+    "district": null,
+    "address": "Plaça Guillermo Vidaña i Haro",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Complex Esportiu Municipal Estruch",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/complex-esportiu-municipal-estruch-94272101346",
+    "district": null,
+    "address": "Av.Pare Andreu de Palma, 9",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Filmoteca de Catalunya",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/filmoteca-de-catalunya-92086011802",
+    "district": "Ciutat Vella",
+    "address": "Plaça de Salvador Seguí, 1 - 9",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Casal Dalt de la Vila",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/casal-dalt-de-la-vila-99400781452",
+    "district": null,
+    "address": "Pl. Església, 13",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Casal Municipal de Gent Gran de La Torrassa",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/casal-municipal-de-gent-gran-de-la-torrassa-99400781451",
+    "district": null,
+    "address": "c. Albareda, 12",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Casal Municipal de Gent Gran de Santa Eulàlia",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/casal-municipal-de-gent-gran-de-santa-eulalia-95065180731",
+    "district": null,
+    "address": "Pl. dels Avis, 12",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Casal de Gent Gran de Via Trajana",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/casal-de-gent-gran-de-via-trajana-99400781450",
+    "district": null,
+    "address": "Av. Ferrocarril, 11-13",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Casal de la Gent Gran Pubilla Casas",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/casal-de-la-gent-gran-pubilla-casas-99400781448",
+    "district": null,
+    "address": "C. d’Amadeu Vives, 1",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Centre Cultural Besòs",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/centre-cultural-besos-99400781447",
+    "district": null,
+    "address": "Pl. Josep Tarradellas",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Centre Cultural Santa Eulalia",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/centre-cultural-santa-eulalia-95328115347",
+    "district": null,
+    "address": "C. Santa Eulàlia, 60",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Centre Cívic Les Planes",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/centre-civic-les-planes-95158103029",
+    "district": null,
+    "address": "Pl .del Coll de la Creu d'en Blau, 7",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Centre Cívic Palmira Domènech",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/centre-civic-palmira-domenech-99400781423",
+    "district": null,
+    "address": "C. Lo Gaiter del Llobregat, 112",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Centre de Promoció Econòmica",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/centre-de-promocio-economica-99400781421",
+    "district": null,
+    "address": "C. de les Moreres, 48",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Centre de Transformació Digital de l’Hospitalet  \"La Florida 6.0\"",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/centre-de-transformacio-digital-de-lhospitalet-la-florida-6-0-99400781422",
+    "district": null,
+    "address": "Av. Primavera, 71, 71",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Espai 3 Ulls - Institut Escola Trinitat Nova",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/espai-3-ulls-99400784289",
+    "district": "Nou Barris",
+    "address": "Carrer de la Pedrosa, 16",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Espai Cultural Kursaal",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/espai-cultural-kursaal-99400781420",
+    "district": null,
+    "address": "C. Masia, 39",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "La CIBA",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/la-ciba-99400781419",
+    "district": null,
+    "address": "Pg. de Llorenç Serra, 64",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Torre Barrina",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/torre-barrina-99400781418",
+    "district": null,
+    "address": "Ctra. de Collblanc, 67",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Mercat de la Florida",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/mercat-de-la-florida-95052183509",
+    "district": null,
+    "address": "Sevilla, 2",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Refugi Climàtic Espai Familiar planta 0 - Centre de Cultura Contemporània de Barcelona",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/refugi-climatic-espai-familiar-planta-0-99400783087",
+    "district": "Ciutat Vella",
+    "address": "Carrer de Montalegre, 5",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Refugi Climàtic Hall - Centre de Cultura Contemporània de Barcelona",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/refugi-climatic-hall-99400783085",
+    "district": "Ciutat Vella",
+    "address": "Carrer de Montalegre, 5",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Refugi Climàtic Vestíbul  planta -1 - Centre de Cultura Contemporània de Barcelona",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/refugi-climatic-vestibul-planta-1-99400783086",
+    "district": "Ciutat Vella",
+    "address": "Carrer de Montalegre, 5",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Arbreda de la Rambleta",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/arbreda-de-la-rambleta-99400781399",
+    "district": null,
+    "address": "Pg. de la Rambleta Joan Llandrich",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Parc de Can Zam",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/parc-de-can-zam-99137092640",
+    "district": null,
+    "address": "C. Víctor Hugo, 70",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Parc de l'Alhambra",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/parc-de-l-alhambra-99400781398",
+    "district": null,
+    "address": "C. Alhambra, 22",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Parc de la Marquesa",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/parc-de-la-marquesa-99400781397",
+    "district": null,
+    "address": "Carrer de la Riera Blanca",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Parc del Besòs",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/parc-del-besos-99400781395",
+    "district": null,
+    "address": "Carrer de Carmen Amaya",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Parc del Molinet",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/parc-del-molinet-99400781390",
+    "district": null,
+    "address": "Avinguda de la Generalitat, 199",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Parc del Riu",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/parc-del-riu-99400781388",
+    "district": null,
+    "address": "Camí del Sorral",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Plaça d'Ernest Lluch",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/placa-d-ernest-lluch-99400781385",
+    "district": null,
+    "address": "Avinguda de la Granvia de l’Hospitalet,",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Plaça de Milagros Consarnau i Sabaté",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/placa-de-milagros-consarnau-i-sabate-99400781384",
+    "district": null,
+    "address": "Carrer de l'Aprestadora",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Plaça de Pere Calders",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/placa-de-pere-calders-99400781383",
+    "district": null,
+    "address": "Pl. Pere Calders",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Refugi Climàtic Pati d'Escola - Escola Mercè Rodoreda",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/refugi-climatic-pati-d-escola-99400737906",
+    "district": "Nou Barris",
+    "address": "Carrer del Vesuvi, 35",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Piscina Descoberta - Centre Esportiu Municipal Bon Pastor",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-descoberta-98188181031",
+    "district": "Sant Andreu",
+    "address": "Carrer de la Costa Daurada, 12",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Piscina Descoberta - Complex Esportiu Municipal de Can Zam",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-descoberta-96159092819",
+    "district": null,
+    "address": "C. Víctor Hugo, s/n",
+    "has_coordinates": false,
+    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+  },
+  {
+    "name": "Piscina Descoberta - Centre Esportiu Municipal Can Caralleu",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-descoberta-92086010501",
+    "district": "Sarrià-Sant Gervasi",
+    "address": "Carrer dels Esports, 2 - 8",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Piscina Esportiva Coberta - Centre Esportiu Municipal de Sant Sebastià",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-esportiva-coberta-97302140150",
+    "district": "Ciutat Vella",
+    "address": "Plaça del Mar, 1",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Piscines Cobertes - Centre Esportiu Municipal Can Dragó",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-cobertes-99400322483",
+    "district": "Nou Barris",
+    "address": "Carrer de Rosselló i Porcel, 7 - 11",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Piscines Cobertes - Centre Esportiu Municipal Guinardó",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-cobertes-99400322475",
+    "district": "Horta-Guinardó",
+    "address": "Carrer del Telègraf, 31 - 57",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Piscines Cobertes - Centre Esportiu Municipal Bac de Roda",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-cobertes-99400038777",
+    "district": "Sant Martí",
+    "address": "Rambla de Guipúscoa, 23 - 25",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Piscines Descobertes - Centre Esportiu Municipal Piscines Bernat Picornell",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-descobertes-94125142139",
+    "district": "Sants-Montjuïc",
+    "address": "Avinguda de l'Estadi, 30 - 38",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Centre d'Atenció Primària Roger de Flor",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/centre-d-atencio-primaria-roger-de-flor-92086004412",
+    "district": "Eixample",
+    "address": "Carrer de Roger de Flor, 194 - 198",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Escola de Música Sant Gervasi",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/escola-de-musica-sant-gervasi-75990674774",
+    "district": "Sarrià-Sant Gervasi",
+    "address": "Carrer de Folgueroles, 8 - 10",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Farmàcia Ibañez Gimeno",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/farmacia-ibanez-gimeno-75990060310",
+    "district": "Eixample",
+    "address": "Avinguda Diagonal, 319",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Reclau Projecte i Obra SL",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/reclau-projecte-i-obra-sl-99400784288",
+    "district": "Sants-Montjuïc",
+    "address": "Riera Blanca, 105 - 107",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  }
+]
