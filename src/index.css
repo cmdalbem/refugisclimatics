@@ -412,6 +412,10 @@ html, body {
   padding: 24px var(--detail-pad-x) 32px;
 }
 
+.detail-body--no-image {
+  padding-top: 58px;
+}
+
 .detail-intro {
   margin-bottom: 0;
 }

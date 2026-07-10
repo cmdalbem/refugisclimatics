@@ -116,7 +116,7 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
                 </figure>
               )}
 
-              <div className="detail-body">
+              <div className={`detail-body${shelter.image_url ? '' : ' detail-body--no-image'}`}>
                 <header className="detail-intro">
                   <div className="detail-meta">
                     <span className="detail-typology">
