@@ -15148,11 +15148,11 @@
     "neighborhood": "el Raval",
     "lat": 41.38391450226559,
     "lon": 2.1668129104163323,
-    "contact_type": null,
-    "contact_value": null,
-    "timetable_raw": null,
-    "register_id": null,
-    "match_status": "cms_only"
+    "contact_type": "E-mail",
+    "contact_value": "info@cccb.org",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"description\">Observacions</th></tr><tr><td class=\"timetable-period current\" rowspan=1><div>De l'1 juny al 31 juliol</div></td><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">De dimarts a diumenge</p></div></td><td class=\"timetable-hour\" rowspan=1><div>d'11.00&nbsp;h a 20.00&nbsp;h</div></td><td class=\"timetable-description\" rowspan=4><div><p style=\"margin:0\">Horaris d'obertura com a refugi climàtic.</p></div></td></tr><tr><td class=\"timetable-period\" rowspan=2><div>De l'1 agost al 31 agost</div></td><td class=\"timetable-day\" rowspan=1><div>Dimarts, dimecres, dijous i divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>d'11.00&nbsp;h a 20.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte i diumenge</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 21.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period\" rowspan=1><div>De l'1 setembre al 30 setembre</div></td><td class=\"timetable-day\" rowspan=1><div>Dimarts, dimecres, dijous, divendres, dissabte i diumenge</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 21.00&nbsp;h</div></td></tr></table>",
+    "register_id": "94042144909",
+    "match_status": "colocated"
   },
   {
     "name": "Refugi Climàtic Hall - Centre de Cultura Contemporània de Barcelona",
@@ -15180,11 +15180,11 @@
     "neighborhood": "el Raval",
     "lat": 41.38391450226559,
     "lon": 2.1668129104163323,
-    "contact_type": null,
-    "contact_value": null,
-    "timetable_raw": null,
-    "register_id": null,
-    "match_status": "cms_only"
+    "contact_type": "E-mail",
+    "contact_value": "info@cccb.org",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"description\">Observacions</th></tr><tr><td class=\"timetable-period current\" rowspan=1><div>De l'1 juny al 31 juliol</div></td><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">De dimarts a diumenge</p></div></td><td class=\"timetable-hour\" rowspan=1><div>d'11.00&nbsp;h a 20.00&nbsp;h</div></td><td class=\"timetable-description\" rowspan=4><div><p style=\"margin:0\">Horaris d'obertura com a refugi climàtic.</p></div></td></tr><tr><td class=\"timetable-period\" rowspan=2><div>De l'1 agost al 31 agost</div></td><td class=\"timetable-day\" rowspan=1><div>Dimarts, dimecres, dijous i divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>d'11.00&nbsp;h a 20.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte i diumenge</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 21.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period\" rowspan=1><div>De l'1 setembre al 30 setembre</div></td><td class=\"timetable-day\" rowspan=1><div>Dimarts, dimecres, dijous, divendres, dissabte i diumenge</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 21.00&nbsp;h</div></td></tr></table>",
+    "register_id": "94042144909",
+    "match_status": "colocated"
   },
   {
     "name": "Refugi Climàtic Vestíbul  planta -1 - Centre de Cultura Contemporània de Barcelona",
@@ -15212,11 +15212,11 @@
     "neighborhood": "el Raval",
     "lat": 41.38391450226559,
     "lon": 2.1668129104163323,
-    "contact_type": null,
-    "contact_value": null,
-    "timetable_raw": null,
-    "register_id": null,
-    "match_status": "cms_only"
+    "contact_type": "E-mail",
+    "contact_value": "info@cccb.org",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"description\">Observacions</th></tr><tr><td class=\"timetable-period current\" rowspan=1><div>De l'1 juny al 31 juliol</div></td><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">De dimarts a diumenge</p></div></td><td class=\"timetable-hour\" rowspan=1><div>d'11.00&nbsp;h a 20.00&nbsp;h</div></td><td class=\"timetable-description\" rowspan=4><div><p style=\"margin:0\">Horaris d'obertura com a refugi climàtic.</p></div></td></tr><tr><td class=\"timetable-period\" rowspan=2><div>De l'1 agost al 31 agost</div></td><td class=\"timetable-day\" rowspan=1><div>Dimarts, dimecres, dijous i divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>d'11.00&nbsp;h a 20.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte i diumenge</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 21.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period\" rowspan=1><div>De l'1 setembre al 30 setembre</div></td><td class=\"timetable-day\" rowspan=1><div>Dimarts, dimecres, dijous, divendres, dissabte i diumenge</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 21.00&nbsp;h</div></td></tr></table>",
+    "register_id": "94042144909",
+    "match_status": "colocated"
   },
   {
     "name": "Saló del Tinell - Museu d'Història de Barcelona. Plaça del Rei",
@@ -17430,11 +17430,11 @@
     "neighborhood": "la Prosperitat",
     "lat": 41.445868894480135,
     "lon": 2.1857245692364806,
-    "contact_type": null,
-    "contact_value": null,
-    "timetable_raw": null,
-    "register_id": null,
-    "match_status": "cms_only"
+    "contact_type": "E-mail",
+    "contact_value": "a8039471@xtec.cat",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"prices\">Preus</th></tr><tr><td class=\"timetable-period\" rowspan=1><div><p style=\"margin:0\">Juny i juliol</p></div></td><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>d'11.00&nbsp;h a 14.00&nbsp;h</div></td><td class=\"timetable-price\" rowspan=1><div>Entrada Gratuïta</div></td></tr></table>",
+    "register_id": "99400758411",
+    "match_status": "colocated"
   },
   {
     "name": "Refugi Climàtic Pati d'Escola - Escola Seat",
@@ -18934,11 +18934,11 @@
     "neighborhood": "el Bon Pastor",
     "lat": 41.43818366042073,
     "lon": 2.2017282935278715,
-    "contact_type": null,
-    "contact_value": null,
-    "timetable_raw": null,
-    "register_id": null,
-    "match_status": "cms_only"
+    "contact_type": "E-mail",
+    "contact_value": "aebonpastor@hotmail.com",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 22:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>dissabtes i diumenges i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 14:00 h</div></td></tr></table>",
+    "register_id": "99400322487",
+    "match_status": "colocated"
   },
   {
     "name": "Piscina Descoberta - Centre Esportiu Municipal Trinitat Vella",
@@ -19227,11 +19227,11 @@
     "neighborhood": "Sarrià",
     "lat": 41.401560942215355,
     "lon": 2.1110929977178143,
-    "contact_type": null,
-    "contact_value": null,
-    "timetable_raw": null,
-    "register_id": null,
-    "match_status": "cms_only"
+    "contact_type": "E-mail",
+    "contact_value": "cancaralleu@cancaralleu.cat",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"description\">Observacions</th></tr><tr><td class=\"timetable-period\" rowspan=3><div><p style=\"margin:0\">De setembre a juny</p></div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 06.45&nbsp;h a 22.30&nbsp;h</div></td><td class=\"timetable-description\" rowspan=9><div>Aforament limitat</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 20.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.30&nbsp;h a 15.30&nbsp;h</div></td></tr><tr><td class=\"timetable-period\" rowspan=3><div>Juliol</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 06.45&nbsp;h a 22.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 20.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 15.30&nbsp;h</div></td></tr><tr><td class=\"timetable-period\" rowspan=3><div>Agost</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 06.45&nbsp;h a 21.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 20.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 15.30&nbsp;h</div></td></tr></table>",
+    "register_id": "99400228653",
+    "match_status": "colocated"
   },
   {
     "name": "Piscina Descoberta - Centre Esportiu Municipal Bac de Roda",
@@ -19431,11 +19431,11 @@
     "neighborhood": "la Barceloneta",
     "lat": 41.3754657408768,
     "lon": 2.1898545572534602,
-    "contact_type": null,
-    "contact_value": null,
-    "timetable_raw": null,
-    "register_id": null,
-    "match_status": "cms_only"
+    "contact_type": "Web",
+    "contact_value": "https://www.cnab.cat/",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-period\" rowspan=3><div>De l'1 octubre al 30 abril</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 06.30&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 17.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period current\" rowspan=3><div>De l'1 maig al 30 setembre</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 06.30&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 20.00&nbsp;h</div></td></tr></table>",
+    "register_id": "97302140150",
+    "match_status": "colocated"
   },
   {
     "name": "Piscina Municipal Descoberta de La Clota - Centre Esportiu Municipal Olímpics Vall Hebron",
@@ -19712,11 +19712,11 @@
     "neighborhood": "Porta",
     "lat": 41.43657012505103,
     "lon": 2.1831235131796087,
-    "contact_type": null,
-    "contact_value": null,
-    "timetable_raw": null,
-    "register_id": null,
-    "match_status": "cms_only"
+    "contact_type": "E-mail",
+    "contact_value": "atencioclients.candrago@eurofitness.com",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"description\">Observacions</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 22:45 h</div></td><td class=\"timetable-description\" rowspan=3><div><p style=\"margin:0\">Palestra i piscina</p></div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 20:45 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 13:45 h</div></td></tr></table>",
+    "register_id": "92086032989",
+    "match_status": "colocated"
   },
   {
     "name": "Piscines Cobertes - Centre Esportiu Municipal Cotxeres",
@@ -19901,11 +19901,11 @@
     "neighborhood": "el Guinardó",
     "lat": 41.41701952006085,
     "lon": 2.1736223594731614,
-    "contact_type": null,
-    "contact_value": null,
-    "timetable_raw": null,
-    "register_id": null,
-    "match_status": "cms_only"
+    "contact_type": "E-mail",
+    "contact_value": "cemguinardo@cemguinardo.cat",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"prices\">Preus</th></tr><tr><td class=\"timetable-period\" rowspan=1><div>De l'1 juny al 23 juny</div></td><td class=\"timetable-day\" rowspan=1><div>Dissabte i diumenge</div></td><td class=\"timetable-hour\" rowspan=3><div>de 10.00&nbsp;h a 19.00&nbsp;h</div></td><td class=\"timetable-price\" rowspan=3><div>Entrada general de: 8.7 a 9.15 €  <p style=\"margin:0\">Preu dies feiners:</p><p style=\"margin:0\">Adult: 8.70 €</p><p style=\"margin:0\">Infantil: 7.85 €</p><p style=\"margin:0\"><br></p><p style=\"margin:0\">Preu dies cap de setmana i festius:</p><p style=\"margin:0\">Adult: 9.15 €</p><p style=\"margin:0\">Infantil: 8.45 €</p></div></td></tr><tr><td class=\"timetable-period current\" rowspan=2><div><p style=\"margin:0\">Estiu 2026:</p><p style=\"margin:0\">Del 24 juny al 6 setembre</p></div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>dissabtes i diumenges i festius</div></td></tr></table>",
+    "register_id": "99400110852",
+    "match_status": "colocated"
   },
   {
     "name": "Piscines Cobertes - Centre Esportiu Municipal Sant Andreu - La Sagrera",
@@ -20047,11 +20047,11 @@
     "neighborhood": "Sant Martí de Provençals",
     "lat": 41.414350023455754,
     "lon": 2.194069526567754,
-    "contact_type": null,
-    "contact_value": null,
-    "timetable_raw": null,
-    "register_id": null,
-    "match_status": "cms_only"
+    "contact_type": "E-mail",
+    "contact_value": "info@bacderodasport.com",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 06:30 h a 23:30 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>dissabtes</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08:00 h a 21:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>diumenges i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 20:00 h</div></td></tr></table>",
+    "register_id": "98056162156",
+    "match_status": "colocated"
   },
   {
     "name": "Piscines Cobertes - Centre Esportiu Municipal Can Toda",
@@ -20354,11 +20354,11 @@
     "neighborhood": "el Poble-sec",
     "lat": 41.36629012228984,
     "lon": 2.1506253005136693,
-    "contact_type": null,
-    "contact_value": null,
-    "timetable_raw": null,
-    "register_id": null,
-    "match_status": "cms_only"
+    "contact_type": "Web",
+    "contact_value": "https://forus.es/ca/centres-forus/barcelona/picornell/",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"prices\">Preus</th></tr><tr><td class=\"timetable-period\" rowspan=2><div>De l'1 abril al 30 abril</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10.00&nbsp;h a 17.00&nbsp;h</div></td><td class=\"timetable-price\" rowspan=10><div>Entrada general de: 9.25 a 15.1 € <p style=\"margin:0\">Entrada adult: 15.10 €</p><p style=\"margin:0\">Entrada infants i gent gran: 9.25 €</p><p style=\"margin:0\">Entrada joves 10.10 €</p></div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10.00&nbsp;h a 16.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period\" rowspan=2><div>De l'1 maig al 31 maig</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10.00&nbsp;h a 19.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10.00&nbsp;h a 16.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period current\" rowspan=2><div>De l'1 juny al 31 agost</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10.00&nbsp;h a 20.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10:00 h a 19:00 h</div></td></tr><tr><td class=\"timetable-period\" rowspan=2><div>De l'1 setembre al 30 setembre</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10.00&nbsp;h a 18.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10.00&nbsp;h a 16.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period\" rowspan=2><div>De l'1 octubre al 31 octubre</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10.00&nbsp;h a 17.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10.00&nbsp;h a 16.00&nbsp;h</div></td></tr></table>",
+    "register_id": "94125142139",
+    "match_status": "colocated"
   },
   {
     "name": "Piscines Esportives Cobertes - Centre Esportiu Municipal l'Espanya Industrial",

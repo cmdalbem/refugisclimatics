@@ -41,8 +41,9 @@ without re-hitting the site.
   Adrià de Besòs, Badalona, l'Hospitalet, Santa Coloma) — the CKAN dataset
   only covers Barcelona.
 - ~17 more have a district and coordinates from their detail page but no
-  match in CKAN — likely recent additions not yet synced into the
-  weekly-updated open dataset.
+  direct CKAN match — ~11 of these inherit CKAN data from a co-located
+  sibling (same building, different sub-venue); the rest are likely recent
+  additions not yet synced into the weekly-updated open dataset.
 - For those without coordinates in either source, `lat`/`lon` are `null` in
   `shelters.json` — they still appear in the dataset but can't be placed on
   a map without geocoding their address, which this pipeline doesn't do.

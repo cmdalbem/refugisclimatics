@@ -25,8 +25,9 @@ https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refug
 - Hours: `opening_hours_raw` (structured rows), `timetable_raw` (CKAN's raw text), `notice` (temporary closures etc.)
 - Contact: `contact_type`/`contact_value` (e.g. email or phone)
 - Media: `image_url` (only ~53% of shelters have one)
-- Provenance: `detail_url`, `register_id`, `match_status` (whether it was
-  matched across both data sources or only found in one)
+- Provenance: `detail_url`, `register_id`, `match_status` (`matched` = direct
+  CKAN join, `colocated` = inherited from a matched sibling at the same
+  coordinates, `cms_only` = no CKAN data)
 
 Not all fields are populated for every shelter — see `data/unmatched.json`
 for known gaps.

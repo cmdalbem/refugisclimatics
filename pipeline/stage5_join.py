@@ -3,12 +3,16 @@ characteristics, hours) with the official CKAN records (authoritative
 geolocation, contact info, register id).
 
 The two systems use unrelated identifiers for the same physical shelters, so
-matching is done in three tiers of decreasing strictness:
+matching is done in four tiers of decreasing strictness:
   1. exact normalized name
   2. exact normalized name + district (catches near-duplicate names in
      different districts, and typos that tier 1 would otherwise conflate)
   3. nearest CKAN point within 30 meters of a CMS record's own parsed
      coordinates, as a last resort for anything else
+  4. inherit CKAN data from an already-matched CMS sibling at the exact
+     same coordinates (sub-venues in the same building, e.g. individual
+     pool halls inside a sports centre). Multiple CMS records may share
+     one CKAN register id when they represent the same site.
 
 The canonical list is the 563 CMS/detail records (this matches the website's
 own count). CKAN data enriches each record when a confident match is found.
@@ -23,6 +27,8 @@ import math
 from common import DATA_DIR, RAW_DIR, normalize_join_key, read_json, write_json
 
 MAX_MATCH_DISTANCE_METERS = 30
+# ~1 m precision; CMS siblings in the same building share one comshiva point.
+COORD_KEY_DECIMALS = 5
 
 
 def haversine_meters(lat1, lon1, lat2, lon2):
@@ -106,6 +112,39 @@ def match_tier3_by_distance(cms_records, ckan_records, already_matched):
     return matches
 
 
+def coord_key(lat, lon):
+    return (round(lat, COORD_KEY_DECIMALS), round(lon, COORD_KEY_DECIMALS))
+
+
+def pick_colocated_donor(unmatched_name, donors):
+    """Choose which matched sibling should donate CKAN data.
+
+    donors: list of (detail_url, ckan, cms_name). Prefer the shortest CMS
+    name at the site — usually the parent venue (sports centre, CCCB, etc.).
+    """
+    return min(donors, key=lambda donor: (len(donor[2]), donor[2]))
+
+
+def match_tier4_by_colocation(cms_records, matches):
+    matched_by_coord = {}
+    for detail_url, ckan in matches.items():
+        cms = cms_records[detail_url]
+        if cms.get("lat") is None:
+            continue
+        key = coord_key(cms["lat"], cms["lon"])
+        matched_by_coord.setdefault(key, []).append((detail_url, ckan, cms["name"]))
+
+    tier4 = {}
+    for detail_url, cms in cms_records.items():
+        if detail_url in matches or cms.get("lat") is None:
+            continue
+        donors = matched_by_coord.get(coord_key(cms["lat"], cms["lon"]))
+        if not donors:
+            continue
+        tier4[detail_url] = pick_colocated_donor(cms["name"], donors)[1]
+    return tier4
+
+
 def main():
     cms_records = read_json(RAW_DIR / "parsed_details.json")
     ckan_raw = read_json(RAW_DIR / "ckan_shelters.json")
@@ -126,10 +165,21 @@ def main():
     matches.update(tier3)
     print(f"Tier 3 (+nearest within {MAX_MATCH_DISTANCE_METERS}m): {len(tier3)} new matches, {len(matches)} total")
 
+    tier4 = match_tier4_by_colocation(cms_records, matches)
+    colocated_urls = set(tier4)
+    matches.update(tier4)
+    print(f"Tier 4 (+colocated sibling): {len(tier4)} new matches, {len(matches)} total")
+
     shelters = []
     unmatched = []
     for detail_url, cms in cms_records.items():
         ckan = matches.get(detail_url)
+        if ckan and detail_url in colocated_urls:
+            match_status = "colocated"
+        elif ckan:
+            match_status = "matched"
+        else:
+            match_status = "cms_only"
         shelter = {
             "name": cms["name"],
             "typology": cms["typology"],
@@ -147,10 +197,10 @@ def main():
             "contact_value": ckan["contact_value"] if ckan else None,
             "timetable_raw": ckan["timetable_raw"] if ckan else None,
             "register_id": ckan["register_id"] if ckan else None,
-            "match_status": "matched" if ckan else "cms_only",
+            "match_status": match_status,
         }
         shelters.append(shelter)
-        if not ckan:
+        if match_status == "cms_only":
             unmatched.append(
                 {
                     "name": cms["name"],

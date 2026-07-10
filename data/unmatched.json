@@ -184,30 +184,6 @@
     "reason": "no coordinates parsed from detail page, cannot attempt distance match"
   },
   {
-    "name": "Refugi Climàtic Espai Familiar planta 0 - Centre de Cultura Contemporània de Barcelona",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/refugi-climatic-espai-familiar-planta-0-99400783087",
-    "district": "Ciutat Vella",
-    "address": "Carrer de Montalegre, 5",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
-  },
-  {
-    "name": "Refugi Climàtic Hall - Centre de Cultura Contemporània de Barcelona",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/refugi-climatic-hall-99400783085",
-    "district": "Ciutat Vella",
-    "address": "Carrer de Montalegre, 5",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
-  },
-  {
-    "name": "Refugi Climàtic Vestíbul  planta -1 - Centre de Cultura Contemporània de Barcelona",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/refugi-climatic-vestibul-planta-1-99400783086",
-    "district": "Ciutat Vella",
-    "address": "Carrer de Montalegre, 5",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
-  },
-  {
     "name": "Arbreda de la Rambleta",
     "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/arbreda-de-la-rambleta-99400781399",
     "district": null,
@@ -288,76 +264,12 @@
     "reason": "no coordinates parsed from detail page, cannot attempt distance match"
   },
   {
-    "name": "Refugi Climàtic Pati d'Escola - Escola Mercè Rodoreda",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/refugi-climatic-pati-d-escola-99400737906",
-    "district": "Nou Barris",
-    "address": "Carrer del Vesuvi, 35",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
-  },
-  {
-    "name": "Piscina Descoberta - Centre Esportiu Municipal Bon Pastor",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-descoberta-98188181031",
-    "district": "Sant Andreu",
-    "address": "Carrer de la Costa Daurada, 12",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
-  },
-  {
     "name": "Piscina Descoberta - Complex Esportiu Municipal de Can Zam",
     "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-descoberta-96159092819",
     "district": null,
     "address": "C. Víctor Hugo, s/n",
     "has_coordinates": false,
     "reason": "no coordinates parsed from detail page, cannot attempt distance match"
-  },
-  {
-    "name": "Piscina Descoberta - Centre Esportiu Municipal Can Caralleu",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-descoberta-92086010501",
-    "district": "Sarrià-Sant Gervasi",
-    "address": "Carrer dels Esports, 2 - 8",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
-  },
-  {
-    "name": "Piscina Esportiva Coberta - Centre Esportiu Municipal de Sant Sebastià",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-esportiva-coberta-97302140150",
-    "district": "Ciutat Vella",
-    "address": "Plaça del Mar, 1",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
-  },
-  {
-    "name": "Piscines Cobertes - Centre Esportiu Municipal Can Dragó",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-cobertes-99400322483",
-    "district": "Nou Barris",
-    "address": "Carrer de Rosselló i Porcel, 7 - 11",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
-  },
-  {
-    "name": "Piscines Cobertes - Centre Esportiu Municipal Guinardó",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-cobertes-99400322475",
-    "district": "Horta-Guinardó",
-    "address": "Carrer del Telègraf, 31 - 57",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
-  },
-  {
-    "name": "Piscines Cobertes - Centre Esportiu Municipal Bac de Roda",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-cobertes-99400038777",
-    "district": "Sant Martí",
-    "address": "Rambla de Guipúscoa, 23 - 25",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
-  },
-  {
-    "name": "Piscines Descobertes - Centre Esportiu Municipal Piscines Bernat Picornell",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-descobertes-94125142139",
-    "district": "Sants-Montjuïc",
-    "address": "Avinguda de l'Estadi, 30 - 38",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
   },
   {
     "name": "Centre d'Atenció Primària Roger de Flor",
