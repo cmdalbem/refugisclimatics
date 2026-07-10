@@ -63,8 +63,8 @@ export function distanceFontYear(km: number): number {
 }
 
 export function shelterId(shelter: Shelter): string {
-  if (shelter.register_id) return `id:${shelter.register_id}`;
   if (shelter.detail_url) return `url:${shelter.detail_url}`;
+  if (shelter.register_id) return `id:${shelter.register_id}`;
   if (typeof shelter.lat === 'number' && typeof shelter.lon === 'number') {
     return `geo:${shelter.lat},${shelter.lon}`;
   }
