@@ -20,8 +20,8 @@ import {
   DEFAULT_ICON,
   DEFAULT_MARKER_COLOR,
 } from '../constants';
-import { distanceColor, shelterGradientKm } from '../utils/distance';
-import { shelterId } from '../utils/distance';
+import { distanceColor, shelterGradientKm, shelterId } from '../utils/distance';
+import { buildDisplayCoordinateMap } from '../utils/displayCoordinates';
 import { markerImageId, ensureMarkerImages } from '../utils/markers';
 import FilterBar from './FilterBar';
 
@@ -143,6 +143,8 @@ function buildGeoJSON(
   shelters: Shelter[],
   userLocation: [number, number] | null,
 ): FeatureCollection {
+  const displayCoords = buildDisplayCoordinateMap(shelters);
+
   return {
     type: 'FeatureCollection',
     features: shelters
@@ -150,9 +152,10 @@ function buildGeoJSON(
       .map(s => {
         const icon = TYPOLOGY_ICONS[s.typology ?? ''] ?? DEFAULT_ICON;
         const color = shelterMarkerColor(s, userLocation);
+        const coordinates = displayCoords.get(shelterId(s)) ?? [s.lon!, s.lat!];
         return {
           type: 'Feature' as const,
-          geometry: { type: 'Point' as const, coordinates: [s.lon!, s.lat!] },
+          geometry: { type: 'Point' as const, coordinates },
           properties: {
             name: s.name ?? 'Sense nom',
             typology: s.typology ?? '',
