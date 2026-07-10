@@ -24,7 +24,7 @@ Barcelona only) but are also listed in unmatched.json for manual review.
 
 import math
 
-from common import DATA_DIR, RAW_DIR, normalize_join_key, read_json, write_json
+from common import DATA_DIR, RAW_DIR, normalize_join_key, read_json, read_json_if_exists, write_json
 
 MAX_MATCH_DISTANCE_METERS = 30
 # ~1 m precision; CMS siblings in the same building share one comshiva point.
@@ -145,6 +145,39 @@ def match_tier4_by_colocation(cms_records, matches):
     return tier4
 
 
+def apply_ckan_overrides(cms_records, ckan_records, matches):
+    """Apply manual detail_url -> register_id mappings from data/ckan_overrides.json."""
+    overrides = read_json_if_exists(DATA_DIR / "ckan_overrides.json", {})
+    if not overrides:
+        return {}
+
+    ckan_by_id = {ckan["register_id"]: ckan for ckan in ckan_records}
+    applied = {}
+    for detail_url, override in overrides.items():
+        if detail_url in matches or detail_url not in cms_records:
+            continue
+        register_id = str(override.get("register_id", "")).lstrip("\ufeff")
+        ckan = ckan_by_id.get(register_id)
+        if ckan is None:
+            print(f"Warning: ckan override for {detail_url} references unknown register_id {register_id}")
+            continue
+        applied[detail_url] = ckan
+    return applied
+
+
+def build_unmatched_entry(detail_url, cms):
+    return {
+        "name": cms["name"],
+        "detail_url": detail_url,
+        "district": cms.get("district"),
+        "address": cms.get("address"),
+        "has_coordinates": cms.get("lat") is not None,
+        "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+        if cms.get("lat") is None
+        else "no confident match found in CKAN dataset (likely outside Barcelona city)",
+    }
+
+
 def main():
     cms_records = read_json(RAW_DIR / "parsed_details.json")
     ckan_raw = read_json(RAW_DIR / "ckan_shelters.json")
@@ -170,12 +203,19 @@ def main():
     matches.update(tier4)
     print(f"Tier 4 (+colocated sibling): {len(tier4)} new matches, {len(matches)} total")
 
+    tier5 = apply_ckan_overrides(cms_records, ckan_records, matches)
+    override_urls = set(tier5)
+    matches.update(tier5)
+    print(f"Tier 5 (+manual CKAN overrides): {len(tier5)} new matches, {len(matches)} total")
+
     shelters = []
     unmatched = []
     for detail_url, cms in cms_records.items():
         ckan = matches.get(detail_url)
         if ckan and detail_url in colocated_urls:
             match_status = "colocated"
+        elif ckan and detail_url in override_urls:
+            match_status = "matched"
         elif ckan:
             match_status = "matched"
         else:
@@ -201,18 +241,7 @@ def main():
         }
         shelters.append(shelter)
         if match_status == "cms_only":
-            unmatched.append(
-                {
-                    "name": cms["name"],
-                    "detail_url": detail_url,
-                    "district": cms.get("district"),
-                    "address": cms.get("address"),
-                    "has_coordinates": cms.get("lat") is not None,
-                    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
-                    if cms.get("lat") is None
-                    else "no confident match found in CKAN dataset (likely outside Barcelona city)",
-                }
-            )
+            unmatched.append(build_unmatched_entry(detail_url, cms))
 
     print(f"\nFinal dataset: {len(shelters)} shelters, {len(unmatched)} unmatched against CKAN")
     write_json(DATA_DIR / "shelters.json", shelters)

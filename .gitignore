@@ -13,5 +13,6 @@ yarn.lock
 # Python (pipeline)
 pipeline/.venv/
 pipeline/raw/
+pipeline/.env
 __pycache__/
 *.pyc

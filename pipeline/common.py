@@ -86,6 +86,32 @@ def read_json(path):
         return json.load(f)
 
 
+def read_json_if_exists(path, default=None):
+    if not path.exists():
+        return default if default is not None else {}
+    return read_json(path)
+
+
+def load_env():
+    """Load pipeline/.env if present (gitignored)."""
+    env_path = PIPELINE_DIR / ".env"
+    if not env_path.exists():
+        return
+    for line in env_path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        import os
+        os.environ.setdefault(key.strip(), value.strip())
+
+
+def google_geocoding_api_key():
+    import os
+    load_env()
+    return os.environ.get("GOOGLE_GEOCODING_API_KEY") or None
+
+
 def normalize_join_key(name, street, number):
     """Build a normalized key for joining CKAN records with CMS records,
     since the two systems use unrelated numbering schemes for the same

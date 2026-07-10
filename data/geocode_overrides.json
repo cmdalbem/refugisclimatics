@@ -1,0 +1,74 @@
+{
+  "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/biblioteca-font-de-la-mina-99400781293": {
+    "lat": 41.45824364,
+    "lon": 2.20109607,
+    "source": "manual",
+    "note": "ICGC toponym Font de la Mina, Santa Coloma de Gramenet"
+  },
+  "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/biblioteca-publica-can-peixauet-99400781311": {
+    "lat": 41.44369943,
+    "lon": 2.20779443,
+    "source": "manual",
+    "note": "ICGC toponym Can Peixauet, Santa Coloma de Gramenet"
+  },
+  "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/bibliomercat-de-santa-eulalia-99400781290": {
+    "lat": 41.45625646,
+    "lon": 2.21459817,
+    "source": "manual",
+    "note": "Near Centre Cultural Santa Eulàlia, Santa Coloma de Gramenet"
+  },
+  "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/casal-municipal-de-gent-gran-de-santa-eulalia-95065180731": {
+    "lat": 41.45625646,
+    "lon": 2.21459817,
+    "source": "manual",
+    "note": "Pl. dels Avis area, Santa Coloma de Gramenet"
+  },
+  "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/parc-de-l-alhambra-99400781398": {
+    "lat": 41.4508,
+    "lon": 2.2455,
+    "source": "manual",
+    "note": "Parc de l'Alhambra, Badalona — approximate park centre"
+  },
+  "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/parc-del-besos-99400781395": {
+    "lat": 41.440125,
+    "lon": 2.2096183,
+    "source": "manual",
+    "note": "Parc Fluvial del Besòs area, Santa Coloma de Gramenet"
+  },
+  "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/biblioteca-josep-janes-95328120348": {
+    "lat": 41.44294472,
+    "lon": 2.21365427,
+    "source": "manual",
+    "note": "ICGC carrer Dr Martí i Julià 33, Santa Coloma de Gramenet"
+  },
+  "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/placa-de-milagros-consarnau-i-sabate-99400781384": {
+    "lat": 41.36634432,
+    "lon": 2.13184831,
+    "source": "manual",
+    "note": "ICGC carrer Aprestadora area, L'Hospitalet"
+  },
+  "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/complex-esportiu-municipal-estruch-94272101346": {
+    "lat": 41.32852998,
+    "lon": 2.10382931,
+    "source": "manual",
+    "note": "ICGC Av. Pare Andreu de Palma 9, El Prat de Llobregat"
+  },
+  "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/casal-de-gent-gran-de-via-trajana-99400781450": {
+    "lat": 41.3595,
+    "lon": 2.1285,
+    "source": "manual",
+    "note": "Av. Ferrocarril 11-13, Via Trajana, L'Hospitalet"
+  },
+  "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/arbreda-de-la-rambleta-99400781399": {
+    "lat": 41.35249881,
+    "lon": 2.12088157,
+    "source": "manual",
+    "note": "ICGC Rambleta Joan Llandrich, L'Hospitalet"
+  },
+  "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/placa-de-pere-calders-99400781383": {
+    "lat": 41.32567444,
+    "lon": 2.10421137,
+    "source": "manual",
+    "note": "ICGC Plaça Pere Calders, L'Hospitalet"
+  }
+}

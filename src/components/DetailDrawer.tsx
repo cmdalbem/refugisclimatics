@@ -165,6 +165,13 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
 
                 <Contact shelter={shelter} />
 
+                {shelter.match_status === 'cms_only' && (
+                  <p className="detail-data-note">
+                    Dades limitades: aquest refugi no consta a l&apos;open data de Barcelona.
+                    Contacte i horaris poden estar incomplets.
+                  </p>
+                )}
+
                 {shelter.detail_url && (
                   <footer className="detail-block detail-footer">
                     <a

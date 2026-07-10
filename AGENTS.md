@@ -11,11 +11,12 @@ https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refug
 
 ## Current state
 
-- `pipeline/` — a data-extraction pipeline, already built and run once.
-  See `pipeline/README.md` for how it works and how to re-run it.
-- `data/shelters.json` — the canonical, committed dataset the pipeline
-  produced. `data/unmatched.json` lists known gaps/edge cases.
-- The actual map/list app has not been started yet (tech stack undecided).
+- `pipeline/` — data-extraction pipeline (stages 1–6). See
+  `pipeline/README.md` for how it works and how to re-run.
+- `data/shelters.json` — canonical dataset (564 shelters, all plottable).
+  `data/unmatched.json` lists the 38 `cms_only` gaps against CKAN.
+- `src/` — Vite + React + Mapbox app. Reads `data/shelters.json` at build
+  time; typology filters, geolocation, map, list, and detail drawer.
 
 ## Data we have per shelter (`data/shelters.json`)
 
@@ -37,10 +38,11 @@ for known gaps.
 - The official open dataset alone lacks typology/characteristics, so we
   also scrape barcelona.cat's own (undocumented) internal API to fill
   those in. Details are in the pipeline code, not duplicated here.
-- The pipeline is a one-time, manually re-run script — not scheduled, not
-  wired into the app.
-- v1 app is planned to read the static `data/shelters.json` directly,
-  filtering client-side — no backend/database yet.
+- The pipeline is a manually re-run script — not scheduled, not wired into
+  the app. Stage 6 geocodes addresses missing from barcelona.cat detail
+  pages; Google API key lives in gitignored `pipeline/.env`.
+- v1 app reads static `data/shelters.json` directly, filtering client-side
+  — no backend/database yet.
 
 ## Design principles (app)
 
@@ -64,4 +66,5 @@ for known gaps.
 
 - `pipeline/README.md` — pipeline stages, data sources, how to re-run.
 - `pipeline/*.py` — endpoint URLs, field mappings, join logic.
-- `data/unmatched.json` — shelters that didn't cleanly match across sources.
+- `data/unmatched.json` — shelters without CKAN enrichment.
+- `data/geocode_overrides.json` — manual lat/lon for addresses geocoders miss.

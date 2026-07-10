@@ -615,6 +615,14 @@ html, body {
   text-underline-offset: 3px;
 }
 
+.detail-data-note {
+  margin: 0;
+  padding: 0 var(--detail-pad-x) var(--detail-block-space);
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
 /* Map controls */
 .mapboxgl-ctrl-bottom-left,
 .mapboxgl-ctrl-bottom-right {

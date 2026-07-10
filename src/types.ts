@@ -15,7 +15,7 @@ export interface Shelter {
   image_url?: string;
   detail_url?: string;
   register_id?: string;
-  match_status?: string;
+  match_status?: 'matched' | 'colocated' | 'cms_only' | string;
 }
 
 export type LocationStatus = 'loading' | 'active' | 'error';
