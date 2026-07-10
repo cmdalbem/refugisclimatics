@@ -1,0 +1,4 @@
+pipeline/.venv/
+pipeline/raw/
+__pycache__/
+*.pyc
