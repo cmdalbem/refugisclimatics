@@ -39,10 +39,17 @@ export default function ShelterList({
           : null;
         const fontWeight = km !== null ? distanceFontWeight(km) : FONT_WEIGHT_MAX;
 
+        const imageUrl = shelter.image_url?.trim();
+
         return (
           <li
             key={id}
-            className={`shelter-list-item${activeShelterId === id ? ' active' : ''}`}
+            className={`shelter-list-item${activeShelterId === id ? ' active' : ''}${imageUrl ? ' has-image' : ''}`}
+            style={
+              imageUrl
+                ? ({ '--item-image': `url("${imageUrl}")` } as React.CSSProperties)
+                : undefined
+            }
             onClick={() => onShelterClick(shelter)}
           >
             {km !== null && (

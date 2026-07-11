@@ -303,6 +303,18 @@ html, body {
   background: rgba(0, 0, 0, 0.1);
 }
 
+@media (min-width: 901px) {
+  .shelter-list-item.has-image {
+    transition: none;
+  }
+
+  .shelter-list-item.has-image:hover {
+    background-image: var(--item-image);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 .shelter-list-item.active {
   background: #fafafa;
   box-shadow: inset 4px 0 0 #111;
