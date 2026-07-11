@@ -4,6 +4,8 @@ import {
   COLOR_GRADIENT_MAX_KM,
   GRADIENT_LAT_MIN,
   GRADIENT_LAT_MAX,
+  FONT_GRADIENT_MIN_KM,
+  FONT_GRADIENT_MAX_KM,
   FONT_WEIGHT_MIN,
   FONT_WEIGHT_MAX,
 } from '../constants';
@@ -55,7 +57,8 @@ export function distanceColor(km: number): string {
 }
 
 export function distanceFontWeight(km: number): number {
-  const t = Math.min(Math.max(km / COLOR_GRADIENT_MAX_KM, 0), 1);
+  const span = FONT_GRADIENT_MAX_KM - FONT_GRADIENT_MIN_KM;
+  const t = span <= 0 ? 0 : Math.min(Math.max((km - FONT_GRADIENT_MIN_KM) / span, 0), 1);
   return Math.round(FONT_WEIGHT_MAX - t * (FONT_WEIGHT_MAX - FONT_WEIGHT_MIN));
 }
 

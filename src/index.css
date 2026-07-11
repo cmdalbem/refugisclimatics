@@ -302,15 +302,15 @@ html, body {
 }
 
 .shelter-list-item .distance {
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 500;
+  font-family: 'Archivo Variable', Archivo, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
   font-variant-numeric: tabular-nums;
+  letter-spacing: -0.05em;
   white-space: nowrap;
   flex-shrink: 0;
   min-width: 48px;
   margin-top: 1px;
-  /* letter-spacing: -0.05em; */
 }
 
 .shelter-list-item .info {
@@ -458,7 +458,7 @@ html, body {
 }
 
 .detail-distance {
-  font-family: inherit;
+  font-family: 'Archivo Variable', Archivo, sans-serif;
   font-size: 22px;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
