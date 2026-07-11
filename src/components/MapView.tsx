@@ -488,12 +488,12 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
 
   return (
     <main id="map-area">
+      <div ref={containerRef} id="map" />
       <FilterBar
         shelters={shelters}
         activeTypology={activeTypology}
         onTypologyChange={onTypologyChange}
       />
-      <div ref={containerRef} id="map" />
     </main>
   );
 });

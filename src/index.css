@@ -204,13 +204,13 @@ html, body {
 
 #filter-bar {
   position: absolute;
-  top: 0px;
+  bottom: 0px;
   left: 0;
   right: 0;
   padding: 0 0px;
   background: transparent;
   border: none;
-  z-index: 2;
+  z-index: 99;
   pointer-events: none;
 }
 
@@ -313,6 +313,30 @@ html, body {
 }
 
 @media (min-width: 901px) {
+  #map-area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #map {
+    flex: 1;
+    min-height: 0;
+    height: auto;
+  }
+
+  #filter-bar {
+    position: static;
+    flex-shrink: 0;
+    z-index: auto;
+    pointer-events: auto;
+    left: auto;
+    right: auto;
+  }
+
+  #typology-list {
+    border-left: none;
+  }
+
   .shelter-list-item.has-image {
     transition: none;
   }
@@ -852,6 +876,7 @@ html, body {
 
   /* Filter bar: single-row horizontal scroll, lifted above the peeking sheet */
   #filter-bar {
+    position: absolute;
     top: auto;
     bottom: calc(var(--sheet-visible) + 12px);
     padding: 0 12px;
