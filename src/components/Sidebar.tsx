@@ -44,6 +44,14 @@ export default function Sidebar({
     return () => window.removeEventListener('resize', onResize);
   }, []);
 
+  const expandedSnapPoint = snapPoints[snapPoints.length - 1] ?? null;
+  const isSheetExpanded = activeSnapPoint === expandedSnapPoint;
+
+  useEffect(() => {
+    if (!isMobile || isSheetExpanded) return;
+    document.getElementById('shelter-list')?.scrollTo(0, 0);
+  }, [isMobile, isSheetExpanded]);
+
   const content = (
     <>
       <header className="panel-header">
@@ -77,13 +85,16 @@ export default function Sidebar({
         defaultOpen
         modal={false}
         dismissible={false}
-        handleOnly
         autoFocus={false}
         snapPoints={snapPoints}
         activeSnapPoint={activeSnapPoint}
         setActiveSnapPoint={setActiveSnapPoint}
       >
-        <Drawer.Content id="sidebar" aria-describedby={undefined}>
+        <Drawer.Content
+          id="sidebar"
+          className={isSheetExpanded ? 'sheet-expanded' : 'sheet-peek'}
+          aria-describedby={undefined}
+        >
           <Drawer.Title className="sr-only">Llista de refugis climàtics</Drawer.Title>
           <Drawer.Handle className="sheet-handle" />
           {content}
