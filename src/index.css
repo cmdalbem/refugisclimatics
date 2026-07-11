@@ -814,10 +814,11 @@ html, body {
     height: 100%;
   }
 
-  /* Filter bar: single-row horizontal scroll at top of map */
+  /* Filter bar: single-row horizontal scroll, lifted above the peeking sheet */
   #filter-bar {
-    top: 8px;
-    padding: 0 12px 0 148px;
+    top: auto;
+    bottom: calc(var(--sheet-peek) + 12px);
+    padding: 0 12px;
     overflow-x: auto;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
