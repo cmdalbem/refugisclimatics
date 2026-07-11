@@ -1,5 +1,5 @@
 import type { Shelter } from '../types';
-import { TYPOLOGY_ICONS, DEFAULT_ICON, FILTER_ALL_ICON } from '../constants';
+import { TYPOLOGY_ICONS, TYPOLOGY_LABELS, DEFAULT_ICON, FILTER_ALL_ICON } from '../constants';
 import PinIcon from './PinIcon';
 
 interface Props {
@@ -40,7 +40,7 @@ export default function FilterBar({ shelters, activeTypology, onTypologyChange }
               onClick={() => onTypologyChange(typology)}
             >
               <PinIcon name={iconName} size={15} />
-              <span>{typology}</span>
+              <span>{TYPOLOGY_LABELS[typology] ?? typology}</span>
               <span className="pill-count">{typologyCounts[typology]}</span>
             </li>
           );

@@ -33,6 +33,28 @@ export const TYPOLOGY_ICONS: Record<string, string> = {
   Universidades: 'square_academic_cap',
 };
 
+// Short Catalan display labels; data keys stay as CMS Spanish values
+export const TYPOLOGY_LABELS: Record<string, string> = {
+  Bibliotecas: 'Biblioteques',
+  'Centros comerciales': 'Comercials',
+  'Centros de culto': 'Culte',
+  'Complejos deportivos': 'Esportius',
+  'Entidades culturales': 'Cultura',
+  'Equipamientos ambientales': 'Espai verd',
+  'Equipos de proximidad': 'Equip. proximitat',
+  'Espacios de juegos con agua': "Jocs d'aigua",
+  'Interiores de manzana': "Interiors d'illa",
+  Mercados: 'Mercats',
+  Microrefugis: 'Microrefugis',
+  Museos: 'Museus',
+  'Otro(s)': 'Altres',
+  'Parques y jardines': 'Parcs',
+  'Patios de escuelas': 'Patis escolars',
+  'Patios de guarderías': 'Patis guarderies',
+  Piscinas: 'Piscines',
+  Universidades: 'Universitats',
+};
+
 // Radial gradient: blue (close) → green → yellow → orange → red (far)
 export const DISTANCE_GRADIENT_STOPS = ['#3187B8', '#F6AF2F', '#F38D03', '#E83E25'];
 export const COLOR_GRADIENT_MAX_KM = 1.5;

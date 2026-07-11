@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Drawer } from 'vaul';
 import type { Shelter } from '../types';
-import { TYPOLOGY_ICONS, DEFAULT_ICON, FONT_WEIGHT_MAX } from '../constants';
+import { TYPOLOGY_ICONS, TYPOLOGY_LABELS, DEFAULT_ICON, FONT_WEIGHT_MAX } from '../constants';
 import PinIcon from './PinIcon';
 import { distanceKm, formatDistance, distanceColor, distanceFontWeight } from '../utils/distance';
 import { formatLocation } from '../utils/distance';
@@ -120,7 +120,9 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
           <div className="detail-meta">
             <span className="detail-typology">
               <PinIcon name={iconName} size={13} />
-              {displayShelter.typology ?? 'Refugi climàtic'}
+              {displayShelter.typology
+                ? (TYPOLOGY_LABELS[displayShelter.typology] ?? displayShelter.typology)
+                : 'Refugi climàtic'}
             </span>
             {km !== null && (
               <span className="detail-distance" style={{ color: distanceColor(km) }}>
