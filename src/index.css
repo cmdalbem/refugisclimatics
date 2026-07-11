@@ -12,6 +12,13 @@
   --radius: 10px;
   --sidebar-width: 420px;
   --drawer-width: 420px;
+
+  /* Typography — set --font-scale to resize the whole UI (e.g. 1.1 = +10%) */
+  --font-scale: 1;
+  --font-size-small: calc(13px * var(--font-scale));   /* labels, detail body, distances */
+  --font-size-base: calc(16px * var(--font-scale));    /* UI text, pills, subtitle */
+  --font-size-title: calc(20px * var(--font-scale));   /* list names, detail distance */
+  --font-size-display: calc(42px * var(--font-scale)); /* shelter names, logo */
 }
 
 * {
@@ -109,7 +116,7 @@ html, body {
 
 #sidebar h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: var(--font-size-display);
   width: 120px;
   font-weight: 600;
   letter-spacing: -6%;
@@ -120,7 +127,7 @@ html, body {
 
 #subtitle {
   margin: 6px 0 0;
-  font-size: 16px;
+  font-size: var(--font-size-base);
   font-weight: 500;
   line-height: 1.35;
   letter-spacing: -0.01em;
@@ -135,7 +142,7 @@ html, body {
   margin: 0;
   padding: 14px 24px 12px;
   font-family: inherit;
-  font-size: 10px;
+  font-size: var(--font-size-small);
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -197,13 +204,13 @@ html, body {
 
 #filter-bar {
   position: absolute;
-  bottom: 44px;
+  top: 16px;
   left: 0;
   right: 0;
-  padding: 0 48px 0 16px;
+  padding: 0 16px;
   background: transparent;
   border: none;
-  z-index: 1;
+  z-index: 2;
   pointer-events: none;
 }
 
@@ -220,10 +227,10 @@ html, body {
 .pill {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 4px 8px;
+  gap: 4px;
+  padding: 8px 12px;
   background: white;
-  font-size: 16px;
+  font-size: var(--font-size-small);
   font-weight: 500;
   color: var(--text);
   white-space: nowrap;
@@ -253,7 +260,7 @@ html, body {
 }
 
 .pill-count {
-  font-size: 11px;
+  font-size: var(--font-size-small);
   font-weight: 500;
   font-variant-numeric: tabular-nums;
   color: var(--text-subtle);
@@ -303,7 +310,7 @@ html, body {
 
 .shelter-list-item .distance {
   font-family: 'Archivo Variable', Archivo, sans-serif;
-  font-size: 14px;
+  font-size: var(--font-size-base);
   font-weight: 600;
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.05em;
@@ -320,7 +327,7 @@ html, body {
 
 .shelter-list-item .info .name {
   font-family: inherit;
-  font-size: 20px;
+  font-size: var(--font-size-title);
   font-weight: 400;
   color: #111;
   line-height: 1.05;
@@ -407,6 +414,7 @@ html, body {
   --detail-pad-x: 24px;
   --detail-block-space: 24px;
   padding: 24px var(--detail-pad-x) 32px;
+  font-size: var(--font-size-base);
 }
 
 .detail-body--no-image {
@@ -443,7 +451,7 @@ html, body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 10px;
+  font-size: var(--font-size-small);
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -459,7 +467,7 @@ html, body {
 
 .detail-distance {
   font-family: 'Archivo Variable', Archivo, sans-serif;
-  font-size: 22px;
+  font-size: var(--font-size-title);
   font-weight: 700;
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.05em;
@@ -469,7 +477,7 @@ html, body {
 .detail-name {
   margin: 0 0 10px;
   font-family: inherit;
-  font-size: 42px;
+  font-size: var(--font-size-display);
   font-weight: 400;
   line-height: 0.95;
   letter-spacing: -5%;
@@ -478,7 +486,6 @@ html, body {
 
 .detail-location {
   margin: 0;
-  font-size: 13px;
   font-weight: 600;
   line-height: 1.45;
   letter-spacing: -0.01em;
@@ -495,7 +502,6 @@ html, body {
 
 .detail-notice p {
   margin: 0;
-  font-size: 13px;
   font-weight: 600;
   line-height: 1.45;
   letter-spacing: -0.01em;
@@ -508,7 +514,6 @@ html, body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px 20px;
-  font-size: 13px;
   font-weight: 600;
   line-height: 1.35;
   letter-spacing: -0.02em;
@@ -517,7 +522,7 @@ html, body {
 
 .detail-section-title {
   margin: 0 0 14px;
-  font-size: 10px;
+  font-size: var(--font-size-small);
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -527,7 +532,6 @@ html, body {
 .detail-hours {
   width: 100%;
   border-collapse: collapse;
-  font-size: 13px;
   margin-top: 0;
 }
 
@@ -577,7 +581,6 @@ html, body {
 
 .detail-contact-value {
   margin: 0;
-  font-size: 14px;
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: -0.02em;
@@ -598,7 +601,7 @@ html, body {
 
 .detail-link {
   display: inline-block;
-  font-size: 11px;
+  font-size: var(--font-size-small);
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -615,7 +618,6 @@ html, body {
 .detail-data-note {
   margin: 0;
   padding: 0 var(--detail-pad-x) var(--detail-block-space);
-  font-size: 13px;
   line-height: 1.45;
   color: var(--text-muted);
 }
@@ -710,7 +712,7 @@ html, body {
   }
 
   #mobile-brand span {
-    font-size: 16px;
+    font-size: var(--font-size-base);
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: -4%;
@@ -777,11 +779,11 @@ html, body {
   }
 
   .shelter-list-item .info .name {
-    font-size: 16px;
+    font-size: var(--font-size-base);
   }
 
   .shelter-list-item .distance {
-    font-size: 14px;
+    font-size: var(--font-size-small);
     min-width: 40px;
   }
 
@@ -812,10 +814,10 @@ html, body {
     height: 100%;
   }
 
-  /* Filter bar: single-row horizontal scroll, lifted above the peeking sheet */
+  /* Filter bar: single-row horizontal scroll at top of map */
   #filter-bar {
-    bottom: calc(var(--sheet-peek) + 12px);
-    padding: 0 12px;
+    top: 8px;
+    padding: 0 12px 0 148px;
     overflow-x: auto;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
