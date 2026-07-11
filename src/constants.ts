@@ -1,6 +1,10 @@
 export const MAPBOX_TOKEN =
   'pk.eyJ1IjoiY21kYWxiZW0iLCJhIjoiY2pnbXhjZnplMDJ6MjMzbnk0OGthZGE1ayJ9.n1flNO8ndRYKQcR9wNIT9w';
 export const MAP_STYLE = 'mapbox://styles/cmdalbem/cmrenqask002e01qwgzs22fbh';
+export const OFFICIAL_SHELTER_NETWORK_URL =
+  'https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos';
+export const MAP_CUSTOM_ATTRIBUTION =
+  `<a href="${OFFICIAL_SHELTER_NETWORK_URL}" target="_blank" rel="noopener noreferrer">Dades: Ajuntament de Barcelona</a>`;
 export const MAP_CENTER: [number, number] = [2.1734, 41.3851];
 export const MAP_ZOOM = 12;
 export const LABEL_ZOOM_THRESHOLD = 15;

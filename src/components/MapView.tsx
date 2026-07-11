@@ -11,6 +11,7 @@ import type { Shelter } from '../types';
 import {
   MAPBOX_TOKEN,
   MAP_STYLE,
+  MAP_CUSTOM_ATTRIBUTION,
   MAP_CENTER,
   MAP_ZOOM,
   LABEL_ZOOM_THRESHOLD,
@@ -232,7 +233,10 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
       zoom: MAP_ZOOM,
       attributionControl: false,
     });
-    map.addControl(new mapboxgl.AttributionControl({ compact: true }), 'bottom-right');
+    map.addControl(
+      new mapboxgl.AttributionControl({ customAttribution: MAP_CUSTOM_ATTRIBUTION }),
+      'bottom-right',
+    );
     mapRef.current = map;
 
     const resizeObserver = new ResizeObserver(() => map.resize());
