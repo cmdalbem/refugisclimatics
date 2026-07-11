@@ -156,6 +156,10 @@ html, body {
   flex-shrink: 0;
 }
 
+.list-status.status-idle {
+  cursor: pointer;
+}
+
 .list-status.status-loading,
 .list-status.status-error {
   color: var(--brand-red);
@@ -335,6 +339,10 @@ html, body {
 
   #typology-list {
     border-left: none;
+  }
+
+  #map-controls {
+    display: contents;
   }
 
   .shelter-list-item.has-image {
@@ -734,7 +742,7 @@ html, body {
 @media (max-width: 900px) {
   :root {
     --sheet-sliver: 72px;
-    --sheet-min: 32px;
+    --sheet-min: 48px;
     --sheet-peek: 240px;
     --sheet-visible: var(--sheet-peek);
     --sheet-height: calc(100vh - var(--sheet-sliver));
@@ -819,16 +827,21 @@ html, body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 32px;
+    height: 48px;
     flex-shrink: 0;
     cursor: grab;
   }
 
+  [data-vaul-handle-hitarea] {
+    width: max(100%, 3.5rem);
+    height: max(100%, 3.5rem);
+  }
+
   .sheet-handle::before {
     content: '';
-    width: 36px;
-    height: 4px;
-    border-radius: 2px;
+    width: 52px;
+    height: 5px;
+    border-radius: 3px;
     background: rgba(0, 0, 0, 0.2);
   }
 
@@ -874,16 +887,36 @@ html, body {
     height: 100%;
   }
 
-  /* Filter bar: single-row horizontal scroll, lifted above the peeking sheet */
-  #filter-bar {
+  /* Filter bar + location button, lifted above the peeking sheet */
+  #map-controls {
     position: absolute;
-    top: auto;
+    left: 0;
+    right: 0;
     bottom: calc(var(--sheet-visible) + 12px);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    pointer-events: none;
+    transition: bottom 0.42s cubic-bezier(0.32, 0.72, 0, 1);
+  }
+
+  #map-controls > * {
+    pointer-events: auto;
+  }
+
+  #filter-bar {
+    position: static;
+    width: 100%;
     padding: 0 12px;
     overflow-x: auto;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
-    transition: bottom 0.42s cubic-bezier(0.32, 0.72, 0, 1);
+  }
+
+  #sidebar.sheet-expanded ~ #map-area #filter-bar {
+    display: none;
   }
 
   #filter-bar::-webkit-scrollbar {
@@ -900,5 +933,51 @@ html, body {
     flex: 0 0 auto;
     min-width: 0;
     border: 1px solid #111;
+  }
+
+  /* Geolocation lives on the map — hide the list status strip on mobile */
+  .list-status {
+    display: none;
+  }
+
+  #map-location-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    width: 44px;
+    height: 44px;
+    margin-right: 12px;
+    padding: 0;
+    background: #fff;
+    border: 1px solid #111;
+    color: #111;
+    cursor: pointer;
+  }
+
+  #map-location-btn svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  #map-location-btn.status-active {
+    color: var(--brand-blue);
+  }
+
+  #map-location-btn.status-idle {
+    color: #111;
+  }
+
+  #map-location-btn.status-loading {
+    color: var(--brand-red);
+    cursor: wait;
+  }
+
+  #map-location-btn.status-error {
+    color: var(--brand-red);
+  }
+
+  #map-location-btn:active {
+    background: #f0f0ee;
   }
 }

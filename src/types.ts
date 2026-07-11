@@ -18,4 +18,4 @@ export interface Shelter {
   match_status?: 'matched' | 'colocated' | 'cms_only' | string;
 }
 
-export type LocationStatus = 'loading' | 'active' | 'error';
+export type LocationStatus = 'idle' | 'loading' | 'active' | 'error';

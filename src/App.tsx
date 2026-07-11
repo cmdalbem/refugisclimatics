@@ -71,6 +71,9 @@ export default function App() {
         activeTypology={activeTypology}
         activeShelterId={activeShelterId}
         drawerOpen={!!activeShelter}
+        locationStatus={locationStatus}
+        locationStatusText={statusText}
+        onLocationButtonClick={handleLocationButtonClick}
         onShelterClick={openShelter}
         onMapClick={closeShelter}
         onTypologyChange={setActiveTypology}

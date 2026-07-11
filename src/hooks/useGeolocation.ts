@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import type { LocationStatus } from '../types';
 
 interface GeolocationState {
@@ -10,8 +10,8 @@ interface GeolocationState {
 
 export function useGeolocation(): GeolocationState {
   const [location, setLocation] = useState<[number, number] | null>(null);
-  const [status, setStatus] = useState<LocationStatus>('loading');
-  const [statusText, setStatusText] = useState('Localitzant-te...');
+  const [status, setStatus] = useState<LocationStatus>('idle');
+  const [statusText, setStatusText] = useState('Localitza\'t per ordenar per distància');
 
   const requestLocation = useCallback(() => {
     if (!navigator.geolocation) {
@@ -38,8 +38,31 @@ export function useGeolocation(): GeolocationState {
     );
   }, []);
 
+  // Auto-locate only when permission was granted previously — never trigger
+  // the browser prompt on first visit (state "prompt").
   useEffect(() => {
-    requestLocation();
+    if (!navigator.geolocation || !navigator.permissions?.query) return;
+
+    let cancelled = false;
+
+    navigator.permissions
+      .query({ name: 'geolocation' })
+      .then(result => {
+        if (cancelled) return;
+        if (result.state === 'granted') {
+          requestLocation();
+        } else if (result.state === 'denied') {
+          setStatus('error');
+          setStatusText('Activa la ubicació per ordenar per distància');
+        }
+      })
+      .catch(() => {
+        // Permissions API unavailable — stay idle until the user taps the button.
+      });
+
+    return () => {
+      cancelled = true;
+    };
   }, [requestLocation]);
 
   return { location, status, statusText, requestLocation };

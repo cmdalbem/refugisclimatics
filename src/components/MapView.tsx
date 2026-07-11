@@ -8,6 +8,7 @@ import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 import type { Shelter } from '../types';
+import type { LocationStatus } from '../types';
 import {
   MAPBOX_TOKEN,
   MAP_STYLE,
@@ -26,6 +27,7 @@ import { distanceColor, shelterGradientKm, shelterId } from '../utils/distance';
 import { buildDisplayCoordinateMap } from '../utils/displayCoordinates';
 import { markerImageId, ensureMarkerImages } from '../utils/markers';
 import FilterBar from './FilterBar';
+import MapLocationButton from './MapLocationButton';
 
 mapboxgl.accessToken = MAPBOX_TOKEN;
 
@@ -35,6 +37,9 @@ interface Props {
   activeTypology: string;
   activeShelterId: string | null;
   drawerOpen: boolean;
+  locationStatus: LocationStatus;
+  locationStatusText: string;
+  onLocationButtonClick: () => void;
   onShelterClick: (shelter: Shelter) => void;
   onMapClick: () => void;
   onTypologyChange: (typology: string) => void;
@@ -185,7 +190,19 @@ function buildMarkerCombos(
 }
 
 const MapView = forwardRef<MapViewHandle, Props>(function MapView(
-  { shelters, userLocation, activeTypology, activeShelterId, drawerOpen, onShelterClick, onMapClick, onTypologyChange },
+  {
+    shelters,
+    userLocation,
+    activeTypology,
+    activeShelterId,
+    drawerOpen,
+    locationStatus,
+    locationStatusText,
+    onLocationButtonClick,
+    onShelterClick,
+    onMapClick,
+    onTypologyChange,
+  },
   ref,
 ) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -493,11 +510,18 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
   return (
     <main id="map-area">
       <div ref={containerRef} id="map" />
-      <FilterBar
-        shelters={shelters}
-        activeTypology={activeTypology}
-        onTypologyChange={onTypologyChange}
-      />
+      <div id="map-controls">
+        <MapLocationButton
+          status={locationStatus}
+          statusText={locationStatusText}
+          onClick={onLocationButtonClick}
+        />
+        <FilterBar
+          shelters={shelters}
+          activeTypology={activeTypology}
+          onTypologyChange={onTypologyChange}
+        />
+      </div>
     </main>
   );
 });
