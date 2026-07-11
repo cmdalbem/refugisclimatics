@@ -199,12 +199,19 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
   const hoveredShelterKeyRef = useRef<string | null>(null);
   const selectedShelterKeyRef = useRef<string | null>(null);
   const prevDrawerOpenRef = useRef(drawerOpen);
+  const hasCenteredOnUserRef = useRef(false);
 
   sheltersRef.current = shelters;
   userLocationRef.current = userLocation;
   onShelterClickRef.current = onShelterClick;
   onMapClickRef.current = onMapClick;
   activeShelterIdRef.current = activeShelterId;
+
+  const centerMapOnUser = (map: mapboxgl.Map, location: [number, number]) => {
+    if (hasCenteredOnUserRef.current) return;
+    hasCenteredOnUserRef.current = true;
+    flyMapTo(map, location, Math.max(map.getZoom(), 14));
+  };
 
   useImperativeHandle(ref, () => ({
     flyToLocation(loc) {
@@ -373,6 +380,7 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
       });
 
       setupUserLocation(map, currentLocation);
+      if (currentLocation) centerMapOnUser(map, currentLocation);
 
       applySelectedShelterState(map, activeShelterIdRef.current, null);
       selectedShelterKeyRef.current = activeShelterIdRef.current;
@@ -414,6 +422,19 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
     const source = map?.getSource('user-location') as mapboxgl.GeoJSONSource | undefined;
     if (!source) return;
     source.setData(buildUserLocationGeoJSON(userLocation));
+  }, [userLocation]);
+
+  // Center on user once geolocation resolves (often after map init)
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !userLocation || hasCenteredOnUserRef.current) return;
+
+    const center = () => centerMapOnUser(map, userLocation);
+    if (map.isStyleLoaded()) {
+      center();
+    } else {
+      map.once('load', center);
+    }
   }, [userLocation]);
 
   // Update layer filter when active typology changes
