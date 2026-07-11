@@ -1,20 +1,15 @@
-import { createElement } from 'react';
-import { renderToStaticMarkup } from 'react-dom/server';
 import type { Map as MapboxMap } from 'mapbox-gl';
-import { ICON_COMPONENTS } from './iconRegistry';
-import { DEFAULT_MARKER_COLOR, DEFAULT_ICON } from '../constants';
+import { getColoredSvg } from './iconRegistry';
+import { DEFAULT_MARKER_COLOR } from '../constants';
 
 export function markerImageId(icon: string, color: string): string {
   return `${icon}__${color.replace(/[^a-zA-Z0-9]/g, '')}`;
 }
 
 function iconToSvgDataUrl(iconName: string): string | null {
-  const Icon = ICON_COMPONENTS[iconName] ?? ICON_COMPONENTS[DEFAULT_ICON];
-  if (!Icon) return null;
-  const svgString = renderToStaticMarkup(
-    createElement(Icon, { stroke: 'white', strokeWidth: 2.25, size: 24 }),
-  );
-  return `data:image/svg+xml;base64,${btoa(svgString)}`;
+  const svg = getColoredSvg(iconName, 'white');
+  if (!svg) return null;
+  return `data:image/svg+xml;base64,${btoa(svg)}`;
 }
 
 async function createMarkerIcon(

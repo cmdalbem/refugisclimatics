@@ -42,6 +42,11 @@ export default function App() {
 
   return (
     <div id="app" className={activeShelter ? 'drawer-open' : ''}>
+      <div id="mobile-brand">
+        <img src="/logo.png" alt="" />
+        <span>Refugis Climàtics</span>
+      </div>
+
       <Sidebar
         shelters={shelters}
         activeTypology={activeTypology}
