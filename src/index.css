@@ -1,7 +1,10 @@
 :root {
-  --bg: #f5f5f4;
-  --surface: #ffffff;
-  --border: #e8e8e6;
+  --bg: #fbf1e7;
+  --surface: #fbf1e7;
+  --surface-hover: #f3e8dc;
+  --surface-active: #ebe0d2;
+  --border: #ffffff;
+  --border-width: 4px;
   --text: #1a1a1a;
   --text-muted: #6b6b6b;
   --text-subtle: #9a9a9a;
@@ -58,8 +61,8 @@ html, body {
 #sidebar {
   display: flex;
   flex-direction: column;
-  background: #fff;
-  border-right: 1px solid #111;
+  background: var(--surface);
+  border-right: var(--border-width) solid var(--border);
   z-index: 1;
   min-height: 0;
   min-width: 0;
@@ -69,14 +72,14 @@ html, body {
   min-width: 0;
   min-height: 0;
   overflow: hidden;
-  background: #fff;
+  background: var(--surface);
   box-shadow: none;
   transition: box-shadow 0.28s ease;
 }
 
 #detail-drawer.open {
-  border-left: 1px solid #111;
-  border-right: 1px solid #111;
+  border-left: var(--border-width) solid var(--border);
+  border-right: var(--border-width) solid var(--border);
   box-shadow: 16px 0 48px rgba(0, 0, 0, 0.18);
 }
 
@@ -99,7 +102,7 @@ html, body {
 #sidebar .panel-header {
   padding: 0;
   flex-shrink: 0;
-  border-bottom: 1px solid #111;
+  border-bottom: var(--border-width) solid var(--border);
 }
 
 .logo-block {
@@ -150,7 +153,7 @@ html, body {
   color: #111;
   background: none;
   border: none;
-  border-bottom: 1px solid #111;
+  border-bottom: var(--border-width) solid var(--border);
   text-align: left;
   cursor: default;
   flex-shrink: 0;
@@ -226,8 +229,8 @@ html, body {
   flex-wrap: wrap;
   gap: 0px;
   width: 100%;
-  border-top: 1px solid #111;
-  border-left: 1px solid #111;
+  border-top: var(--border-width) solid var(--border);
+  border-left: var(--border-width) solid var(--border);
   pointer-events: auto;
 }
 
@@ -239,7 +242,7 @@ html, body {
   align-items: center;
   gap: 4px;
   padding: 8px 12px;
-  background: white;
+  background: var(--surface);
   font-size: var(--font-size-small);
   font-weight: 500;
   color: var(--text);
@@ -247,13 +250,13 @@ html, body {
   cursor: pointer;
   letter-spacing: 1%;
   border: none;
-  border-right: 1px solid #111;
-  border-bottom: 1px solid #111;
+  border-right: var(--border-width) solid var(--border);
+  border-bottom: var(--border-width) solid var(--border);
   transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
 
 .pill:hover {
-  background: #f0f0ee;
+  background: var(--surface-hover);
 }
 
 .pill.active:hover {
@@ -303,7 +306,7 @@ html, body {
   align-items: flex-start;
   gap: 16px;
   padding: 16px 24px;
-  border-top: 1px solid #111;
+  border-top: var(--border-width) solid var(--border);
   cursor: pointer;
   transition: background 0.15s ease-out;
 }
@@ -357,7 +360,7 @@ html, body {
 }
 
 .shelter-list-item.active {
-  background: #fafafa;
+  background: var(--surface-active);
   box-shadow: inset 4px 0 0 #111;
 }
 
@@ -397,7 +400,7 @@ html, body {
   width: var(--drawer-width);
   min-width: var(--drawer-width);
   height: 100%;
-  background: #fff;
+  background: var(--surface);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -413,9 +416,9 @@ html, body {
   justify-content: center;
   width: 36px;
   height: 36px;
-  border: 1px solid #111;
+  border: var(--border-width) solid var(--border);
   border-radius: 0;
-  background: #fff;
+  background: var(--surface);
   color: #111;
   cursor: pointer;
   z-index: 10;
@@ -481,7 +484,7 @@ html, body {
 .detail-block {
   margin: 0 calc(-1 * var(--detail-pad-x));
   padding: var(--detail-block-space) var(--detail-pad-x);
-  border-top: 1px solid #111;
+  border-top: var(--border-width) solid var(--border);
 }
 
 .detail-block:first-of-type {
@@ -548,8 +551,8 @@ html, body {
 .detail-notice {
   padding: 14px 16px;
   border-radius: 0;
-  background: #fff;
-  border: 1px solid #111;
+  background: var(--surface);
+  border: var(--border-width) solid var(--border);
   color: #111;
 }
 
@@ -807,7 +810,7 @@ html, body {
     max-height: none;
     border-right: none;
     border-bottom: none;
-    border-top: 1px solid #111;
+    border-top: var(--border-width) solid var(--border);
   }
 
   /* At peek, don't scroll the list — upward swipes/drags expand the sheet first
@@ -877,7 +880,7 @@ html, body {
     height: var(--sheet-height);
     max-height: none;
     border: none;
-    border-top: 1px solid #111;
+    border-top: var(--border-width) solid var(--border);
     border-radius: 16px 16px 0 0;
   }
 
@@ -932,7 +935,7 @@ html, body {
   .pill {
     flex: 0 0 auto;
     min-width: 0;
-    border: 1px solid #111;
+    border: var(--border-width) solid var(--border);
   }
 
   /* Geolocation lives on the map — hide the list status strip on mobile */
@@ -949,8 +952,8 @@ html, body {
     height: 44px;
     margin-right: 12px;
     padding: 0;
-    background: #fff;
-    border: 1px solid #111;
+    background: var(--surface);
+    border: var(--border-width) solid var(--border);
     color: #111;
     cursor: pointer;
   }
@@ -978,6 +981,6 @@ html, body {
   }
 
   #map-location-btn:active {
-    background: #f0f0ee;
+    background: var(--surface-hover);
   }
 }
