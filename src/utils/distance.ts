@@ -4,10 +4,6 @@ import {
   COLOR_GRADIENT_MAX_KM,
   GRADIENT_LAT_MIN,
   GRADIENT_LAT_MAX,
-  FONT_GRADIENT_MIN_KM,
-  FONT_GRADIENT_MAX_KM,
-  CLIMATE_FONT_YEAR_MIN,
-  CLIMATE_FONT_YEAR_MAX,
 } from '../constants';
 
 export function distanceKm(lat1: number, lon1: number, lat2: number, lon2: number): number {
@@ -54,12 +50,6 @@ export function distanceColor(km: number): string {
   const [r1, g1, b1] = stops[i];
   const [r2, g2, b2] = stops[i + 1];
   return `rgb(${Math.round(r1 + (r2 - r1) * localT)}, ${Math.round(g1 + (g2 - g1) * localT)}, ${Math.round(b1 + (b2 - b1) * localT)})`;
-}
-
-export function distanceFontYear(km: number): number {
-  const span = FONT_GRADIENT_MAX_KM - FONT_GRADIENT_MIN_KM;
-  const t = span <= 0 ? 0 : Math.min(Math.max((km - FONT_GRADIENT_MIN_KM) / span, 0), 1);
-  return Math.round(CLIMATE_FONT_YEAR_MIN + t * (CLIMATE_FONT_YEAR_MAX - CLIMATE_FONT_YEAR_MIN));
 }
 
 export function shelterId(shelter: Shelter): string {

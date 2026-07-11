@@ -1,7 +1,6 @@
 import type { Shelter } from '../types';
 import { shelterId } from '../utils/distance';
-import { distanceKm, formatDistance, distanceColor, distanceFontYear } from '../utils/distance';
-import { CLIMATE_FONT_YEAR_MIN } from '../constants';
+import { distanceKm, formatDistance, distanceColor } from '../utils/distance';
 
 interface Props {
   shelters: Shelter[];
@@ -37,8 +36,6 @@ export default function ShelterList({
         const km = userLocation
           ? distanceKm(userLocation[1], userLocation[0], shelter.lat!, shelter.lon!)
           : null;
-        const fontYear = km !== null ? distanceFontYear(km) : CLIMATE_FONT_YEAR_MIN;
-
         return (
           <li
             key={id}
@@ -51,12 +48,7 @@ export default function ShelterList({
               </div>
             )}
             <div className="info">
-              <div
-                className="name"
-                style={{ fontVariationSettings: `'YEAR' ${fontYear}` }}
-              >
-                {shelter.name ?? 'Sense nom'}
-              </div>
+              <div className="name">{shelter.name ?? 'Sense nom'}</div>
             </div>
           </li>
         );

@@ -36,7 +36,3 @@ export const DISTANCE_GRADIENT_STOPS = ['#3187B8', '#F6AF2F', '#F38D03', '#E83E2
 export const COLOR_GRADIENT_MAX_KM = 1.5;
 export const GRADIENT_LAT_MIN = 41.352;
 export const GRADIENT_LAT_MAX = 41.471;
-export const FONT_GRADIENT_MIN_KM = 0.5;
-export const FONT_GRADIENT_MAX_KM = 0.8;
-export const CLIMATE_FONT_YEAR_MIN = 1990;
-export const CLIMATE_FONT_YEAR_MAX = 2050;
