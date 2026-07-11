@@ -689,7 +689,9 @@ html, body {
 @media (max-width: 900px) {
   :root {
     --sheet-sliver: 72px;
+    --sheet-min: 32px;
     --sheet-peek: 240px;
+    --sheet-visible: var(--sheet-peek);
     --sheet-height: calc(100vh - var(--sheet-sliver));
   }
 
@@ -752,6 +754,19 @@ html, body {
     max-height: none;
     border-right: none;
     border-bottom: none;
+    border-top: 1px solid #111;
+  }
+
+  /* At peek, don't scroll the list — upward swipes/drags expand the sheet first
+     (vaul pattern). Only enable list scroll once fully expanded. */
+  #sidebar.sheet-peek #shelter-list {
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+
+  #sidebar.sheet-expanded #shelter-list {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   [data-vaul-handle].sheet-handle {
@@ -804,8 +819,8 @@ html, body {
     height: var(--sheet-height);
     max-height: none;
     border: none;
+    border-top: 1px solid #111;
     border-radius: 16px 16px 0 0;
-    box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.18);
   }
 
   .detail-drawer-panel {
@@ -817,11 +832,12 @@ html, body {
   /* Filter bar: single-row horizontal scroll, lifted above the peeking sheet */
   #filter-bar {
     top: auto;
-    bottom: calc(var(--sheet-peek) + 12px);
+    bottom: calc(var(--sheet-visible) + 12px);
     padding: 0 12px;
     overflow-x: auto;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
+    transition: bottom 0.42s cubic-bezier(0.32, 0.72, 0, 1);
   }
 
   #filter-bar::-webkit-scrollbar {

@@ -16,12 +16,17 @@ interface Props {
   onLocationButtonClick: () => void;
 }
 
-// Must match --sheet-peek / --sheet-sliver in index.css.
+// Must match --sheet-min / --sheet-peek / --sheet-sliver in index.css.
+const SHEET_MIN_PX = 32;
 const SHEET_PEEK_PX = 240;
 const SHEET_SLIVER_PX = 100;
 
 function computeSnapPoints(): (string | number)[] {
-  return [`${SHEET_PEEK_PX}px`, `${window.innerHeight - SHEET_SLIVER_PX}px`];
+  return [
+    `${SHEET_MIN_PX}px`,
+    `${SHEET_PEEK_PX}px`,
+    `${window.innerHeight - SHEET_SLIVER_PX}px`,
+  ];
 }
 
 export default function Sidebar({
@@ -36,7 +41,9 @@ export default function Sidebar({
 }: Props) {
   const isMobile = useIsMobile();
   const [snapPoints, setSnapPoints] = useState(computeSnapPoints);
-  const [activeSnapPoint, setActiveSnapPoint] = useState<string | number | null>(snapPoints[0]);
+  const [activeSnapPoint, setActiveSnapPoint] = useState<string | number | null>(
+    () => `${SHEET_PEEK_PX}px`,
+  );
 
   useEffect(() => {
     const onResize = () => setSnapPoints(computeSnapPoints());
@@ -46,6 +53,17 @@ export default function Sidebar({
 
   const expandedSnapPoint = snapPoints[snapPoints.length - 1] ?? null;
   const isSheetExpanded = activeSnapPoint === expandedSnapPoint;
+
+  useEffect(() => {
+    if (!isMobile || activeSnapPoint == null) return;
+    const px =
+      typeof activeSnapPoint === 'number'
+        ? activeSnapPoint
+        : parseInt(String(activeSnapPoint), 10);
+    if (!Number.isNaN(px)) {
+      document.documentElement.style.setProperty('--sheet-visible', `${px}px`);
+    }
+  }, [isMobile, activeSnapPoint]);
 
   useEffect(() => {
     if (!isMobile || isSheetExpanded) return;
