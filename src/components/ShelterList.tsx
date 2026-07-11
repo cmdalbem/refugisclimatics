@@ -1,6 +1,7 @@
 import type { Shelter } from '../types';
 import { shelterId } from '../utils/distance';
-import { distanceKm, formatDistance, distanceColor } from '../utils/distance';
+import { distanceKm, formatDistance, distanceColor, distanceFontWeight } from '../utils/distance';
+import { FONT_WEIGHT_MAX } from '../constants';
 
 interface Props {
   shelters: Shelter[];
@@ -36,6 +37,8 @@ export default function ShelterList({
         const km = userLocation
           ? distanceKm(userLocation[1], userLocation[0], shelter.lat!, shelter.lon!)
           : null;
+        const fontWeight = km !== null ? distanceFontWeight(km) : FONT_WEIGHT_MAX;
+
         return (
           <li
             key={id}
@@ -48,7 +51,9 @@ export default function ShelterList({
               </div>
             )}
             <div className="info">
-              <div className="name">{shelter.name ?? 'Sense nom'}</div>
+              <div className="name" style={{ fontWeight }}>
+                {shelter.name ?? 'Sense nom'}
+              </div>
             </div>
           </li>
         );

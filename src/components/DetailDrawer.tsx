@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import { X } from 'lucide-react';
 import type { Shelter } from '../types';
-import { TYPOLOGY_ICONS, DEFAULT_ICON } from '../constants';
+import { TYPOLOGY_ICONS, DEFAULT_ICON, FONT_WEIGHT_MAX } from '../constants';
 import { ICON_COMPONENTS } from '../utils/iconRegistry';
-import { distanceKm, formatDistance, distanceColor } from '../utils/distance';
+import { distanceKm, formatDistance, distanceColor, distanceFontWeight } from '../utils/distance';
 import { formatLocation } from '../utils/distance';
 
 interface Props {
@@ -91,6 +91,7 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
       ? distanceKm(userLocation[1], userLocation[0], shelter.lat, shelter.lon)
       : null;
 
+  const fontWeight = km !== null ? distanceFontWeight(km) : FONT_WEIGHT_MAX;
   const location = shelter ? formatLocation(shelter) : '';
   const iconName = shelter ? (TYPOLOGY_ICONS[shelter.typology ?? ''] ?? DEFAULT_ICON) : DEFAULT_ICON;
   const TypologyIcon = ICON_COMPONENTS[iconName] ?? ICON_COMPONENTS[DEFAULT_ICON];
@@ -129,7 +130,9 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
                     )}
                   </div>
 
-                  <h2 className="detail-name">{shelter.name ?? 'Sense nom'}</h2>
+                  <h2 className="detail-name" style={{ fontWeight }}>
+                    {shelter.name ?? 'Sense nom'}
+                  </h2>
 
                   {location && <p className="detail-location">{location}</p>}
                 </header>

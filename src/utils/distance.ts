@@ -4,6 +4,8 @@ import {
   COLOR_GRADIENT_MAX_KM,
   GRADIENT_LAT_MIN,
   GRADIENT_LAT_MAX,
+  FONT_WEIGHT_MIN,
+  FONT_WEIGHT_MAX,
 } from '../constants';
 
 export function distanceKm(lat1: number, lon1: number, lat2: number, lon2: number): number {
@@ -50,6 +52,11 @@ export function distanceColor(km: number): string {
   const [r1, g1, b1] = stops[i];
   const [r2, g2, b2] = stops[i + 1];
   return `rgb(${Math.round(r1 + (r2 - r1) * localT)}, ${Math.round(g1 + (g2 - g1) * localT)}, ${Math.round(b1 + (b2 - b1) * localT)})`;
+}
+
+export function distanceFontWeight(km: number): number {
+  const t = Math.min(Math.max(km / COLOR_GRADIENT_MAX_KM, 0), 1);
+  return Math.round(FONT_WEIGHT_MAX - t * (FONT_WEIGHT_MAX - FONT_WEIGHT_MIN));
 }
 
 export function shelterId(shelter: Shelter): string {
