@@ -901,12 +901,23 @@ html, body {
 }
 
 @media (max-width: 900px) {
+  /* dvh tracks the visible viewport (excludes mobile browser chrome); vaul snap
+     points use window.innerHeight, so the layout must share that basis. */
+  html,
+  body,
+  #root {
+    height: 100vh;
+    height: 100dvh;
+  }
+
   :root {
     --sheet-sliver: 72px;
     --sheet-min: 48px;
     --sheet-peek: 240px;
     --sheet-visible: var(--sheet-peek);
     --sheet-height: calc(100vh - var(--sheet-sliver));
+    --sheet-height: calc(100dvh - var(--sheet-sliver));
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
   }
 
   /* Simple logo mark + wordmark, floating over the always-visible map sliver */
@@ -984,6 +995,7 @@ html, body {
        window.innerHeight, so the drawer itself must match that basis — the
        "sliver" is created by the snap point value, not by shrinking this box. */
     height: 100vh;
+    height: 100dvh;
     max-height: none;
     border-right: none;
     border-bottom: none;
@@ -1072,7 +1084,7 @@ html, body {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: calc(var(--sheet-visible) + 12px);
+    bottom: calc(var(--sheet-visible) + 12px + var(--safe-bottom));
     z-index: 3;
     display: flex;
     flex-direction: column;

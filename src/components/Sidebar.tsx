@@ -52,7 +52,11 @@ export default function Sidebar({
   useEffect(() => {
     const onResize = () => setSnapPoints(computeSnapPoints());
     window.addEventListener('resize', onResize);
-    return () => window.removeEventListener('resize', onResize);
+    window.visualViewport?.addEventListener('resize', onResize);
+    return () => {
+      window.removeEventListener('resize', onResize);
+      window.visualViewport?.removeEventListener('resize', onResize);
+    };
   }, []);
 
   const expandedSnapPoint = snapPoints[snapPoints.length - 1] ?? null;
