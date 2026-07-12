@@ -52,16 +52,16 @@
     "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/casal-dalt-de-la-vila-99400781452",
     "district": null,
     "address": "Pl. Església, 13",
-    "has_coordinates": false,
-    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
   },
   {
     "name": "Casal Municipal de Gent Gran de La Torrassa",
     "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/casal-municipal-de-gent-gran-de-la-torrassa-99400781451",
     "district": null,
     "address": "c. Albareda, 12",
-    "has_coordinates": false,
-    "reason": "no coordinates parsed from detail page, cannot attempt distance match"
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
   },
   {
     "name": "Casal Municipal de Gent Gran de Santa Eulàlia",

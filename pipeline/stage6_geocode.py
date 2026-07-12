@@ -26,24 +26,13 @@ GOOGLE_GEOCODE_URL = "https://maps.googleapis.com/maps/api/geocode/json"
 GOOGLE_DELAY_SECONDS = 0.1
 ICGC_DELAY_SECONDS = 0.25
 
-# (min_lat, max_lat, min_lon, max_lon)
-MUNICIPALITY_BBOXES = {
-    "Sant Adrià de Besòs": (41.415, 41.445, 2.205, 2.235),
-    "Santa Coloma de Gramenet": (41.435, 41.475, 2.175, 2.225),
-    "L'Hospitalet de Llobregat": (41.315, 41.385, 2.070, 2.155),
-    "Badalona": (41.435, 41.475, 2.225, 2.275),
-    "El Prat de Llobregat": (41.315, 41.345, 2.070, 2.115),
-}
-
-METRO_BBOX = (41.310, 41.480, 2.000, 2.280)
-
 
 def infer_municipality(name, address):
     text = f"{name} {address or ''}".lower()
     rules = [
-        (("sant adria", "sant adrià", "besòs", "besos"), "Sant Adrià de Besòs"),
+        (("dalt de la vila", "sant adria", "sant adrià", "besòs", "besos"), "Sant Adrià de Besòs"),
         (("santa eul", "santa coloma", "gramenet", "ponent", "generalitat", "victor hugo", "víctor hugo", "muns", "can peixauet", "font de la mina", "molinet", "kursaal", "carmen amaya", "martí i julià", "marti i julia", "josep janes", "janes"), "Santa Coloma de Gramenet"),
-        (("hospitalet", "collblanc", "florida", "granvia de l", "albareda", "moreres", "trajana", "planes", "rambleta", "aprestadora", "pere calders", "ernest lluch", "gaiter", "pubilla", "torrassa", "església", "esglesia"), "L'Hospitalet de Llobregat"),
+        (("hospitalet", "collblanc", "florida", "granvia de l", "albareda", "moreres", "trajana", "planes", "rambleta", "aprestadora", "pere calders", "ernest lluch", "gaiter", "pubilla", "torrassa"), "L'Hospitalet de Llobregat"),
         (("badalona", "can zam", "alhambra"), "Badalona"),
         (("estruch", "pare andreu de palma"), "El Prat de Llobregat"),
     ]
@@ -51,22 +40,6 @@ def infer_municipality(name, address):
         if any(pattern in text for pattern in patterns):
             return municipality
     return None
-
-
-def point_in_bbox(lat, lon, bbox):
-    min_lat, max_lat, min_lon, max_lon = bbox
-    return min_lat <= lat <= max_lat and min_lon <= lon <= max_lon
-
-
-def validate_coords(lat, lon, municipality):
-    if municipality and municipality in MUNICIPALITY_BBOXES:
-        return point_in_bbox(lat, lon, MUNICIPALITY_BBOXES[municipality])
-    if point_in_bbox(lat, lon, METRO_BBOX):
-        return True
-    for bbox in MUNICIPALITY_BBOXES.values():
-        if point_in_bbox(lat, lon, bbox):
-            return True
-    return False
 
 
 def build_geocode_queries(shelter, municipality):
@@ -211,19 +184,6 @@ def main():
                 "query": query,
                 "provider": provider,
             }
-
-        if not validate_coords(coords[0], coords[1], municipality):
-            failures.append(
-                {
-                    "name": shelter.get("name"),
-                    "detail_url": detail_url,
-                    "lat": coords[0],
-                    "lon": coords[1],
-                    "municipality": municipality,
-                    "reason": "coordinates failed municipality bbox validation",
-                }
-            )
-            continue
 
         shelter["lat"] = coords[0]
         shelter["lon"] = coords[1]

@@ -70,5 +70,17 @@
     "lon": 2.10421137,
     "source": "manual",
     "note": "ICGC Plaça Pere Calders, L'Hospitalet"
+  },
+  "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/casal-dalt-de-la-vila-99400781452": {
+    "lat": 41.4340681,
+    "lon": 2.2145343,
+    "source": "manual",
+    "note": "Pl. Església 13, Sant Adrià de Besòs (Google; detail page lacks comshiva link)"
+  },
+  "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/casal-municipal-de-gent-gran-de-la-torrassa-99400781451": {
+    "lat": 41.36900756,
+    "lon": 2.12161516,
+    "source": "manual",
+    "note": "ICGC carrer d'Albareda 12, La Torrassa, L'Hospitalet"
   }
 }
