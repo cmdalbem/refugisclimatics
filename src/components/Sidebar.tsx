@@ -78,6 +78,35 @@ export default function Sidebar({
     document.getElementById('shelter-list')?.scrollTo(0, 0);
   }, [isMobile, isSheetExpanded]);
 
+  // When expanded, the list scrolls — but a downward pull at scroll-top should
+  // collapse the sheet (vaul) instead of being eaten by the browser (modal={false}).
+  useEffect(() => {
+    if (!isMobile || !isSheetExpanded) return;
+    const list = document.getElementById('shelter-list');
+    if (!list) return;
+
+    let startY = 0;
+
+    const onTouchStart = (e: TouchEvent) => {
+      startY = e.touches[0]?.clientY ?? 0;
+    };
+
+    const onTouchMove = (e: TouchEvent) => {
+      const y = e.touches[0]?.clientY;
+      if (y == null) return;
+      if (list.scrollTop <= 0 && y - startY > 0) {
+        e.preventDefault();
+      }
+    };
+
+    list.addEventListener('touchstart', onTouchStart, { passive: true });
+    list.addEventListener('touchmove', onTouchMove, { passive: false });
+    return () => {
+      list.removeEventListener('touchstart', onTouchStart);
+      list.removeEventListener('touchmove', onTouchMove);
+    };
+  }, [isMobile, isSheetExpanded]);
+
   const content = (
     <>
       <header className="panel-header">
@@ -115,6 +144,7 @@ export default function Sidebar({
         modal={false}
         dismissible={false}
         autoFocus={false}
+        scrollLockTimeout={100}
         snapPoints={snapPoints}
         fadeFromIndex={0}
         activeSnapPoint={activeSnapPoint}

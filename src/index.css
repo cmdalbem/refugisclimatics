@@ -1017,8 +1017,12 @@ html, body {
     border-top: var(--border-width) solid var(--border);
   }
 
-  /* At peek, don't scroll the list — upward swipes/drags expand the sheet first
-     (vaul pattern). Only enable list scroll once fully expanded. */
+  /* At peek, don't scroll the list — swipes/drags on the whole sheet move it
+     between snap points. Only enable list scroll once fully expanded. */
+  #sidebar.sheet-peek {
+    touch-action: none;
+  }
+
   #sidebar.sheet-peek #shelter-list {
     overflow: hidden;
     overscroll-behavior: none;
@@ -1027,6 +1031,7 @@ html, body {
   #sidebar.sheet-expanded #shelter-list {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: none;
   }
 
   [data-vaul-handle].sheet-handle {
@@ -1034,22 +1039,22 @@ html, body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 48px;
+    height: 16px;
     flex-shrink: 0;
     cursor: grab;
   }
 
   [data-vaul-handle-hitarea] {
-    width: max(100%, 3.5rem);
-    height: max(100%, 3.5rem);
+    width: max(100%, 2.75rem);
+    height: max(100%, 2.75rem);
   }
 
   .sheet-handle::before {
     content: '';
-    width: 52px;
-    height: 5px;
-    border-radius: 3px;
-    background: rgba(0, 0, 0, 0.2);
+    width: 32px;
+    height: 3px;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.18);
   }
 
   /* Compact list items */
