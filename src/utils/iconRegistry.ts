@@ -4,7 +4,10 @@ import chapel from '@waysidemapping/pinhead/dist/icons/chapel.svg?raw';
 import classicalBuilding from '@waysidemapping/pinhead/dist/icons/classical_building.svg?raw';
 import comedyMaskAndTragedyMask from '@waysidemapping/pinhead/dist/icons/comedy_mask_and_tragedy_mask.svg?raw';
 import commercialBuilding from '@waysidemapping/pinhead/dist/icons/commercial_building.svg?raw';
+import dogSitting from '@waysidemapping/pinhead/dist/icons/dog_sitting.svg?raw';
+import droplet from '@waysidemapping/pinhead/dist/icons/droplet.svg?raw';
 import fountainFromWater from '@waysidemapping/pinhead/dist/icons/fountain_from_water.svg?raw';
+import internationalWheelchairSymbol from '@waysidemapping/pinhead/dist/icons/international_wheelchair_symbol.svg?raw';
 import houseWithChimney from '@waysidemapping/pinhead/dist/icons/house_with_chimney.svg?raw';
 import mapleLeaf from '@waysidemapping/pinhead/dist/icons/maple_leaf.svg?raw';
 import mapPin from '@waysidemapping/pinhead/dist/icons/map_pin.svg?raw';
@@ -18,6 +21,8 @@ import squareAcademicCap from '@waysidemapping/pinhead/dist/icons/square_academi
 import treeAndBenchWithBackrest from '@waysidemapping/pinhead/dist/icons/tree_and_bench_with_backrest.svg?raw';
 import treeRow from '@waysidemapping/pinhead/dist/icons/tree_row.svg?raw';
 import triangleUpWithExclamationPoint from '@waysidemapping/pinhead/dist/icons/triangle_up_with_exclamation_point.svg?raw';
+import womensAndMensRestroomSymbol from '@waysidemapping/pinhead/dist/icons/womens_and_mens_restroom_symbol.svg?raw';
+import wifi from '@waysidemapping/pinhead/dist/icons/wifi.svg?raw';
 import x from '@waysidemapping/pinhead/dist/icons/x.svg?raw';
 import { DEFAULT_ICON } from '../constants';
 
@@ -28,7 +33,10 @@ export const ICON_SVGS: Record<string, string> = {
   classical_building: classicalBuilding,
   comedy_mask_and_tragedy_mask: comedyMaskAndTragedyMask,
   commercial_building: commercialBuilding,
+  dog_sitting: dogSitting,
+  droplet,
   fountain_from_water: fountainFromWater,
+  international_wheelchair_symbol: internationalWheelchairSymbol,
   house_with_chimney: houseWithChimney,
   maple_leaf: mapleLeaf,
   map_pin: mapPin,
@@ -42,6 +50,8 @@ export const ICON_SVGS: Record<string, string> = {
   tree_and_bench_with_backrest: treeAndBenchWithBackrest,
   tree_row: treeRow,
   triangle_up_with_exclamation_point: triangleUpWithExclamationPoint,
+  womens_and_mens_restroom_symbol: womensAndMensRestroomSymbol,
+  wifi,
   x,
 };
 

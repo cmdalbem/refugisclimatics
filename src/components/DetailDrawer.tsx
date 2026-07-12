@@ -1,7 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { Shelter } from '../types';
-import { TYPOLOGY_ICONS, DEFAULT_ICON, FONT_WEIGHT_MAX } from '../constants';
+import {
+  TYPOLOGY_ICONS,
+  DEFAULT_ICON,
+  FONT_WEIGHT_MAX,
+  PRIORITY_CHARACTERISTICS,
+  CHARACTERISTIC_ICONS,
+} from '../constants';
 import PinIcon from './PinIcon';
 import { distanceKm, distanceFontWeight } from '../utils/distance';
 import { formatLocation, mapsUrlForShelter } from '../utils/distance';
@@ -137,6 +143,18 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
     ? (TYPOLOGY_ICONS[displayShelter.typology ?? ''] ?? DEFAULT_ICON)
     : DEFAULT_ICON;
 
+  const sortedCharacteristics = (() => {
+    const characteristics = displayShelter?.characteristics;
+    if (!characteristics?.length) return [];
+    const priority = new Map(PRIORITY_CHARACTERISTICS.map((c, i) => [c, i]));
+    return [...characteristics].sort((a, b) => {
+      const ai = priority.get(a) ?? Number.POSITIVE_INFINITY;
+      const bi = priority.get(b) ?? Number.POSITIVE_INFINITY;
+      if (ai !== bi) return ai - bi;
+      return characteristics.indexOf(a) - characteristics.indexOf(b);
+    });
+  })();
+
   const content = displayShelter && (
     <div id="detail-content">
       {displayShelter.image_url && (
@@ -174,13 +192,19 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
           </section>
         )}
 
-        {displayShelter.characteristics?.length ? (
+        {sortedCharacteristics.length ? (
           <section className="detail-block">
             <h3 className="detail-section-title">{t('detailDrawer.characteristics')}</h3>
             <ul className="detail-chars">
-              {displayShelter.characteristics.map((c, i) => (
-                <li key={i}>{t(`characteristics.${c}`, { defaultValue: c })}</li>
-              ))}
+              {sortedCharacteristics.map((c) => {
+                const icon = CHARACTERISTIC_ICONS[c];
+                return (
+                  <li key={c} className="detail-char">
+                    {icon ? <PinIcon name={icon} size={15} className="detail-char-icon" /> : null}
+                    <span>{t(`characteristics.${c}`, { defaultValue: c })}</span>
+                  </li>
+                );
+              })}
             </ul>
           </section>
         ) : null}

@@ -4,7 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { shelterId } from '../utils/distance';
 import { distanceKm, formatDistance, distanceColor, distanceFontWeight } from '../utils/distance';
 import { shelterPath } from '../utils/slug';
-import { FONT_WEIGHT_MAX } from '../constants';
+import { FONT_WEIGHT_MAX, priorityAmenityIcons } from '../constants';
+import PinIcon from './PinIcon';
 
 interface Props {
   shelters: Shelter[];
@@ -49,6 +50,7 @@ export default function ShelterList({
         const fontWeight = km !== null ? distanceFontWeight(km) : FONT_WEIGHT_MAX;
 
         const imageUrl = shelter.image_url?.trim();
+        const amenities = priorityAmenityIcons(shelter.characteristics);
 
         return (
           <li key={id}>
@@ -70,6 +72,19 @@ export default function ShelterList({
                 <div className="name" style={{ fontWeight }}>
                   {shelter.name ?? t('shelterList.noName')}
                 </div>
+                {amenities.length > 0 && (
+                  <div className="shelter-list-amenities">
+                    {amenities.map(({ key, icon }) => (
+                      <span
+                        key={key}
+                        className="shelter-list-amenity"
+                        aria-label={t(`characteristics.${key}`, { defaultValue: key })}
+                      >
+                        <PinIcon name={icon} size={13} />
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
             </Link>
           </li>

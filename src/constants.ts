@@ -37,6 +37,42 @@ export const DEFAULT_MARKER_COLOR = '#3A84B3';
 export const DEFAULT_ICON = 'map_pin';
 
 // Maps each data typology key to a Pinhead icon id
+// Priority order for amenity characteristics in detail views (positive only).
+export const PRIORITY_CHARACTERISTICS = [
+  'Con lavabo',
+  'Amb aigua per beure',
+  'Con internet para uso público',
+  'Puntos de conexión Barcelona WiFi',
+  'Accesible para personas con discapacidad física',
+  'Se admiten animales de compañía',
+];
+
+export const CHARACTERISTIC_ICONS: Record<string, string> = {
+  'Con lavabo': 'womens_and_mens_restroom_symbol',
+  'Amb aigua per beure': 'droplet',
+  'Con internet para uso público': 'wifi',
+  'Puntos de conexión Barcelona WiFi': 'wifi',
+  'Accesible para personas con discapacidad física': 'international_wheelchair_symbol',
+  'Se admiten animales de compañía': 'dog_sitting',
+};
+
+export function priorityAmenityIcons(
+  characteristics: string[] | undefined,
+): { key: string; icon: string }[] {
+  if (!characteristics?.length) return [];
+  const available = new Set(characteristics);
+  const icons: { key: string; icon: string }[] = [];
+  const seenIcons = new Set<string>();
+  for (const key of PRIORITY_CHARACTERISTICS) {
+    if (!available.has(key)) continue;
+    const icon = CHARACTERISTIC_ICONS[key];
+    if (!icon || seenIcons.has(icon)) continue;
+    icons.push({ key, icon });
+    seenIcons.add(icon);
+  }
+  return icons;
+}
+
 export const TYPOLOGY_ICONS: Record<string, string> = {
   Bibliotecas: 'open_book',
   'Centros comerciales': 'shopping_basket',
