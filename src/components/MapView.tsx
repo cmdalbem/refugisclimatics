@@ -3,6 +3,7 @@ import {
   useEffect,
   useImperativeHandle,
   useRef,
+  type MutableRefObject,
 } from 'react';
 import { useTranslation } from 'react-i18next';
 import mapboxgl from 'mapbox-gl';
@@ -13,6 +14,8 @@ import type { LocationStatus } from '../types';
 import {
   MAPBOX_TOKEN,
   MAP_STYLE,
+  MAP_BASEMAP_IMPORT_ID,
+  mapBasemapConfigForTheme,
   mapCustomAttribution,
   MAP_CENTER,
   MAP_ZOOM,
@@ -26,7 +29,8 @@ import {
 } from '../constants';
 import { distanceColor, shelterGradientKm, shelterId } from '../utils/distance';
 import { buildDisplayCoordinateMap } from '../utils/displayCoordinates';
-import { markerImageId, ensureMarkerImages } from '../utils/markers';
+import { markerImageId, ensureMarkerImages, getMapThemeColors } from '../utils/markers';
+import { getCurrentTheme, useTheme } from '../hooks/useTheme';
 import { useIsMobile } from '../hooks/useIsMobile';
 import FilterBar from './FilterBar';
 import MapLocationButton from './MapLocationButton';
@@ -114,7 +118,33 @@ function buildUserLocationGeoJSON(location: [number, number] | null): FeatureCol
   };
 }
 
+function applyMapTheme(map: mapboxgl.Map) {
+  const { markerStroke, labelHalo, userCore, userStroke, userHaloOpacity } = getMapThemeColors();
+
+  if (map.getLayer('shelter-marker-highlight')) {
+    map.setPaintProperty('shelter-marker-highlight', 'circle-stroke-color', markerStroke);
+  }
+  if (map.getLayer('shelter-markers')) {
+    map.setPaintProperty('shelter-markers', 'icon-halo-color', markerStroke);
+  }
+  if (map.getLayer('shelter-labels')) {
+    map.setPaintProperty('shelter-labels', 'text-halo-color', labelHalo);
+  }
+  if (map.getLayer('user-location-halo')) {
+    map.setPaintProperty('user-location-halo', 'circle-color', userCore);
+    map.setPaintProperty('user-location-halo', 'circle-opacity', userHaloOpacity);
+    map.setPaintProperty('user-location-halo', 'circle-emissive-strength', 1);
+  }
+  if (map.getLayer('user-location-dot')) {
+    map.setPaintProperty('user-location-dot', 'circle-color', userCore);
+    map.setPaintProperty('user-location-dot', 'circle-stroke-color', userStroke);
+    map.setPaintProperty('user-location-dot', 'circle-emissive-strength', 1);
+  }
+}
+
 function setupUserLocation(map: mapboxgl.Map, location: [number, number] | null) {
+  const { userCore, userStroke, userHaloOpacity } = getMapThemeColors();
+
   map.addSource('user-location', {
     type: 'geojson',
     data: buildUserLocationGeoJSON(location),
@@ -126,8 +156,9 @@ function setupUserLocation(map: mapboxgl.Map, location: [number, number] | null)
     source: 'user-location',
     paint: {
       'circle-radius': 14,
-      'circle-color': DEFAULT_MARKER_COLOR,
-      'circle-opacity': 0.18,
+      'circle-color': userCore,
+      'circle-opacity': userHaloOpacity,
+      'circle-emissive-strength': 1,
       'circle-stroke-width': 0,
     },
   });
@@ -138,9 +169,10 @@ function setupUserLocation(map: mapboxgl.Map, location: [number, number] | null)
     source: 'user-location',
     paint: {
       'circle-radius': 6,
-      'circle-color': DEFAULT_MARKER_COLOR,
+      'circle-color': userCore,
       'circle-stroke-width': 2,
-      'circle-stroke-color': '#ffffff',
+      'circle-stroke-color': userStroke,
+      'circle-emissive-strength': 1,
     },
   });
 }
@@ -212,6 +244,177 @@ function buildMarkerCombos(
   return combos;
 }
 
+const SHELTER_INTERACTIVE_LAYERS = ['shelter-markers', 'shelter-labels'] as const;
+
+async function setupMapSources(
+  map: mapboxgl.Map,
+  shelters: Shelter[],
+  userLocation: [number, number] | null,
+  noName: string,
+) {
+  const { markerStroke, labelHalo } = getMapThemeColors();
+
+  await ensureMarkerImages(map, buildMarkerCombos(shelters, userLocation));
+
+  map.addSource('shelters', {
+    type: 'geojson',
+    data: buildGeoJSON(shelters, userLocation, noName),
+    promoteId: 'shelter_key',
+  });
+
+  map.addLayer({
+    id: 'shelter-marker-highlight',
+    type: 'circle',
+    source: 'shelters',
+    paint: {
+      'circle-radius': [
+        'case',
+        ['boolean', ['feature-state', 'selected'], false],
+        20,
+        ['boolean', ['feature-state', 'hover'], false],
+        17,
+        0,
+      ],
+      'circle-color': ['get', 'marker_color'],
+      'circle-opacity': [
+        'case',
+        ['boolean', ['feature-state', 'selected'], false],
+        0.22,
+        ['boolean', ['feature-state', 'hover'], false],
+        0.14,
+        0,
+      ],
+      'circle-stroke-width': [
+        'case',
+        ['boolean', ['feature-state', 'selected'], false],
+        2,
+        ['boolean', ['feature-state', 'hover'], false],
+        1.5,
+        0,
+      ],
+      'circle-stroke-color': markerStroke,
+      'circle-stroke-opacity': [
+        'case',
+        ['boolean', ['feature-state', 'selected'], false],
+        0.9,
+        ['boolean', ['feature-state', 'hover'], false],
+        0.55,
+        0,
+      ],
+    },
+  });
+
+  map.addLayer({
+    id: 'shelter-markers',
+    type: 'symbol',
+    source: 'shelters',
+    layout: {
+      'icon-image': ['get', 'marker_image'],
+      'icon-size': 1,
+      'icon-allow-overlap': ['step', ['zoom'], false, LABEL_ZOOM_THRESHOLD, true],
+      'icon-padding': 0,
+    },
+    paint: {
+      'icon-halo-width': [
+        'case',
+        ['boolean', ['feature-state', 'selected'], false],
+        3,
+        ['boolean', ['feature-state', 'hover'], false],
+        2,
+        0,
+      ],
+      'icon-halo-color': markerStroke,
+    },
+  });
+
+  map.addLayer({
+    id: 'shelter-labels',
+    type: 'symbol',
+    source: 'shelters',
+    minzoom: LABEL_ZOOM_THRESHOLD,
+    layout: {
+      'text-field': ['get', 'name'],
+      'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
+      'text-size': 12,
+      'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
+      'text-radial-offset': 1.5,
+      'text-justify': 'auto',
+      'text-allow-overlap': false,
+      'text-optional': true,
+    },
+    paint: {
+      'text-color': ['get', 'marker_color'],
+      'text-halo-color': labelHalo,
+      'text-halo-width': [
+        'case',
+        ['boolean', ['feature-state', 'selected'], false],
+        3,
+        ['boolean', ['feature-state', 'hover'], false],
+        2.5,
+        2,
+      ],
+    },
+  });
+
+  setupUserLocation(map, userLocation);
+}
+
+function bindShelterLayerClicks(
+  map: mapboxgl.Map,
+  onShelterClickRef: MutableRefObject<(shelter: Shelter) => void>,
+  sheltersRef: MutableRefObject<Shelter[]>,
+) {
+  const handleShelterFeatureClick = (
+    e: mapboxgl.MapMouseEvent & { features?: mapboxgl.GeoJSONFeature[] },
+  ) => {
+    const shelterKey = e.features?.[0]?.properties?.shelter_key;
+    const shelter = sheltersRef.current.find(s => shelterId(s) === shelterKey);
+    if (shelter) onShelterClickRef.current(shelter);
+  };
+
+  SHELTER_INTERACTIVE_LAYERS.forEach(layer => {
+    map.on('click', layer, handleShelterFeatureClick);
+  });
+}
+
+async function refreshShelterMarkers(
+  map: mapboxgl.Map,
+  shelters: Shelter[],
+  userLocation: [number, number] | null,
+  noName: string,
+) {
+  const source = map.getSource('shelters') as mapboxgl.GeoJSONSource | undefined;
+  if (!source) return;
+
+  await ensureMarkerImages(map, buildMarkerCombos(shelters, userLocation));
+  source.setData(buildGeoJSON(shelters, userLocation, noName));
+}
+
+async function syncMapTheme(
+  map: mapboxgl.Map,
+  theme: 'light' | 'dark',
+  shelters: Shelter[],
+  userLocation: [number, number] | null,
+  noName: string,
+) {
+  const { lightPreset, theme: colorTheme } = mapBasemapConfigForTheme(theme);
+  map.setConfigProperty(MAP_BASEMAP_IMPORT_ID, 'lightPreset', lightPreset);
+  map.setConfigProperty(MAP_BASEMAP_IMPORT_ID, 'theme', colorTheme);
+  await refreshShelterMarkers(map, shelters, userLocation, noName);
+  applyMapTheme(map);
+}
+
+function applyTypologyFilter(map: mapboxgl.Map, activeTypology: string) {
+  if (!map.getLayer('shelter-markers')) return;
+  const filter = activeTypology ? ['==', ['get', 'typology'], activeTypology] : null;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  map.setFilter('shelter-marker-highlight', filter as any);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  map.setFilter('shelter-markers', filter as any);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  map.setFilter('shelter-labels', filter as any);
+}
+
 const MapView = forwardRef<MapViewHandle, Props>(function MapView(
   {
     shelters,
@@ -229,11 +432,15 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
   ref,
 ) {
   const { t, i18n } = useTranslation();
+  const { theme } = useTheme();
   const isMobile = useIsMobile();
   const noName = t('shelterList.noName');
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
   const attributionControlRef = useRef<mapboxgl.AttributionControl | null>(null);
+  const mapContentReadyRef = useRef(false);
+  const prevThemeRef = useRef(theme);
+  const activeTypologyRef = useRef(activeTypology);
 
   // Keep latest values accessible in stable event listeners without re-binding
   const sheltersRef = useRef(shelters);
@@ -251,6 +458,17 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
   onShelterClickRef.current = onShelterClick;
   onMapClickRef.current = onMapClick;
   activeShelterIdRef.current = activeShelterId;
+  activeTypologyRef.current = activeTypology;
+
+  const syncMapContent = async (map: mapboxgl.Map) => {
+    await setupMapSources(map, sheltersRef.current, userLocationRef.current, noName);
+    bindShelterLayerClicks(map, onShelterClickRef, sheltersRef);
+    applyTypologyFilter(map, activeTypologyRef.current);
+    applySelectedShelterState(map, activeShelterIdRef.current, null);
+    selectedShelterKeyRef.current = activeShelterIdRef.current;
+    applyHoveredShelterState(map, hoveredShelterKeyRef.current, null);
+    mapContentReadyRef.current = true;
+  };
 
   const centerMapOnUser = (map: mapboxgl.Map, location: [number, number]) => {
     if (hasCenteredOnUserRef.current) return;
@@ -273,6 +491,9 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
     const map = new mapboxgl.Map({
       container: containerRef.current,
       style: MAP_STYLE,
+      config: {
+        [MAP_BASEMAP_IMPORT_ID]: mapBasemapConfigForTheme(getCurrentTheme()),
+      },
       center: MAP_CENTER,
       zoom: MAP_ZOOM,
       attributionControl: false,
@@ -282,160 +503,82 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
     const resizeObserver = new ResizeObserver(() => map.resize());
     resizeObserver.observe(containerRef.current);
 
-    map.on('load', async () => {
-      const currentShelters = sheltersRef.current;
-      const currentLocation = userLocationRef.current;
-
-      await ensureMarkerImages(map, buildMarkerCombos(currentShelters, currentLocation));
-
-      map.addSource('shelters', {
-        type: 'geojson',
-        data: buildGeoJSON(currentShelters, currentLocation, noName),
-        promoteId: 'shelter_key',
+    map.on('load', () => {
+      void syncMapContent(map).then(() => {
+        const currentLocation = userLocationRef.current;
+        if (currentLocation) centerMapOnUser(map, currentLocation);
       });
+    });
 
-      map.addLayer({
-        id: 'shelter-marker-highlight',
-        type: 'circle',
-        source: 'shelters',
-        paint: {
-          'circle-radius': [
-            'case',
-            ['boolean', ['feature-state', 'selected'], false],
-            20,
-            ['boolean', ['feature-state', 'hover'], false],
-            17,
-            0,
-          ],
-          'circle-color': ['get', 'marker_color'],
-          'circle-opacity': [
-            'case',
-            ['boolean', ['feature-state', 'selected'], false],
-            0.22,
-            ['boolean', ['feature-state', 'hover'], false],
-            0.14,
-            0,
-          ],
-          'circle-stroke-width': [
-            'case',
-            ['boolean', ['feature-state', 'selected'], false],
-            2,
-            ['boolean', ['feature-state', 'hover'], false],
-            1.5,
-            0,
-          ],
-          'circle-stroke-color': '#111111',
-          'circle-stroke-opacity': [
-            'case',
-            ['boolean', ['feature-state', 'selected'], false],
-            0.9,
-            ['boolean', ['feature-state', 'hover'], false],
-            0.55,
-            0,
-          ],
-        },
-      });
+    map.on('mousemove', e => {
+      if (!map.getLayer('shelter-markers')) return;
+      const features = map.queryRenderedFeatures(e.point, { layers: [...SHELTER_INTERACTIVE_LAYERS] });
+      const nextKey = (features[0]?.properties?.shelter_key as string | undefined) ?? null;
+      if (nextKey === hoveredShelterKeyRef.current) return;
 
-      map.addLayer({
-        id: 'shelter-markers',
-        type: 'symbol',
-        source: 'shelters',
-        layout: {
-          'icon-image': ['get', 'marker_image'],
-          'icon-size': 1,
-          'icon-allow-overlap': true,
-        },
-        paint: {
-          'icon-halo-width': [
-            'case',
-            ['boolean', ['feature-state', 'selected'], false],
-            3,
-            ['boolean', ['feature-state', 'hover'], false],
-            2,
-            0,
-          ],
-          'icon-halo-color': '#111111',
-        },
-      });
+      applyHoveredShelterState(map, nextKey, hoveredShelterKeyRef.current);
+      hoveredShelterKeyRef.current = nextKey;
+      map.getCanvas().style.cursor = nextKey ? 'pointer' : '';
+    });
 
-      map.addLayer({
-        id: 'shelter-labels',
-        type: 'symbol',
-        source: 'shelters',
-        minzoom: LABEL_ZOOM_THRESHOLD,
-        layout: {
-          'text-field': ['get', 'name'],
-          'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
-          'text-size': 14,
-          'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
-          'text-radial-offset': 1.5,
-          'text-justify': 'auto',
-          'text-allow-overlap': false,
-          'text-optional': true,
-        },
-        paint: {
-          'text-color': ['get', 'marker_color'],
-          'text-halo-color': '#ffffff',
-          'text-halo-width': [
-            'case',
-            ['boolean', ['feature-state', 'selected'], false],
-            3,
-            ['boolean', ['feature-state', 'hover'], false],
-            2.5,
-            2,
-          ],
-        },
-      });
+    map.on('mouseleave', () => {
+      applyHoveredShelterState(map, null, hoveredShelterKeyRef.current);
+      hoveredShelterKeyRef.current = null;
+      map.getCanvas().style.cursor = '';
+    });
 
-      const shelterInteractiveLayers = ['shelter-markers', 'shelter-labels'];
-
-      const handleShelterFeatureClick = (
-        e: mapboxgl.MapMouseEvent & { features?: mapboxgl.GeoJSONFeature[] },
-      ) => {
-        const shelterKey = e.features?.[0]?.properties?.shelter_key;
-        const shelter = sheltersRef.current.find(s => shelterId(s) === shelterKey);
-        if (shelter) onShelterClickRef.current(shelter);
-      };
-
-      shelterInteractiveLayers.forEach(layer => {
-        map.on('click', layer, handleShelterFeatureClick);
-      });
-
-      map.on('mousemove', e => {
-        if (!map.getLayer('shelter-markers')) return;
-        const features = map.queryRenderedFeatures(e.point, { layers: shelterInteractiveLayers });
-        const nextKey = (features[0]?.properties?.shelter_key as string | undefined) ?? null;
-        if (nextKey === hoveredShelterKeyRef.current) return;
-
-        applyHoveredShelterState(map, nextKey, hoveredShelterKeyRef.current);
-        hoveredShelterKeyRef.current = nextKey;
-        map.getCanvas().style.cursor = nextKey ? 'pointer' : '';
-      });
-
-      map.on('mouseleave', () => {
-        applyHoveredShelterState(map, null, hoveredShelterKeyRef.current);
-        hoveredShelterKeyRef.current = null;
-        map.getCanvas().style.cursor = '';
-      });
-
-      map.on('click', e => {
-        const onShelter = map.queryRenderedFeatures(e.point, { layers: shelterInteractiveLayers }).length;
-        if (!onShelter) onMapClickRef.current();
-      });
-
-      setupUserLocation(map, currentLocation);
-      if (currentLocation) centerMapOnUser(map, currentLocation);
-
-      applySelectedShelterState(map, activeShelterIdRef.current, null);
-      selectedShelterKeyRef.current = activeShelterIdRef.current;
+    map.on('click', e => {
+      const onShelter = map.queryRenderedFeatures(e.point, { layers: [...SHELTER_INTERACTIVE_LAYERS] }).length;
+      if (!onShelter) onMapClickRef.current();
     });
 
     return () => {
       resizeObserver.disconnect();
-      map.remove();
+      if (attributionControlRef.current && mapRef.current === map) {
+        try {
+          map.removeControl(attributionControlRef.current);
+        } catch {
+          // Control may already be removed during HMR.
+        }
+        attributionControlRef.current = null;
+      }
       mapRef.current = null;
+      map.remove();
+      mapContentReadyRef.current = false;
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || prevThemeRef.current === theme) return;
+
+    prevThemeRef.current = theme;
+
+    const run = () => {
+      void syncMapTheme(
+        map,
+        theme,
+        sheltersRef.current,
+        userLocationRef.current,
+        noName,
+      ).then(() => {
+        applySelectedShelterState(map, activeShelterIdRef.current, null);
+        selectedShelterKeyRef.current = activeShelterIdRef.current;
+        applyHoveredShelterState(map, hoveredShelterKeyRef.current, null);
+      });
+    };
+
+    if (map.isStyleLoaded()) {
+      run();
+    } else {
+      map.once('style.load', run);
+    }
+
+    return () => {
+      if (mapRef.current !== map) return;
+      map.off('style.load', run);
+    };
+  }, [theme, noName]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -459,6 +602,10 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
     }
 
     return () => {
+      if (mapRef.current !== map) {
+        attributionControlRef.current = null;
+        return;
+      }
       map.off('load', syncAttribution);
       if (attributionControlRef.current) {
         map.removeControl(attributionControlRef.current);
@@ -473,8 +620,7 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
     const source = map?.getSource('shelters') as mapboxgl.GeoJSONSource | undefined;
     if (!source) return;
 
-    ensureMarkerImages(map!, buildMarkerCombos(shelters, userLocation)).then(() => {
-      source.setData(buildGeoJSON(shelters, userLocation, noName));
+    void refreshShelterMarkers(map!, shelters, userLocation, noName).then(() => {
       selectedShelterKeyRef.current = null;
       applySelectedShelterState(map!, activeShelterIdRef.current, null);
       selectedShelterKeyRef.current = activeShelterIdRef.current;
@@ -509,19 +655,18 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
     } else {
       map.once('load', center);
     }
+
+    return () => {
+      if (mapRef.current !== map) return;
+      map.off('load', center);
+    };
   }, [userLocation]);
 
   // Update layer filter when active typology changes
   useEffect(() => {
     const map = mapRef.current;
-    if (!map?.getLayer('shelter-markers')) return;
-    const filter = activeTypology ? ['==', ['get', 'typology'], activeTypology] : null;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    map.setFilter('shelter-marker-highlight', filter as any);
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    map.setFilter('shelter-markers', filter as any);
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    map.setFilter('shelter-labels', filter as any);
+    if (!map) return;
+    applyTypologyFilter(map, activeTypology);
   }, [activeTypology]);
 
   // Fly to newly selected shelter after layout settles

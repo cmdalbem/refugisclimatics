@@ -1,10 +1,14 @@
 {
   "sidebar": {
-    "subtitle": "Refugios urbanos para protegerse del calor.",
+    "subtitle": "Refugios urbanos de Barcelona para protegerse del calor.",
     "listTitle": "Lista de refugios climáticos"
   },
   "languageSwitcher": {
     "ariaLabel": "Selecciona el idioma"
+  },
+  "themeToggle": {
+    "toDark": "Cambiar a modo oscuro",
+    "toLight": "Cambiar a modo claro"
   },
   "geolocation": {
     "idle": "Localízate para ordenar por distancia",

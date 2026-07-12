@@ -11,6 +11,7 @@ import type { Shelter } from './types';
 import Sidebar from './components/Sidebar';
 import DetailDrawer from './components/DetailDrawer';
 import LanguageSwitcher from './components/LanguageSwitcher';
+import ThemeToggle from './components/ThemeToggle';
 import type { MapViewHandle } from './components/MapView';
 const MapView = lazy(() => import('./components/MapView'));
 
@@ -86,7 +87,10 @@ function AppShell() {
         <div id="mobile-brand">
           <span>{APP_TITLE}</span>
         </div>
-        <LanguageSwitcher variant="mobile" />
+        <div className="mobile-header-controls">
+          <ThemeToggle variant="mobile" />
+          <LanguageSwitcher variant="mobile" />
+        </div>
       </div>
 
       {sheltersError ? (

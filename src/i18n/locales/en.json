@@ -1,10 +1,14 @@
 {
   "sidebar": {
-    "subtitle": "Urban shelters to protect yourself from the heat.",
+    "subtitle": "Barcelona's urban shelters to protect yourself from the heat.",
     "listTitle": "Climate shelter list"
   },
   "languageSwitcher": {
     "ariaLabel": "Select language"
+  },
+  "themeToggle": {
+    "toDark": "Switch to dark mode",
+    "toLight": "Switch to light mode"
   },
   "geolocation": {
     "idle": "Locate yourself to sort by distance",

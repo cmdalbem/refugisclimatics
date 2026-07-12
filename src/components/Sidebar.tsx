@@ -6,6 +6,7 @@ import type { LocationStatus } from '../types';
 import { APP_TITLE } from '../constants';
 import ShelterList from './ShelterList';
 import LanguageSwitcher from './LanguageSwitcher';
+import ThemeToggle from './ThemeToggle';
 import { useIsMobile } from '../hooks/useIsMobile';
 
 interface Props {
@@ -111,16 +112,16 @@ export default function Sidebar({
     <>
       <header className="panel-header">
         <div className="logo-block">
-          <div>
+          <div className="logo-block-main">
             <h1>
               {APP_TITLE.split(' ')[0]}{' '}
               <span className="logo-title-clima">Climàt</span>ics
             </h1>
             <p id="subtitle">{t('sidebar.subtitle')}</p>
-            <div className="logo-block-controls">
+          </div>
+          <div className="logo-block-controls">
+            <ThemeToggle variant="on-gradient" />
             <LanguageSwitcher variant="on-gradient" />
-              <ThemeToggle variant="on-gradient" />
-            </div>
           </div>
         </div>
       </header>

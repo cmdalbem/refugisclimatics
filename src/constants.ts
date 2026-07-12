@@ -4,6 +4,13 @@ export const APP_PAGE_TITLE = `${APP_TITLE} — Barcelona`;
 export const MAPBOX_TOKEN =
   'pk.eyJ1IjoiY21kYWxiZW0iLCJhIjoiY2pnbXhjZnplMDJ6MjMzbnk0OGthZGE1ayJ9.n1flNO8ndRYKQcR9wNIT9w';
 export const MAP_STYLE = 'mapbox://styles/cmdalbem/cmrenqask002e01qwgzs22fbh';
+export const MAP_BASEMAP_IMPORT_ID = 'basemap';
+
+export function mapBasemapConfigForTheme(theme: 'light' | 'dark') {
+  return theme === 'dark'
+    ? { lightPreset: 'night', theme: 'monochrome' }
+    : { lightPreset: 'day', theme: 'faded' };
+}
 export const OFFICIAL_SHELTER_NETWORK_URL =
   'https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos';
 
