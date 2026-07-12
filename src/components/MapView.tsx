@@ -27,6 +27,7 @@ import {
 import { distanceColor, shelterGradientKm, shelterId } from '../utils/distance';
 import { buildDisplayCoordinateMap } from '../utils/displayCoordinates';
 import { markerImageId, ensureMarkerImages } from '../utils/markers';
+import { useIsMobile } from '../hooks/useIsMobile';
 import FilterBar from './FilterBar';
 import MapLocationButton from './MapLocationButton';
 
@@ -46,16 +47,36 @@ interface Props {
   onTypologyChange: (typology: string) => void;
 }
 
+/** Space above the peeking sheet taken by map controls (location btn + filter bar + gaps). */
+const MOBILE_MAP_CONTROLS_OFFSET = 12 + 44 + 8 + 44 + 16;
+
+function getSheetVisiblePx(): number {
+  const raw = getComputedStyle(document.documentElement).getPropertyValue('--sheet-visible').trim();
+  const px = parseInt(raw, 10);
+  return Number.isNaN(px) ? 240 : px;
+}
+
+function getMapFlyPadding(isMobile: boolean): mapboxgl.PaddingOptions {
+  if (!isMobile) return MAP_FLY_PADDING;
+
+  const sheetPx = getSheetVisiblePx();
+  return {
+    ...MAP_FLY_PADDING_MOBILE_DRAWER,
+    bottom: sheetPx + MOBILE_MAP_CONTROLS_OFFSET,
+  };
+}
+
 function flyMapTo(
   map: mapboxgl.Map,
   center: [number, number],
   zoom: number,
+  isMobile: boolean,
 ) {
   map.resize();
   map.flyTo({
     center,
     zoom,
-    padding: MAP_FLY_PADDING,
+    padding: getMapFlyPadding(isMobile),
     essential: true,
   });
 }
@@ -208,6 +229,7 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
   ref,
 ) {
   const { t, i18n } = useTranslation();
+  const isMobile = useIsMobile();
   const noName = t('shelterList.noName');
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
@@ -233,16 +255,16 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
   const centerMapOnUser = (map: mapboxgl.Map, location: [number, number]) => {
     if (hasCenteredOnUserRef.current) return;
     hasCenteredOnUserRef.current = true;
-    flyMapTo(map, location, Math.max(map.getZoom(), 14));
+    flyMapTo(map, location, Math.max(map.getZoom(), 14), isMobile);
   };
 
   useImperativeHandle(ref, () => ({
     flyToLocation(loc) {
       const map = mapRef.current;
       if (!map) return;
-      flyMapTo(map, loc, Math.max(map.getZoom(), 14));
+      flyMapTo(map, loc, Math.max(map.getZoom(), 14), isMobile);
     },
-  }));
+  }), [isMobile]);
 
   // Initialize map once
   useEffect(() => {
@@ -520,7 +542,7 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
 
     let cancelled = false;
     const run = () => {
-      if (!cancelled) flyMapTo(map, center, zoom);
+      if (!cancelled) flyMapTo(map, center, zoom, isMobile);
     };
 
     if (drawerJustOpened) {
@@ -536,7 +558,7 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
       cancelled = true;
       cancelAnimationFrame(frame);
     };
-  }, [activeShelterId, shelters, drawerOpen]);
+  }, [activeShelterId, shelters, drawerOpen, isMobile]);
 
   return (
     <main id="map-area">
