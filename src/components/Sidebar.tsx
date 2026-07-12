@@ -113,6 +113,7 @@ export default function Sidebar({
         dismissible={false}
         autoFocus={false}
         snapPoints={snapPoints}
+        fadeFromIndex={0}
         activeSnapPoint={activeSnapPoint}
         setActiveSnapPoint={setActiveSnapPoint}
       >
