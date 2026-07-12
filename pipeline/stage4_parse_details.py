@@ -46,14 +46,17 @@ def parse_opening_hours(soup):
     return rows
 
 
-def parse_coordinates(soup):
+def parse_comshiva_link(soup):
     link = soup.select_one("div.comshiva a")
     if not link or not link.get("href"):
-        return None, None
-    match = COMSHIVA_COORDS_RE.search(link["href"])
+        return None, None, None
+    href = link["href"].strip()
+    if not href.startswith("http"):
+        return None, None, None
+    match = COMSHIVA_COORDS_RE.search(href)
     if not match:
-        return None, None
-    return float(match.group(1)), float(match.group(2))
+        return None, None, href
+    return float(match.group(1)), float(match.group(2)), href
 
 
 def parse_notice(soup):
@@ -69,7 +72,7 @@ def parse_image_url(soup):
 def parse_detail_page(html, detail_url):
     soup = BeautifulSoup(html, "lxml")
     name_el = soup.select_one("div.title-content h2")
-    lat, lon = parse_coordinates(soup)
+    lat, lon, comshiva_url = parse_comshiva_link(soup)
     address = parse_address_block(soup)
 
     return {
@@ -82,6 +85,7 @@ def parse_detail_page(html, detail_url):
         "opening_hours_raw": parse_opening_hours(soup),
         "lat": lat,
         "lon": lon,
+        "comshiva_url": comshiva_url,
         "notice": parse_notice(soup),
         "image_url": parse_image_url(soup),
     }
@@ -109,9 +113,13 @@ def main():
 
     missing_name = sum(1 for r in parsed.values() if not r["name"])
     missing_coords = sum(1 for r in parsed.values() if r["lat"] is None)
+    missing_comshiva = sum(1 for r in parsed.values() if not r["comshiva_url"])
     missing_image = sum(1 for r in parsed.values() if not r["image_url"])
     print(f"Parsed {len(parsed)} detail pages ({len(failures)} missing from cache).")
-    print(f"  missing name: {missing_name}, missing coordinates: {missing_coords}, missing image: {missing_image}")
+    print(
+        f"  missing name: {missing_name}, missing coordinates: {missing_coords},"
+        f" missing comshiva link: {missing_comshiva}, missing image: {missing_image}"
+    )
 
     write_json(RAW_DIR / "parsed_details.json", parsed)
     if failures:

@@ -233,6 +233,7 @@ def main():
             "neighborhood": (ckan["neighborhood"] if ckan else cms.get("neighborhood")),
             "lat": (ckan["lat"] if ckan else cms.get("lat")),
             "lon": (ckan["lon"] if ckan else cms.get("lon")),
+            "comshiva_url": cms.get("comshiva_url"),
             "contact_type": ckan["contact_type"] if ckan else None,
             "contact_value": ckan["contact_value"] if ckan else None,
             "timetable_raw": ckan["timetable_raw"] if ckan else None,

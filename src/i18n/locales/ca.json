@@ -34,6 +34,8 @@
     "noName": "Sense nom",
     "limitedDataNotice": "Dades limitades: aquest refugi no consta a l'open data de Barcelona. Contacte i horaris poden estar incomplets.",
     "moreInfo": "Més informació a barcelona.cat →",
+    "directions": "Com s'hi va",
+    "openDirections": "Com s'hi va: {{address}}",
     "close": "Tancar",
     "defaultTitle": "Detall del refugi"
   },

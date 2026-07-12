@@ -34,6 +34,8 @@
     "noName": "Unnamed",
     "limitedDataNotice": "Limited data: this shelter is not listed in Barcelona's open data. Contact details and opening hours may be incomplete.",
     "moreInfo": "More information at barcelona.cat →",
+    "directions": "Get directions",
+    "openDirections": "Get directions to {{address}}",
     "close": "Close",
     "defaultTitle": "Shelter details"
   },

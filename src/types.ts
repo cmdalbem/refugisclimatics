@@ -5,6 +5,7 @@ export interface Shelter {
   neighborhood?: string;
   lat?: number;
   lon?: number;
+  comshiva_url?: string;
   typology?: string;
   characteristics?: string[];
   opening_hours_raw?: [string?, string?, string?][];

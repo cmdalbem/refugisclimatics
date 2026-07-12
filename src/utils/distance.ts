@@ -74,3 +74,20 @@ export function shelterId(shelter: Shelter): string {
 export function formatLocation(shelter: Shelter): string {
   return [shelter.address, shelter.neighborhood, shelter.district].filter(Boolean).join(' · ');
 }
+
+export function mapsUrlForShelter(shelter: Shelter): string | null {
+  const hasCoords = typeof shelter.lat === 'number' && typeof shelter.lon === 'number';
+  const address = formatLocation(shelter);
+  if (!hasCoords && !address && !shelter.comshiva_url) return null;
+
+  const ua = typeof navigator !== 'undefined' ? navigator.userAgent : '';
+  if (/Android/i.test(ua)) {
+    return hasCoords
+      ? `geo:${shelter.lat},${shelter.lon}`
+      : address
+        ? `geo:0,0?q=${encodeURIComponent(address)}`
+        : null;
+  }
+
+  return shelter.comshiva_url ?? null;
+}

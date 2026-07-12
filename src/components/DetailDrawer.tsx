@@ -4,7 +4,7 @@ import type { Shelter } from '../types';
 import { TYPOLOGY_ICONS, DEFAULT_ICON, FONT_WEIGHT_MAX } from '../constants';
 import PinIcon from './PinIcon';
 import { distanceKm, distanceFontWeight } from '../utils/distance';
-import { formatLocation } from '../utils/distance';
+import { formatLocation, mapsUrlForShelter } from '../utils/distance';
 
 interface Props {
   shelter: Shelter | null;
@@ -35,6 +35,29 @@ function OpeningHours({ rows }: { rows: [string?, string?, string?][] }) {
           ))}
         </tbody>
       </table>
+    </section>
+  );
+}
+
+function Location({ location, mapsUrl }: { location: string; mapsUrl: string | null }) {
+  const { t } = useTranslation();
+  if (!location) return null;
+
+  return (
+    <section className="detail-block">
+      <h3 className="detail-section-title">{t('detailDrawer.directions')}</h3>
+      {mapsUrl ? (
+        <a
+          className="detail-directions"
+          href={mapsUrl}
+          aria-label={t('detailDrawer.openDirections', { address: location })}
+        >
+          <span className="detail-directions-address">{location}</span>
+          <PinIcon name="navigation_arrow_top_right" size={18} className="detail-directions-icon" />
+        </a>
+      ) : (
+        <p className="detail-location">{location}</p>
+      )}
     </section>
   );
 }
@@ -104,6 +127,7 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
 
   const fontWeight = km !== null ? distanceFontWeight(km) : FONT_WEIGHT_MAX;
   const location = displayShelter ? formatLocation(displayShelter) : '';
+  const mapsUrl = displayShelter ? mapsUrlForShelter(displayShelter) : null;
   const iconName = displayShelter
     ? (TYPOLOGY_ICONS[displayShelter.typology ?? ''] ?? DEFAULT_ICON)
     : DEFAULT_ICON;
@@ -118,7 +142,7 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
 
       <div className="detail-body">
         <header className="detail-intro">
-          <div className="detail-meta">
+          <div className="detail-typology-block">
             <span className="detail-typology">
               <PinIcon name={iconName} size={15} />
               {displayShelter.typology
@@ -132,9 +156,9 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
           <h2 className="detail-name" style={{ fontWeight }}>
             {displayShelter.name ?? t('detailDrawer.noName')}
           </h2>
-
-          {location && <p className="detail-location">{location}</p>}
         </header>
+
+        <Location location={location} mapsUrl={mapsUrl} />
 
         {displayShelter.notice && (
           <section className="detail-block">

@@ -8,6 +8,7 @@ import fountainFromWater from '@waysidemapping/pinhead/dist/icons/fountain_from_
 import houseWithChimney from '@waysidemapping/pinhead/dist/icons/house_with_chimney.svg?raw';
 import mapleLeaf from '@waysidemapping/pinhead/dist/icons/maple_leaf.svg?raw';
 import mapPin from '@waysidemapping/pinhead/dist/icons/map_pin.svg?raw';
+import navigationArrowTopRight from '@waysidemapping/pinhead/dist/icons/navigation_arrow_top_right.svg?raw';
 import openBook from '@waysidemapping/pinhead/dist/icons/open_book.svg?raw';
 import personSwimmingInWater from '@waysidemapping/pinhead/dist/icons/person_swimming_in_water.svg?raw';
 import playStructureWithSlide from '@waysidemapping/pinhead/dist/icons/play_structure_with_slide.svg?raw';
@@ -31,6 +32,7 @@ export const ICON_SVGS: Record<string, string> = {
   house_with_chimney: houseWithChimney,
   maple_leaf: mapleLeaf,
   map_pin: mapPin,
+  navigation_arrow_top_right: navigationArrowTopRight,
   open_book: openBook,
   person_swimming_in_water: personSwimmingInWater,
   play_structure_with_slide: playStructureWithSlide,

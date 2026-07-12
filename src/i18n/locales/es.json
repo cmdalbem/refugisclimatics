@@ -34,6 +34,8 @@
     "noName": "Sin nombre",
     "limitedDataNotice": "Datos limitados: este refugio no consta en el open data de Barcelona. Contacto y horarios pueden estar incompletos.",
     "moreInfo": "Más información en barcelona.cat →",
+    "directions": "Cómo llegar",
+    "openDirections": "Cómo llegar: {{address}}",
     "close": "Cerrar",
     "defaultTitle": "Detalle del refugio"
   },
