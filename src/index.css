@@ -1052,9 +1052,8 @@ html, body {
   .sheet-handle::before {
     content: '';
     width: 32px;
-    height: 3px;
-    border-radius: 2px;
-    background: rgba(0, 0, 0, 0.18);
+    height: 2px;
+    background: var(--border);
   }
 
   /* Compact list items */
