@@ -1,46 +1,44 @@
 import baby from '@waysidemapping/pinhead/dist/icons/baby.svg?raw';
-import benchWithBackrest from '@waysidemapping/pinhead/dist/icons/bench_with_backrest.svg?raw';
-import book from '@waysidemapping/pinhead/dist/icons/book.svg?raw';
+import barbell from '@waysidemapping/pinhead/dist/icons/barbell.svg?raw';
 import chapel from '@waysidemapping/pinhead/dist/icons/chapel.svg?raw';
 import classicalBuilding from '@waysidemapping/pinhead/dist/icons/classical_building.svg?raw';
-import comedyMask from '@waysidemapping/pinhead/dist/icons/comedy_mask.svg?raw';
-import coniferTree from '@waysidemapping/pinhead/dist/icons/conifer_tree.svg?raw';
-import droplet from '@waysidemapping/pinhead/dist/icons/droplet.svg?raw';
-import dumbbell from '@waysidemapping/pinhead/dist/icons/dumbbell.svg?raw';
-import leaf from '@waysidemapping/pinhead/dist/icons/leaf.svg?raw';
-import lowriseBuilding from '@waysidemapping/pinhead/dist/icons/lowrise_building.svg?raw';
-import mapOutline from '@waysidemapping/pinhead/dist/icons/map_outline.svg?raw';
+import comedyMaskAndTragedyMask from '@waysidemapping/pinhead/dist/icons/comedy_mask_and_tragedy_mask.svg?raw';
+import commercialBuilding from '@waysidemapping/pinhead/dist/icons/commercial_building.svg?raw';
+import fountainFromWater from '@waysidemapping/pinhead/dist/icons/fountain_from_water.svg?raw';
+import houseWithChimney from '@waysidemapping/pinhead/dist/icons/house_with_chimney.svg?raw';
+import mapleLeaf from '@waysidemapping/pinhead/dist/icons/maple_leaf.svg?raw';
 import mapPin from '@waysidemapping/pinhead/dist/icons/map_pin.svg?raw';
+import openBook from '@waysidemapping/pinhead/dist/icons/open_book.svg?raw';
 import personSwimmingInWater from '@waysidemapping/pinhead/dist/icons/person_swimming_in_water.svg?raw';
 import playStructureWithSlide from '@waysidemapping/pinhead/dist/icons/play_structure_with_slide.svg?raw';
-import shoppingBag from '@waysidemapping/pinhead/dist/icons/shopping_bag.svg?raw';
+import shoppingBasket from '@waysidemapping/pinhead/dist/icons/shopping_basket.svg?raw';
 import shoppingCart from '@waysidemapping/pinhead/dist/icons/shopping_cart.svg?raw';
 import squareAcademicCap from '@waysidemapping/pinhead/dist/icons/square_academic_cap.svg?raw';
-import tableWithUmbrella from '@waysidemapping/pinhead/dist/icons/table_with_umbrella.svg?raw';
+import treeAndBenchWithBackrest from '@waysidemapping/pinhead/dist/icons/tree_and_bench_with_backrest.svg?raw';
+import treeRow from '@waysidemapping/pinhead/dist/icons/tree_row.svg?raw';
 import triangleUpWithExclamationPoint from '@waysidemapping/pinhead/dist/icons/triangle_up_with_exclamation_point.svg?raw';
 import x from '@waysidemapping/pinhead/dist/icons/x.svg?raw';
 import { DEFAULT_ICON } from '../constants';
 
 export const ICON_SVGS: Record<string, string> = {
   baby,
-  bench_with_backrest: benchWithBackrest,
-  book,
+  barbell,
   chapel,
   classical_building: classicalBuilding,
-  comedy_mask: comedyMask,
-  conifer_tree: coniferTree,
-  droplet,
-  dumbbell,
-  leaf,
-  lowrise_building: lowriseBuilding,
-  map_outline: mapOutline,
+  comedy_mask_and_tragedy_mask: comedyMaskAndTragedyMask,
+  commercial_building: commercialBuilding,
+  fountain_from_water: fountainFromWater,
+  house_with_chimney: houseWithChimney,
+  maple_leaf: mapleLeaf,
   map_pin: mapPin,
+  open_book: openBook,
   person_swimming_in_water: personSwimmingInWater,
   play_structure_with_slide: playStructureWithSlide,
-  shopping_bag: shoppingBag,
+  shopping_basket: shoppingBasket,
   shopping_cart: shoppingCart,
   square_academic_cap: squareAcademicCap,
-  table_with_umbrella: tableWithUmbrella,
+  tree_and_bench_with_backrest: treeAndBenchWithBackrest,
+  tree_row: treeRow,
   triangle_up_with_exclamation_point: triangleUpWithExclamationPoint,
   x,
 };

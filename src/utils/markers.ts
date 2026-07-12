@@ -22,21 +22,21 @@ async function createMarkerIcon(
   return new Promise(resolve => {
     const img = new Image();
     img.onload = () => {
-      const size = 64;
+      const size = 60;
       const canvas = document.createElement('canvas');
       canvas.width = size;
       canvas.height = size;
       const ctx = canvas.getContext('2d')!;
 
       ctx.beginPath();
-      ctx.arc(size / 2, size / 2, size / 2 - 4, 0, Math.PI * 2);
+      ctx.arc(size / 2, size / 2, size / 2 - 3, 0, Math.PI * 2);
       ctx.fillStyle = color;
       ctx.fill();
       ctx.lineWidth = 4;
       ctx.strokeStyle = 'white';
       ctx.stroke();
 
-      const iconSize = size * 0.4;
+      const iconSize = size * 0.5;
       ctx.drawImage(img, (size - iconSize) / 2, (size - iconSize) / 2, iconSize, iconSize);
       resolve(ctx.getImageData(0, 0, size, size));
     };

@@ -28,24 +28,23 @@ export const MAP_FLY_PADDING_MOBILE_DRAWER = { top: 32, bottom: 260, left: 32, r
 export const DRAWER_TRANSITION_MS = 300;
 export const DEFAULT_MARKER_COLOR = '#3A84B3';
 export const DEFAULT_ICON = 'map_pin';
-export const FILTER_ALL_ICON = 'map_outline';
 
 // Maps each data typology key to a Pinhead icon id
 export const TYPOLOGY_ICONS: Record<string, string> = {
-  Bibliotecas: 'book',
-  'Centros comerciales': 'shopping_bag',
+  Bibliotecas: 'open_book',
+  'Centros comerciales': 'shopping_basket',
   'Centros de culto': 'chapel',
-  'Complejos deportivos': 'dumbbell',
-  'Entidades culturales': 'comedy_mask',
-  'Equipamientos ambientales': 'leaf',
-  'Equipos de proximidad': 'lowrise_building',
-  'Espacios de juegos con agua': 'droplet',
-  'Interiores de manzana': 'bench_with_backrest',
+  'Complejos deportivos': 'barbell',
+  'Entidades culturales': 'comedy_mask_and_tragedy_mask',
+  'Equipamientos ambientales': 'maple_leaf',
+  'Equipos de proximidad': 'house_with_chimney',
+  'Espacios de juegos con agua': 'fountain_from_water',
+  'Interiores de manzana': 'tree_and_bench_with_backrest',
   Mercados: 'shopping_cart',
-  Microrefugis: 'table_with_umbrella',
+  Microrefugis: 'commercial_building',
   Museos: 'classical_building',
   'Otro(s)': 'map_pin',
-  'Parques y jardines': 'conifer_tree',
+  'Parques y jardines': 'tree_row',
   'Patios de escuelas': 'play_structure_with_slide',
   'Patios de guarderías': 'baby',
   Piscinas: 'person_swimming_in_water',

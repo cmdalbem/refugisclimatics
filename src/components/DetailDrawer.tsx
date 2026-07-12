@@ -123,7 +123,7 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
         <header className="detail-intro">
           <div className="detail-meta">
             <span className="detail-typology">
-              <PinIcon name={iconName} size={13} />
+              <PinIcon name={iconName} size={15} />
               {displayShelter.typology
                 ? t(`typology.${displayShelter.typology}`, {
                     defaultValue: displayShelter.typology,

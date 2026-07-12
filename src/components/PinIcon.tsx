@@ -7,7 +7,7 @@ interface Props {
   color?: string;
 }
 
-export default function PinIcon({ name, size = 16, className, color }: Props) {
+export default function PinIcon({ name, size = 15, className, color }: Props) {
   const svg = getColoredSvg(name, color ?? 'currentColor');
   if (!svg) return null;
 

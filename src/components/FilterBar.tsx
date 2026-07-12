@@ -1,7 +1,7 @@
 import * as Tooltip from '@radix-ui/react-tooltip';
 import type { Shelter } from '../types';
 import { useTranslation } from 'react-i18next';
-import { TYPOLOGY_ICONS, DEFAULT_ICON, FILTER_ALL_ICON, microrefugisFaqUrl } from '../constants';
+import { TYPOLOGY_ICONS, DEFAULT_ICON, microrefugisFaqUrl } from '../constants';
 import PinIcon from './PinIcon';
 
 const MICROREFUGIS_TYPOLOGY = 'Microrefugis';
@@ -33,7 +33,6 @@ export default function FilterBar({ shelters, activeTypology, onTypologyChange }
             className={`pill${activeTypology === '' ? ' active' : ''}`}
             onClick={() => onTypologyChange('')}
           >
-            <PinIcon name={FILTER_ALL_ICON} size={15} />
             <span>{t('filterBar.all')}</span>
             <span className="pill-count">{mappable.length}</span>
           </li>
