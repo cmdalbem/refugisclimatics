@@ -1,0 +1,75 @@
+{
+  "sidebar": {
+    "subtitle": "Urban shelters to protect yourself from the heat.",
+    "listTitle": "Climate shelter list"
+  },
+  "languageSwitcher": {
+    "ariaLabel": "Select language"
+  },
+  "geolocation": {
+    "idle": "Locate yourself to sort by distance",
+    "unavailable": "Geolocation unavailable",
+    "loading": "Locating you...",
+    "activeWithAccuracy": "Located · accuracy {{accuracy}} m",
+    "activeNoAccuracy": "Located · sorted by distance",
+    "denied": "Enable location to sort by distance"
+  },
+  "filterBar": {
+    "all": "All"
+  },
+  "shelterList": {
+    "noName": "Unnamed"
+  },
+  "detailDrawer": {
+    "hours": "Opening hours",
+    "contact": "Contact",
+    "characteristics": "Features",
+    "fallbackTypology": "Climate shelter",
+    "noName": "Unnamed",
+    "limitedDataNotice": "Limited data: this shelter is not listed in Barcelona's open data. Contact details and opening hours may be incomplete.",
+    "moreInfo": "More information at barcelona.cat →",
+    "close": "Close",
+    "defaultTitle": "Shelter details"
+  },
+  "map": {
+    "attribution": "Data: Barcelona City Council"
+  },
+  "typology": {
+    "Bibliotecas": "Libraries",
+    "Centros comerciales": "Shopping centres",
+    "Centros de culto": "Places of worship",
+    "Complejos deportivos": "Sports facilities",
+    "Entidades culturales": "Cultural centers",
+    "Equipamientos ambientales": "Environmental centers",
+    "Equipos de proximidad": "Community & civic centers",
+    "Espacios de juegos con agua": "Water play areas",
+    "Interiores de manzana": "Hidden courtyard gardens",
+    "Mercados": "Markets",
+    "Microrefugis": "Microrefugis",
+    "Museos": "Museums",
+    "Otro(s)": "Other",
+    "Parques y jardines": "Parks",
+    "Patios de escuelas": "School playgrounds",
+    "Patios de guarderías": "Nursery playgrounds",
+    "Piscinas": "Swimming pools",
+    "Universidades": "Universities"
+  },
+  "characteristics": {
+    "Accesible para personas con discapacidad física": "Wheelchair accessible",
+    "Al aire libre": "Outdoors",
+    "Amb aigua per beure": "Drinking water available",
+    "Con internet para uso público": "Public WiFi",
+    "Con lavabo": "Restroom available",
+    "Interior": "Indoors",
+    "No accessible per a persones amb discapacitat física": "Not wheelchair accessible",
+    "No se admiten animales de compañía": "Pets not allowed",
+    "Obert tot l'any": "Open all year",
+    "Parcialment accessible per a persones amb discapacitat física": "Partially wheelchair accessible",
+    "Puntos de conexión Barcelona WiFi": "Barcelona WiFi hotspots",
+    "Se admiten animales de compañía": "Pets allowed",
+    "Sin internet para uso interno": "No public WiFi",
+    "Sin lavabo": "No restroom",
+    "Titularidad Privada": "Private ownership",
+    "Titularidad Pública": "Public ownership"
+  }
+}

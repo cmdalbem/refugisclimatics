@@ -1,10 +1,15 @@
+export const APP_TITLE = 'Refugis Climàtics';
+export const APP_PAGE_TITLE = `${APP_TITLE} — Barcelona`;
+
 export const MAPBOX_TOKEN =
   'pk.eyJ1IjoiY21kYWxiZW0iLCJhIjoiY2pnbXhjZnplMDJ6MjMzbnk0OGthZGE1ayJ9.n1flNO8ndRYKQcR9wNIT9w';
 export const MAP_STYLE = 'mapbox://styles/cmdalbem/cmrenqask002e01qwgzs22fbh';
 export const OFFICIAL_SHELTER_NETWORK_URL =
   'https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos';
-export const MAP_CUSTOM_ATTRIBUTION =
-  `<a href="${OFFICIAL_SHELTER_NETWORK_URL}" target="_blank" rel="noopener noreferrer">Dades: Ajuntament de Barcelona</a>`;
+
+export function mapCustomAttribution(label: string): string {
+  return `<a href="${OFFICIAL_SHELTER_NETWORK_URL}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+}
 export const MAP_CENTER: [number, number] = [2.1734, 41.3851];
 export const MAP_ZOOM = 12;
 export const LABEL_ZOOM_THRESHOLD = 15;
@@ -35,28 +40,6 @@ export const TYPOLOGY_ICONS: Record<string, string> = {
   'Patios de guarderías': 'baby',
   Piscinas: 'person_swimming_in_water',
   Universidades: 'square_academic_cap',
-};
-
-// Short Catalan display labels; data keys stay as CMS Spanish values
-export const TYPOLOGY_LABELS: Record<string, string> = {
-  Bibliotecas: 'Biblioteques',
-  'Centros comerciales': 'Comercials',
-  'Centros de culto': 'Culte',
-  'Complejos deportivos': 'Esportius',
-  'Entidades culturales': 'Cultura',
-  'Equipamientos ambientales': 'Espai verd',
-  'Equipos de proximidad': 'Equip. proximitat',
-  'Espacios de juegos con agua': "Jocs d'aigua",
-  'Interiores de manzana': "Interiors d'illa",
-  Mercados: 'Mercats',
-  Microrefugis: 'Microrefugis',
-  Museos: 'Museus',
-  'Otro(s)': 'Altres',
-  'Parques y jardines': 'Parcs',
-  'Patios de escuelas': 'Patis escolars',
-  'Patios de guarderías': 'Patis guarderies',
-  Piscinas: 'Piscines',
-  Universidades: 'Universitats',
 };
 
 // Radial gradient: blue (close) → green → yellow → orange → red (far)

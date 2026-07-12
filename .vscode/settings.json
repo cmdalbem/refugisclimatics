@@ -1,0 +1,13 @@
+{
+  "i18n-ally.localesPaths": ["src/i18n/locales"],
+  "i18n-ally.dirStructure": "file",
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.sourceLanguage": "ca",
+  "i18n-ally.displayLanguage": "ca",
+  "i18n-ally.enabledFrameworks": ["i18next"],
+  "i18nJsonEditor.workspaceFolders": [
+    { "name": "Refugis", "path": "./src/i18n/locales" }
+  ],
+  "i18nJsonEditor.supportedFolders": ["locales", "i18n"],
+  "i18nJsonEditor.defaultLanguage": "ca"
+}

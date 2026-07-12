@@ -4,6 +4,7 @@ import {
   useImperativeHandle,
   useRef,
 } from 'react';
+import { useTranslation } from 'react-i18next';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
@@ -12,7 +13,7 @@ import type { LocationStatus } from '../types';
 import {
   MAPBOX_TOKEN,
   MAP_STYLE,
-  MAP_CUSTOM_ATTRIBUTION,
+  mapCustomAttribution,
   MAP_CENTER,
   MAP_ZOOM,
   LABEL_ZOOM_THRESHOLD,
@@ -149,6 +150,7 @@ function applyHoveredShelterState(map: mapboxgl.Map, shelterKey: string | null, 
 function buildGeoJSON(
   shelters: Shelter[],
   userLocation: [number, number] | null,
+  noName: string,
 ): FeatureCollection {
   const displayCoords = buildDisplayCoordinateMap(shelters);
 
@@ -164,7 +166,7 @@ function buildGeoJSON(
           type: 'Feature' as const,
           geometry: { type: 'Point' as const, coordinates },
           properties: {
-            name: s.name ?? 'Sense nom',
+            name: s.name ?? noName,
             typology: s.typology ?? '',
             marker_image: markerImageId(icon, color),
             marker_color: color,
@@ -205,8 +207,11 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
   },
   ref,
 ) {
+  const { t, i18n } = useTranslation();
+  const noName = t('shelterList.noName');
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
+  const attributionControlRef = useRef<mapboxgl.AttributionControl | null>(null);
 
   // Keep latest values accessible in stable event listeners without re-binding
   const sheltersRef = useRef(shelters);
@@ -250,10 +255,6 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
       zoom: MAP_ZOOM,
       attributionControl: false,
     });
-    map.addControl(
-      new mapboxgl.AttributionControl({ customAttribution: MAP_CUSTOM_ATTRIBUTION }),
-      'bottom-right',
-    );
     mapRef.current = map;
 
     const resizeObserver = new ResizeObserver(() => map.resize());
@@ -267,7 +268,7 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
 
       map.addSource('shelters', {
         type: 'geojson',
-        data: buildGeoJSON(currentShelters, currentLocation),
+        data: buildGeoJSON(currentShelters, currentLocation, noName),
         promoteId: 'shelter_key',
       });
 
@@ -414,20 +415,50 @@ const MapView = forwardRef<MapViewHandle, Props>(function MapView(
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Refresh GeoJSON when shelters or user location changes
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+
+    const syncAttribution = () => {
+      if (attributionControlRef.current) {
+        map.removeControl(attributionControlRef.current);
+      }
+      const control = new mapboxgl.AttributionControl({
+        customAttribution: mapCustomAttribution(t('map.attribution')),
+      });
+      map.addControl(control, 'bottom-right');
+      attributionControlRef.current = control;
+    };
+
+    if (map.isStyleLoaded()) {
+      syncAttribution();
+    } else {
+      map.once('load', syncAttribution);
+    }
+
+    return () => {
+      map.off('load', syncAttribution);
+      if (attributionControlRef.current) {
+        map.removeControl(attributionControlRef.current);
+        attributionControlRef.current = null;
+      }
+    };
+  }, [t, i18n.language]);
+
+  // Refresh GeoJSON when shelters, user location, or labels change
   useEffect(() => {
     const map = mapRef.current;
     const source = map?.getSource('shelters') as mapboxgl.GeoJSONSource | undefined;
     if (!source) return;
 
     ensureMarkerImages(map!, buildMarkerCombos(shelters, userLocation)).then(() => {
-      source.setData(buildGeoJSON(shelters, userLocation));
+      source.setData(buildGeoJSON(shelters, userLocation, noName));
       selectedShelterKeyRef.current = null;
       applySelectedShelterState(map!, activeShelterIdRef.current, null);
       selectedShelterKeyRef.current = activeShelterIdRef.current;
       applyHoveredShelterState(map!, hoveredShelterKeyRef.current, null);
     });
-  }, [shelters, userLocation]);
+  }, [shelters, userLocation, noName]);
 
   // Highlight selected shelter on the map
   useEffect(() => {

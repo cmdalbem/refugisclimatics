@@ -11,9 +11,11 @@
     "@fontsource-variable/archivo": "^5.2.8",
     "@fontsource-variable/inter": "^5.2.8",
     "@waysidemapping/pinhead": "^15.25.0",
+    "i18next": "^26.3.6",
     "mapbox-gl": "^3.6.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-i18next": "^17.0.9",
     "vaul": "^1.1.2"
   },
   "devDependencies": {

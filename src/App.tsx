@@ -1,5 +1,6 @@
 import { useCallback, useMemo, useRef, useState } from 'react';
 
+import { APP_TITLE } from './constants';
 import { useGeolocation } from './hooks/useGeolocation';
 import { shelterId } from './utils/distance';
 import type { Shelter } from './types';
@@ -7,6 +8,7 @@ import rawSheltersData from '../data/shelters.json';
 import Sidebar from './components/Sidebar';
 import DetailDrawer from './components/DetailDrawer';
 import MapView, { type MapViewHandle } from './components/MapView';
+import LanguageSwitcher from './components/LanguageSwitcher';
 
 const shelters = rawSheltersData as Shelter[];
 
@@ -44,7 +46,8 @@ export default function App() {
     <div id="app" className={activeShelter ? 'drawer-open' : ''}>
       <div id="mobile-brand">
         <img src="/logo.png" alt="" />
-        <span>Refugis Climàtics</span>
+        <span>{APP_TITLE}</span>
+        <LanguageSwitcher />
       </div>
 
       <Sidebar

@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Drawer } from 'vaul';
+import { useTranslation } from 'react-i18next';
 import type { Shelter } from '../types';
-import { TYPOLOGY_ICONS, TYPOLOGY_LABELS, DEFAULT_ICON, FONT_WEIGHT_MAX } from '../constants';
+import { TYPOLOGY_ICONS, DEFAULT_ICON, FONT_WEIGHT_MAX } from '../constants';
 import PinIcon from './PinIcon';
 import { distanceKm, formatDistance, distanceColor, distanceFontWeight } from '../utils/distance';
 import { formatLocation } from '../utils/distance';
@@ -14,6 +15,7 @@ interface Props {
 }
 
 function OpeningHours({ rows }: { rows: [string?, string?, string?][] }) {
+  const { t } = useTranslation();
   const valid = rows.filter(
     ([p, d, h]) => (p ?? '').trim() || (d ?? '').trim() || (h ?? '').trim(),
   );
@@ -23,7 +25,7 @@ function OpeningHours({ rows }: { rows: [string?, string?, string?][] }) {
 
   return (
     <section className="detail-block">
-      <h3 className="detail-section-title">Horari</h3>
+      <h3 className="detail-section-title">{t('detailDrawer.hours')}</h3>
       <table className={`detail-hours${hasPeriods ? ' has-periods' : ''}`}>
         <tbody>
           {valid.map(([period, days, hours], i) => (
@@ -40,6 +42,7 @@ function OpeningHours({ rows }: { rows: [string?, string?, string?][] }) {
 }
 
 function Contact({ shelter }: { shelter: Shelter }) {
+  const { t } = useTranslation();
   const { contact_type: type, contact_value: value } = shelter;
   if (!value) return null;
 
@@ -60,7 +63,7 @@ function Contact({ shelter }: { shelter: Shelter }) {
 
   return (
     <section className="detail-block">
-      <h3 className="detail-section-title">Contacte</h3>
+      <h3 className="detail-section-title">{t('detailDrawer.contact')}</h3>
       <p className="detail-contact-value">
         {label}
         {href ? (
@@ -76,6 +79,7 @@ function Contact({ shelter }: { shelter: Shelter }) {
 }
 
 export default function DetailDrawer({ shelter, userLocation, onClose }: Props) {
+  const { t } = useTranslation();
   const isMobile = useIsMobile();
 
   // Keep rendering the last shelter's content while the sheet animates closed,
@@ -121,8 +125,10 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
             <span className="detail-typology">
               <PinIcon name={iconName} size={13} />
               {displayShelter.typology
-                ? (TYPOLOGY_LABELS[displayShelter.typology] ?? displayShelter.typology)
-                : 'Refugi climàtic'}
+                ? t(`typology.${displayShelter.typology}`, {
+                    defaultValue: displayShelter.typology,
+                  })
+                : t('detailDrawer.fallbackTypology')}
             </span>
             {km !== null && (
               <span className="detail-distance" style={{ color: distanceColor(km) }}>
@@ -132,7 +138,7 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
           </div>
 
           <h2 className="detail-name" style={{ fontWeight }}>
-            {displayShelter.name ?? 'Sense nom'}
+            {displayShelter.name ?? t('detailDrawer.noName')}
           </h2>
 
           {location && <p className="detail-location">{location}</p>}
@@ -148,10 +154,10 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
 
         {displayShelter.characteristics?.length ? (
           <section className="detail-block">
-            <h3 className="detail-section-title">Característiques</h3>
+            <h3 className="detail-section-title">{t('detailDrawer.characteristics')}</h3>
             <ul className="detail-chars">
               {displayShelter.characteristics.map((c, i) => (
-                <li key={i}>{c}</li>
+                <li key={i}>{t(`characteristics.${c}`, { defaultValue: c })}</li>
               ))}
             </ul>
           </section>
@@ -164,10 +170,7 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
         <Contact shelter={displayShelter} />
 
         {displayShelter.match_status === 'cms_only' && (
-          <p className="detail-data-note">
-            Dades limitades: aquest refugi no consta a l&apos;open data de Barcelona.
-            Contacte i horaris poden estar incomplets.
-          </p>
+          <p className="detail-data-note">{t('detailDrawer.limitedDataNotice')}</p>
         )}
 
         {displayShelter.detail_url && (
@@ -178,7 +181,7 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
               target="_blank"
               rel="noopener noreferrer"
             >
-              Més informació a barcelona.cat →
+              {t('detailDrawer.moreInfo')}
             </a>
           </footer>
         )}
@@ -187,7 +190,7 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
   );
 
   const closeButton = (
-    <button type="button" className="detail-close" onClick={onClose} aria-label="Tancar">
+    <button type="button" className="detail-close" onClick={onClose} aria-label={t('detailDrawer.close')}>
       <PinIcon name="x" size={16} />
     </button>
   );
@@ -204,7 +207,9 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
         autoFocus={false}
       >
         <Drawer.Content id="detail-drawer" aria-describedby={undefined}>
-          <Drawer.Title className="sr-only">{displayShelter?.name ?? 'Detall del refugi'}</Drawer.Title>
+          <Drawer.Title className="sr-only">
+            {displayShelter?.name ?? t('detailDrawer.defaultTitle')}
+          </Drawer.Title>
           <div className="detail-drawer-panel">
             <Drawer.Handle className="sheet-handle" />
             {closeButton}

@@ -1,4 +1,5 @@
 import type { Shelter } from '../types';
+import { useTranslation } from 'react-i18next';
 import { shelterId } from '../utils/distance';
 import { distanceKm, formatDistance, distanceColor, distanceFontWeight } from '../utils/distance';
 import { FONT_WEIGHT_MAX } from '../constants';
@@ -18,6 +19,7 @@ export default function ShelterList({
   userLocation,
   onShelterClick,
 }: Props) {
+  const { t } = useTranslation();
   const filtered = shelters
     .filter(s => typeof s.lat === 'number' && typeof s.lon === 'number')
     .filter(s => !activeTypology || s.typology === activeTypology);
@@ -59,7 +61,7 @@ export default function ShelterList({
             )}
             <div className="info">
               <div className="name" style={{ fontWeight }}>
-                {shelter.name ?? 'Sense nom'}
+                {shelter.name ?? t('shelterList.noName')}
               </div>
             </div>
           </li>

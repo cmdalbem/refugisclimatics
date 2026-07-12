@@ -1,0 +1,75 @@
+{
+  "sidebar": {
+    "subtitle": "Refugios urbanos para protegerse del calor.",
+    "listTitle": "Lista de refugios climáticos"
+  },
+  "languageSwitcher": {
+    "ariaLabel": "Selecciona el idioma"
+  },
+  "geolocation": {
+    "idle": "Localízate para ordenar por distancia",
+    "unavailable": "Geolocalización no disponible",
+    "loading": "Localizándote...",
+    "activeWithAccuracy": "Ubicado · precisión {{accuracy}} m",
+    "activeNoAccuracy": "Ubicado · ordenados por distancia",
+    "denied": "Activa la ubicación para ordenar por distancia"
+  },
+  "filterBar": {
+    "all": "Todos"
+  },
+  "shelterList": {
+    "noName": "Sin nombre"
+  },
+  "detailDrawer": {
+    "hours": "Horario",
+    "contact": "Contacto",
+    "characteristics": "Características",
+    "fallbackTypology": "Refugio climático",
+    "noName": "Sin nombre",
+    "limitedDataNotice": "Datos limitados: este refugio no consta en el open data de Barcelona. Contacto y horarios pueden estar incompletos.",
+    "moreInfo": "Más información en barcelona.cat →",
+    "close": "Cerrar",
+    "defaultTitle": "Detalle del refugio"
+  },
+  "map": {
+    "attribution": "Datos: Ayuntamiento de Barcelona"
+  },
+  "typology": {
+    "Bibliotecas": "Bibliotecas",
+    "Centros comerciales": "Centros comerciales",
+    "Centros de culto": "Centros de culto",
+    "Complejos deportivos": "Centros deportivos",
+    "Entidades culturales": "Centros y entidades culturales",
+    "Equipamientos ambientales": "Centros ambientales",
+    "Equipos de proximidad": "Casales y centros cívicos",
+    "Espacios de juegos con agua": "Juegos de agua",
+    "Interiores de manzana": "Jardines interiores de manzana",
+    "Mercados": "Mercados",
+    "Microrefugis": "Microrefugios",
+    "Museos": "Museos",
+    "Otro(s)": "Otros",
+    "Parques y jardines": "Parques",
+    "Patios de escuelas": "Patios escolares",
+    "Patios de guarderías": "Patios guarderías",
+    "Piscinas": "Piscinas",
+    "Universidades": "Universidades"
+  },
+  "characteristics": {
+    "Accesible para personas con discapacidad física": "Accesible para personas con discapacidad física",
+    "Al aire libre": "Al aire libre",
+    "Amb aigua per beure": "Con agua para beber",
+    "Con internet para uso público": "Con internet para uso público",
+    "Con lavabo": "Con lavabo",
+    "Interior": "Interior",
+    "No accessible per a persones amb discapacitat física": "No accesible para personas con discapacidad física",
+    "No se admiten animales de compañía": "No se admiten animales de compañía",
+    "Obert tot l'any": "Abierto todo el año",
+    "Parcialment accessible per a persones amb discapacitat física": "Parcialmente accesible para personas con discapacidad física",
+    "Puntos de conexión Barcelona WiFi": "Puntos de conexión Barcelona WiFi",
+    "Se admiten animales de compañía": "Se admiten animales de compañía",
+    "Sin internet para uso interno": "Sin internet para uso interno",
+    "Sin lavabo": "Sin lavabo",
+    "Titularidad Privada": "Titularidad privada",
+    "Titularidad Pública": "Titularidad pública"
+  }
+}

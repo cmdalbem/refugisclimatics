@@ -1,5 +1,9 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
 import type { LocationStatus } from '../types';
+
+type GeolocationErrorReason = 'unavailable' | 'denied' | null;
 
 interface GeolocationState {
   location: [number, number] | null;
@@ -9,30 +13,49 @@ interface GeolocationState {
 }
 
 export function useGeolocation(): GeolocationState {
+  const { t } = useTranslation();
   const [location, setLocation] = useState<[number, number] | null>(null);
   const [status, setStatus] = useState<LocationStatus>('idle');
-  const [statusText, setStatusText] = useState('Localitza\'t per ordenar per distància');
+  const [accuracy, setAccuracy] = useState<number | null>(null);
+  const [errorReason, setErrorReason] = useState<GeolocationErrorReason>(null);
+
+  const statusText = useMemo(() => {
+    switch (status) {
+      case 'idle':
+        return t('geolocation.idle');
+      case 'loading':
+        return t('geolocation.loading');
+      case 'active':
+        return accuracy !== null
+          ? t('geolocation.activeWithAccuracy', { accuracy })
+          : t('geolocation.activeNoAccuracy');
+      case 'error':
+        return errorReason === 'unavailable'
+          ? t('geolocation.unavailable')
+          : t('geolocation.denied');
+      default:
+        return t('geolocation.idle');
+    }
+  }, [status, accuracy, errorReason, t]);
 
   const requestLocation = useCallback(() => {
     if (!navigator.geolocation) {
       setStatus('error');
-      setStatusText('Geolocalització no disponible');
+      setErrorReason('unavailable');
       return;
     }
     setStatus('loading');
-    setStatusText('Localitzant-te...');
+    setErrorReason(null);
     navigator.geolocation.getCurrentPosition(
       pos => {
         setLocation([pos.coords.longitude, pos.coords.latitude]);
-        const accuracy = pos.coords.accuracy ? Math.round(pos.coords.accuracy) : null;
+        setAccuracy(pos.coords.accuracy ? Math.round(pos.coords.accuracy) : null);
         setStatus('active');
-        setStatusText(
-          accuracy ? `Ubicat · precisió ${accuracy} m` : 'Ubicat · ordenats per distància',
-        );
+        setErrorReason(null);
       },
       () => {
         setStatus('error');
-        setStatusText('Activa la ubicació per ordenar per distància');
+        setErrorReason('denied');
       },
       { timeout: 8000, enableHighAccuracy: true },
     );
@@ -53,7 +76,7 @@ export function useGeolocation(): GeolocationState {
           requestLocation();
         } else if (result.state === 'denied') {
           setStatus('error');
-          setStatusText('Activa la ubicació per ordenar per distància');
+          setErrorReason('denied');
         }
       })
       .catch(() => {

@@ -1,5 +1,6 @@
 import type { Shelter } from '../types';
-import { TYPOLOGY_ICONS, TYPOLOGY_LABELS, DEFAULT_ICON, FILTER_ALL_ICON } from '../constants';
+import { useTranslation } from 'react-i18next';
+import { TYPOLOGY_ICONS, DEFAULT_ICON, FILTER_ALL_ICON } from '../constants';
 import PinIcon from './PinIcon';
 
 interface Props {
@@ -9,6 +10,7 @@ interface Props {
 }
 
 export default function FilterBar({ shelters, activeTypology, onTypologyChange }: Props) {
+  const { t } = useTranslation();
   const mappable = shelters.filter(
     s => typeof s.lat === 'number' && typeof s.lon === 'number',
   );
@@ -28,7 +30,7 @@ export default function FilterBar({ shelters, activeTypology, onTypologyChange }
           onClick={() => onTypologyChange('')}
         >
           <PinIcon name={FILTER_ALL_ICON} size={15} />
-          <span>Tots</span>
+          <span>{t('filterBar.all')}</span>
           <span className="pill-count">{mappable.length}</span>
         </li>
         {typologies.map(typology => {
@@ -40,7 +42,7 @@ export default function FilterBar({ shelters, activeTypology, onTypologyChange }
               onClick={() => onTypologyChange(typology)}
             >
               <PinIcon name={iconName} size={15} />
-              <span>{TYPOLOGY_LABELS[typology] ?? typology}</span>
+              <span>{t(`typology.${typology}`, { defaultValue: typology })}</span>
               <span className="pill-count">{typologyCounts[typology]}</span>
             </li>
           );

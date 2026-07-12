@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
 import { Drawer } from 'vaul';
+import { useTranslation } from 'react-i18next';
 import type { Shelter } from '../types';
 import type { LocationStatus } from '../types';
+import { APP_TITLE } from '../constants';
 import ShelterList from './ShelterList';
+import LanguageSwitcher from './LanguageSwitcher';
 import { useIsMobile } from '../hooks/useIsMobile';
 
 interface Props {
@@ -39,6 +42,7 @@ export default function Sidebar({
   onShelterClick,
   onLocationButtonClick,
 }: Props) {
+  const { t } = useTranslation();
   const isMobile = useIsMobile();
   const [snapPoints, setSnapPoints] = useState(computeSnapPoints);
   const [activeSnapPoint, setActiveSnapPoint] = useState<string | number | null>(
@@ -74,8 +78,11 @@ export default function Sidebar({
     <>
       <header className="panel-header">
         <div className="logo-block">
-          <h1>Refugis Climàtics</h1>
-          <p id="subtitle">Refugis urbans per protegir-se de la calor.</p>
+          <div>
+            <h1>{APP_TITLE}</h1>
+            <p id="subtitle">{t('sidebar.subtitle')}</p>
+            <LanguageSwitcher variant="on-gradient" />
+          </div>
         </div>
       </header>
 
@@ -113,7 +120,7 @@ export default function Sidebar({
           className={isSheetExpanded ? 'sheet-expanded' : 'sheet-peek'}
           aria-describedby={undefined}
         >
-          <Drawer.Title className="sr-only">Llista de refugis climàtics</Drawer.Title>
+          <Drawer.Title className="sr-only">{t('sidebar.listTitle')}</Drawer.Title>
           <Drawer.Handle className="sheet-handle" />
           {content}
         </Drawer.Content>
