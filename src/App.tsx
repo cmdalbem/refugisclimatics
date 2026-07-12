@@ -10,9 +10,8 @@ import { shelterPath, shelterSlug } from './utils/slug';
 import type { Shelter } from './types';
 import Sidebar from './components/Sidebar';
 import DetailDrawer from './components/DetailDrawer';
-import type { MapViewHandle } from './components/MapView';
 import LanguageSwitcher from './components/LanguageSwitcher';
-
+import type { MapViewHandle } from './components/MapView';
 const MapView = lazy(() => import('./components/MapView'));
 
 function AppShell() {
@@ -85,7 +84,6 @@ function AppShell() {
     <div id="app" className={activeShelter ? 'drawer-open' : ''}>
       <div id="mobile-header">
         <div id="mobile-brand">
-          <img src="/logo.png" alt="" width="32" height="32" />
           <span>{APP_TITLE}</span>
         </div>
         <LanguageSwitcher variant="mobile" />

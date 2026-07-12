@@ -953,6 +953,7 @@ html, body {
   #mobile-brand {
     pointer-events: none;
     height: 16px;
+    gap: 4px;
   }
 
   .language-switcher--mobile {
@@ -964,10 +965,20 @@ html, body {
     pointer-events: auto;
   }
 
-  #mobile-brand img {
-    width: 16px;
-    height: 16px;
-    display: block;
+  .language-switcher--mobile .language-switcher-select {
+    height: 18px;
+    min-height: 18px;
+    max-height: 18px;
+    width: 44px;
+    padding: 0 12px 0 4px;
+    font-size: var(--font-size-small);
+    font-weight: 700;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 8 5'%3E%3Cpath d='M1 1l3 3 3-3' fill='none' stroke='%23111' stroke-width='1' stroke-linecap='square'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 4px center;
+    background-size: 8px 5px;
   }
 
   #mobile-brand span {
@@ -1171,7 +1182,7 @@ html, body {
     position: static;
     width: 44px;
     height: 44px;
-    margin-right: 12px;
+    margin-right: 8px;
     padding: 0;
     background: var(--surface);
     border: var(--border-width) solid var(--border);
