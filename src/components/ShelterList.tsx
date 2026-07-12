@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom';
 import type { Shelter } from '../types';
 import { useTranslation } from 'react-i18next';
 import { shelterId } from '../utils/distance';
 import { distanceKm, formatDistance, distanceColor, distanceFontWeight } from '../utils/distance';
+import { shelterPath } from '../utils/slug';
 import { FONT_WEIGHT_MAX } from '../constants';
 
 interface Props {
@@ -9,7 +11,6 @@ interface Props {
   activeTypology: string;
   activeShelterId: string | null;
   userLocation: [number, number] | null;
-  onShelterClick: (shelter: Shelter) => void;
 }
 
 export default function ShelterList({
@@ -17,7 +18,6 @@ export default function ShelterList({
   activeTypology,
   activeShelterId,
   userLocation,
-  onShelterClick,
 }: Props) {
   const { t } = useTranslation();
   const filtered = shelters
@@ -44,26 +44,27 @@ export default function ShelterList({
         const imageUrl = shelter.image_url?.trim();
 
         return (
-          <li
-            key={id}
-            className={`shelter-list-item${activeShelterId === id ? ' active' : ''}${imageUrl ? ' has-image' : ''}`}
-            style={
-              imageUrl
-                ? ({ '--item-image': `url("${imageUrl}")` } as React.CSSProperties)
-                : undefined
-            }
-            onClick={() => onShelterClick(shelter)}
-          >
-            {km !== null && (
-              <div className="distance" style={{ color: distanceColor(km) }}>
-                {formatDistance(km)}
+          <li key={id}>
+            <Link
+              to={shelterPath(shelter)}
+              className={`shelter-list-item${activeShelterId === id ? ' active' : ''}${imageUrl ? ' has-image' : ''}`}
+              style={
+                imageUrl
+                  ? ({ '--item-image': `url("${imageUrl}")` } as React.CSSProperties)
+                  : undefined
+              }
+            >
+              {km !== null && (
+                <div className="distance" style={{ color: distanceColor(km) }}>
+                  {formatDistance(km)}
+                </div>
+              )}
+              <div className="info">
+                <div className="name" style={{ fontWeight }}>
+                  {shelter.name ?? t('shelterList.noName')}
+                </div>
               </div>
-            )}
-            <div className="info">
-              <div className="name" style={{ fontWeight }}>
-                {shelter.name ?? t('shelterList.noName')}
-              </div>
-            </div>
+            </Link>
           </li>
         );
       })}

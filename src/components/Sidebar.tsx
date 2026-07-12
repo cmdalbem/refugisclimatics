@@ -15,7 +15,6 @@ interface Props {
   userLocation: [number, number] | null;
   locationStatus: LocationStatus;
   locationStatusText: string;
-  onShelterClick: (shelter: Shelter) => void;
   onLocationButtonClick: () => void;
 }
 
@@ -39,7 +38,6 @@ export default function Sidebar({
   userLocation,
   locationStatus,
   locationStatusText,
-  onShelterClick,
   onLocationButtonClick,
 }: Props) {
   const { t } = useTranslation();
@@ -103,7 +101,6 @@ export default function Sidebar({
         activeTypology={activeTypology}
         activeShelterId={activeShelterId}
         userLocation={userLocation}
-        onShelterClick={onShelterClick}
       />
     </>
   );

@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react';
-import { Drawer } from 'vaul';
 import { useTranslation } from 'react-i18next';
 import type { Shelter } from '../types';
 import { TYPOLOGY_ICONS, DEFAULT_ICON, FONT_WEIGHT_MAX } from '../constants';
 import PinIcon from './PinIcon';
 import { distanceKm, distanceFontWeight } from '../utils/distance';
 import { formatLocation } from '../utils/distance';
-import { useIsMobile } from '../hooks/useIsMobile';
 
 interface Props {
   shelter: Shelter | null;
@@ -80,7 +78,6 @@ function Contact({ shelter }: { shelter: Shelter }) {
 
 export default function DetailDrawer({ shelter, userLocation, onClose }: Props) {
   const { t } = useTranslation();
-  const isMobile = useIsMobile();
 
   // Keep rendering the last shelter's content while the sheet animates closed,
   // so the swipe-to-dismiss transition doesn't show an empty box.
@@ -190,31 +187,6 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
       <PinIcon name="x" size={16} />
     </button>
   );
-
-  if (isMobile) {
-    return (
-      <Drawer.Root
-        open={!!shelter}
-        onOpenChange={open => {
-          if (!open) onClose();
-        }}
-        modal={false}
-        dismissible
-        autoFocus={false}
-      >
-        <Drawer.Content id="detail-drawer" aria-describedby={undefined}>
-          <Drawer.Title className="sr-only">
-            {displayShelter?.name ?? t('detailDrawer.defaultTitle')}
-          </Drawer.Title>
-          <div className="detail-drawer-panel">
-            <Drawer.Handle className="sheet-handle" />
-            {closeButton}
-            <div className="detail-scroll">{content}</div>
-          </div>
-        </Drawer.Content>
-      </Drawer.Root>
-    );
-  }
 
   return (
     <aside

@@ -469,10 +469,12 @@ html, body {
   padding: 16px 24px;
   border-top: var(--border-width) solid var(--border);
   cursor: pointer;
+  color: inherit;
+  text-decoration: none;
   transition: background 0.15s ease-out;
 }
 
-.shelter-list-item:first-child {
+#shelter-list li:first-child .shelter-list-item {
   border-top: none;
 }
 
@@ -1056,21 +1058,33 @@ html, body {
   .detail-close {
     width: 44px;
     height: 44px;
-    top: 12px;
+    top: max(12px, env(safe-area-inset-top));
     right: 12px;
   }
 
+  /* The detail view takes over the whole screen (not another stacked sheet
+     over the shelter list) and slides in like a native pushed page. Real
+     history entries (see App.tsx routing) make the browser/OS back gesture
+     and back button dismiss it too. */
   #detail-drawer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 5;
-    height: var(--sheet-height);
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    height: 100vh;
+    height: 100dvh;
     max-height: none;
     border: none;
-    border-top: var(--border-width) solid var(--border);
-    border-radius: 16px 16px 0 0;
+    border-radius: 0;
+    transform: translateX(100%);
+    transition: transform 0.32s cubic-bezier(0.32, 0.72, 0, 1);
+    pointer-events: none;
+  }
+
+  #detail-drawer.open {
+    transform: translateX(0);
+    border: none;
+    box-shadow: none;
+    pointer-events: auto;
   }
 
   .detail-drawer-panel {
