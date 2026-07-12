@@ -20,7 +20,7 @@ interface Props {
 }
 
 // Must match --sheet-min / --sheet-peek / --sheet-sliver in index.css.
-const SHEET_MIN_PX = 48;
+const SHEET_MIN_PX = 28;
 const SHEET_PEEK_PX = 240;
 const SHEET_SLIVER_PX = 100;
 
