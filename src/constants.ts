@@ -58,5 +58,5 @@ export const GRADIENT_LAT_MIN = 41.352;
 export const GRADIENT_LAT_MAX = 41.471;
 export const FONT_GRADIENT_MIN_KM = 0.5;
 export const FONT_GRADIENT_MAX_KM = 0.8;
-export const FONT_WEIGHT_MIN = 150;
+export const FONT_WEIGHT_MIN = 250;
 export const FONT_WEIGHT_MAX = 850;
