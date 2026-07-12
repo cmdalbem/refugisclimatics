@@ -468,6 +468,8 @@ html, body {
   gap: 16px;
   padding: 16px 24px;
   border-top: var(--border-width) solid var(--border);
+  content-visibility: auto;
+  contain-intrinsic-size: auto 56px;
   cursor: pointer;
   color: inherit;
   text-decoration: none;
@@ -476,6 +478,17 @@ html, body {
 
 #shelter-list li:first-child .shelter-list-item {
   border-top: none;
+}
+
+.shelter-list-loading,
+.app-load-error {
+  padding: 16px 24px;
+  color: var(--text-muted);
+  font-size: var(--font-size-base);
+}
+
+#map-area.map-loading {
+  background: #f4f4f2;
 }
 
 .shelter-list-item:hover {

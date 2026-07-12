@@ -23,7 +23,8 @@
     "microrefugisFaqLink": "FAQ oficial de Barcelona"
   },
   "shelterList": {
-    "noName": "Sin nombre"
+    "noName": "Sin nombre",
+    "loading": "Cargando refugios…"
   },
   "detailDrawer": {
     "hours": "Horario",

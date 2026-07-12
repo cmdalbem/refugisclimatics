@@ -10,6 +10,7 @@ import { useIsMobile } from '../hooks/useIsMobile';
 
 interface Props {
   shelters: Shelter[];
+  loading?: boolean;
   activeTypology: string;
   activeShelterId: string | null;
   userLocation: [number, number] | null;
@@ -33,6 +34,7 @@ function computeSnapPoints(): (string | number)[] {
 
 export default function Sidebar({
   shelters,
+  loading = false,
   activeTypology,
   activeShelterId,
   userLocation,
@@ -98,6 +100,7 @@ export default function Sidebar({
 
       <ShelterList
         shelters={shelters}
+        loading={loading}
         activeTypology={activeTypology}
         activeShelterId={activeShelterId}
         userLocation={userLocation}

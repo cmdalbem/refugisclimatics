@@ -8,6 +8,7 @@ import { FONT_WEIGHT_MAX } from '../constants';
 
 interface Props {
   shelters: Shelter[];
+  loading?: boolean;
   activeTypology: string;
   activeShelterId: string | null;
   userLocation: [number, number] | null;
@@ -15,6 +16,7 @@ interface Props {
 
 export default function ShelterList({
   shelters,
+  loading = false,
   activeTypology,
   activeShelterId,
   userLocation,
@@ -33,8 +35,13 @@ export default function ShelterList({
     : [...filtered].sort((a, b) => (a.name ?? '').localeCompare(b.name ?? ''));
 
   return (
-    <ul id="shelter-list">
-      {sorted.map(shelter => {
+    <ul id="shelter-list" aria-busy={loading}>
+      {loading ? (
+        <li className="shelter-list-loading" aria-live="polite">
+          {t('shelterList.loading')}
+        </li>
+      ) : (
+        sorted.map(shelter => {
         const id = shelterId(shelter);
         const km = userLocation
           ? distanceKm(userLocation[1], userLocation[0], shelter.lat!, shelter.lon!)
@@ -67,7 +74,8 @@ export default function ShelterList({
             </Link>
           </li>
         );
-      })}
+      })
+      )}
     </ul>
   );
 }

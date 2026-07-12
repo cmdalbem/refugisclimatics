@@ -23,7 +23,8 @@
     "microrefugisFaqLink": "FAQ oficial de Barcelona"
   },
   "shelterList": {
-    "noName": "Sense nom"
+    "noName": "Sense nom",
+    "loading": "Carregant refugis…"
   },
   "detailDrawer": {
     "hours": "Horari",

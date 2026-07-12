@@ -23,7 +23,8 @@
     "microrefugisFaqLink": "Official Barcelona FAQ"
   },
   "shelterList": {
-    "noName": "Unnamed"
+    "noName": "Unnamed",
+    "loading": "Loading shelters…"
   },
   "detailDrawer": {
     "hours": "Opening hours",
