@@ -112,9 +112,15 @@ export default function Sidebar({
       <header className="panel-header">
         <div className="logo-block">
           <div>
-            <h1>{APP_TITLE}</h1>
+            <h1>
+              {APP_TITLE.split(' ')[0]}{' '}
+              <span className="logo-title-clima">Climàt</span>ics
+            </h1>
             <p id="subtitle">{t('sidebar.subtitle')}</p>
+            <div className="logo-block-controls">
             <LanguageSwitcher variant="on-gradient" />
+              <ThemeToggle variant="on-gradient" />
+            </div>
           </div>
         </div>
       </header>
