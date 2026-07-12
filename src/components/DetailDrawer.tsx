@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { Shelter } from '../types';
 import { TYPOLOGY_ICONS, DEFAULT_ICON, FONT_WEIGHT_MAX } from '../constants';
@@ -104,9 +104,14 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
 
   // Keep rendering the last shelter's content while the sheet animates closed,
   // so the swipe-to-dismiss transition doesn't show an empty box.
+  const scrollRef = useRef<HTMLDivElement>(null);
   const [displayShelter, setDisplayShelter] = useState(shelter);
   useEffect(() => {
     if (shelter) setDisplayShelter(shelter);
+  }, [shelter]);
+
+  useEffect(() => {
+    if (shelter) scrollRef.current?.scrollTo(0, 0);
   }, [shelter]);
 
   useEffect(() => {
@@ -220,7 +225,9 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
     >
       <div className="detail-drawer-panel">
         {closeButton}
-        <div className="detail-scroll">{content}</div>
+        <div className="detail-scroll" ref={scrollRef}>
+          {content}
+        </div>
       </div>
     </aside>
   );
