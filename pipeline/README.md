@@ -26,6 +26,14 @@ Run the stages in order from inside `pipeline/`:
 
 ```bash
 .venv/bin/python stage1_ckan.py            # -> raw/ckan_shelters.json
+```
+
+Stage 1 normally uses the CKAN `datastore_search` API. If that indexed
+endpoint returns suspiciously few records (it has dropped to ~30 while the
+full dataset still has ~535), it automatically falls back to downloading the
+companion JSON resource and normalizing it to the same flat field names.
+
+```bash
 .venv/bin/python stage2_typology.py        # -> raw/typology_index.json
 .venv/bin/python stage3_fetch_details.py   # -> raw/detail_pages/*.html (slow: ~7 min, one request per shelter)
 .venv/bin/python stage4_parse_details.py   # -> raw/parsed_details.json

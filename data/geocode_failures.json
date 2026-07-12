@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "name": "Casal Dalt de la Vila",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/casal-dalt-de-la-vila-99400781452",
+    "lat": 41.4340681,
+    "lon": 2.2145343,
+    "municipality": "L'Hospitalet de Llobregat",
+    "reason": "coordinates failed municipality bbox validation"
+  },
+  {
+    "name": "Casal Municipal de Gent Gran de La Torrassa",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/casal-municipal-de-gent-gran-de-la-torrassa-99400781451",
+    "lat": 41.381639,
+    "lon": 2.0485053,
+    "municipality": "L'Hospitalet de Llobregat",
+    "reason": "coordinates failed municipality bbox validation"
+  }
+]

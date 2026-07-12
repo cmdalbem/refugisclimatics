@@ -12,7 +12,15 @@ DETAIL_PAGES_DIR = RAW_DIR / "detail_pages"
 DATA_DIR = PIPELINE_DIR.parent / "data"
 
 CKAN_RESOURCE_ID = "7ecae024-6cb2-427d-b2d0-e170500e2a38"
+CKAN_JSON_RESOURCE_ID = "d88129fe-7aaa-4ae6-b9fd-908ad3f7480d"
 CKAN_DATASTORE_SEARCH_URL = "https://opendata-ajuntament.barcelona.cat/data/api/action/datastore_search"
+CKAN_JSON_DOWNLOAD_URL = (
+    "https://opendata-ajuntament.barcelona.cat/data/dataset/xarxa-refugis-climatics"
+    f"/resource/{CKAN_JSON_RESOURCE_ID}/download/opendatabcn_NP-NASIA_xarxa-refugis-climatics-js.json"
+)
+# When datastore_search returns fewer records than this, assume the indexed
+# API is out of sync and fall back to the full JSON resource download.
+CKAN_DATASTORE_MIN_RECORDS = 100
 
 GUIA_BASE_URL = "https://www.barcelona.cat/barcelona-pel-clima/es/api/guia/filter/node/146"
 GUIA_SHOW_MORE_URL = "https://www.barcelona.cat/barcelona-pel-clima/es/api/guia/show_more/node/146"
