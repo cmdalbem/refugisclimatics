@@ -2,6 +2,7 @@ import * as Tooltip from '@radix-ui/react-tooltip';
 import type { Shelter } from '../types';
 import { useTranslation } from 'react-i18next';
 import { TYPOLOGY_ICONS, DEFAULT_ICON, microrefugisFaqUrl } from '../constants';
+import { useIsMobile } from '../hooks/useIsMobile';
 import PinIcon from './PinIcon';
 
 const MICROREFUGIS_TYPOLOGY = 'Microrefugis';
@@ -14,6 +15,7 @@ interface Props {
 
 export default function FilterBar({ shelters, activeTypology, onTypologyChange }: Props) {
   const { t, i18n } = useTranslation();
+  const isMobile = useIsMobile();
   const mappable = shelters.filter(
     s => typeof s.lat === 'number' && typeof s.lon === 'number',
   );
@@ -42,7 +44,7 @@ export default function FilterBar({ shelters, activeTypology, onTypologyChange }
             const isActive = activeTypology === typology;
             const pillClassName = `pill${isActive ? ' active' : ''}`;
 
-            if (isMicrorefugis) {
+            if (isMicrorefugis && !isMobile) {
               return (
                 <Tooltip.Root key={typology}>
                   <Tooltip.Trigger asChild>
