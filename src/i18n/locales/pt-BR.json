@@ -17,6 +17,11 @@
   "filterBar": {
     "all": "Todos"
   },
+  "typologyTooltip": {
+    "microrefugisLabel": "O que é um micro-refúgio climático?",
+    "microrefugis": "Os micro-refúgios climáticos são estabelecimentos pequenos que oferecem um espaço interior gratuito para se proteger de temperaturas extremas durante uma estadia curta. Farmácias, comércios ou entidades podem ser micro-refúgios, por exemplo. Costumam oferecer um ou poucos lugares para sentar e devem ser seguros, acessíveis e ter temperatura adequada. Opcionalmente, podem disponibilizar água e banheiro sem custo. Também informam onde ficam os refúgios climáticos mais próximos.",
+    "microrefugisFaqLink": "FAQ oficial de Barcelona"
+  },
   "shelterList": {
     "noName": "Sem nome"
   },

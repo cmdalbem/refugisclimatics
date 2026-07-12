@@ -17,6 +17,11 @@
   "filterBar": {
     "all": "All"
   },
+  "typologyTooltip": {
+    "microrefugisLabel": "What is a climate micro-shelter?",
+    "microrefugis": "Climate micro-shelters are small establishments that offer a free indoor space to protect yourself from extreme temperatures during a short stay. Pharmacies, shops, or community organisations can be micro-shelters, for example. They usually offer one or a few seats and must be safe, accessible, and kept at a suitable temperature. They may optionally provide free drinking water and restrooms. They also share information about the nearest climate shelters.",
+    "microrefugisFaqLink": "Official Barcelona FAQ"
+  },
   "shelterList": {
     "noName": "Unnamed"
   },

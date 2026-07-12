@@ -332,6 +332,98 @@ html, body {
   color: rgba(255, 255, 255, 0.55);
 }
 
+.pill-info {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.08);
+  font-size: calc(var(--font-size-small) * 0.85);
+  font-weight: 700;
+  line-height: 0;
+  color: var(--text-muted);
+}
+
+.pill.active .pill-info {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.pill-tooltip {
+  z-index: 200;
+  width: max(240px, 28vw);
+  max-width: min(320px, calc(100vw - 24px));
+  padding: 10px 12px;
+  border: var(--border-width) solid var(--border);
+  border-radius: 0;
+  background: var(--surface);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  color: var(--text);
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: 0;
+  white-space: normal;
+  text-align: left;
+  overflow: visible;
+  animation-duration: 0.15s;
+  animation-timing-function: ease;
+}
+
+.pill-tooltip-arrow {
+  display: block;
+  width: 10px;
+  height: 10px;
+  overflow: visible;
+}
+
+.pill-tooltip-arrow-shape {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: var(--surface);
+  border-right: var(--border-width) solid var(--border);
+  border-bottom: var(--border-width) solid var(--border);
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+.pill-tooltip[data-state='delayed-open'],
+.pill-tooltip[data-state='instant-open'] {
+  animation-name: pill-tooltip-in;
+}
+
+@keyframes pill-tooltip-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pill-tooltip-text {
+  margin: 0 0 8px;
+}
+
+.pill-tooltip-link {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.pill-tooltip-link:hover {
+  text-decoration-thickness: 2px;
+}
+
 #shelter-list {
   list-style: none;
   margin: 0;
@@ -966,6 +1058,7 @@ html, body {
     width: 100%;
     padding: 0 12px;
     overflow-x: auto;
+    overflow-y: visible;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
   }

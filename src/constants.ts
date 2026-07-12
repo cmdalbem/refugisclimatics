@@ -7,6 +7,16 @@ export const MAP_STYLE = 'mapbox://styles/cmdalbem/cmrenqask002e01qwgzs22fbh';
 export const OFFICIAL_SHELTER_NETWORK_URL =
   'https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos';
 
+const MICROREFUGIS_FAQ_URLS: Record<string, string> = {
+  ca: 'https://www.barcelona.cat/barcelona-pel-clima/ca/accions-concretes/xarxa-de-refugis-climatics#i-com-es-un-microrefugi-climatic',
+  es: 'https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos#y-como-es-un-microrrefugio-climatico',
+};
+
+export function microrefugisFaqUrl(language: string): string {
+  const code = language.split('-')[0];
+  return MICROREFUGIS_FAQ_URLS[code] ?? MICROREFUGIS_FAQ_URLS.es;
+}
+
 export function mapCustomAttribution(label: string): string {
   return `<a href="${OFFICIAL_SHELTER_NETWORK_URL}" target="_blank" rel="noopener noreferrer">${label}</a>`;
 }

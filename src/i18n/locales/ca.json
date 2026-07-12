@@ -17,6 +17,11 @@
   "filterBar": {
     "all": "Tots"
   },
+  "typologyTooltip": {
+    "microrefugisLabel": "Què és un microrefugi climàtic?",
+    "microrefugis": "Els microrefugis climàtics són establiments petits que ofereixen un espai interior gratuït per protegir-se de les temperatures extremes durant una estada curta. Poden ser microrefugis les farmàcies, els comerços o les entitats, per exemple. Acostumen a oferir un o uns pocs llocs on seure i han de ser segurs, accessibles i tenir una temperatura adequada. Opcionalment, poden disposar d'aigua i lavabo sense cost per a la ciutadania. A més, donen informació d'on es troben els refugis climàtics més propers.",
+    "microrefugisFaqLink": "FAQ oficial de Barcelona"
+  },
   "shelterList": {
     "noName": "Sense nom"
   },
