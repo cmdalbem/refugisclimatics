@@ -32,7 +32,8 @@ def parse_characteristics(soup):
     container = soup.select_one("div.caracteristic")
     if not container:
         return []
-    return [li.get_text(strip=True) for li in container.select("ul li")]
+    # CMS pages sometimes repeat the same <li> (e.g. "Titularidad Pública" x3).
+    return list(dict.fromkeys(li.get_text(strip=True) for li in container.select("ul li")))
 
 
 def parse_opening_hours(soup):
