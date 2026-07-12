@@ -162,6 +162,30 @@ html, body {
   color: #111;
 }
 
+.language-switcher--mobile {
+  display: none;
+  margin-top: 0;
+}
+
+.language-switcher-select {
+  display: block;
+  height: 16px;
+  min-height: 16px;
+  max-height: 16px;
+  margin: 0;
+  padding: 0 4px;
+  border: var(--border-width) solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: calc(var(--font-size-base) * 0.625);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 16px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
 #sidebar h1 {
   margin: 0;
   font-size: var(--font-size-display);
@@ -853,8 +877,15 @@ html, body {
 }
 
 /* Floating brand mark over the map — mobile only */
-#mobile-brand {
+#mobile-header {
   display: none;
+}
+
+#mobile-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
 }
 
 /* Map controls */
@@ -879,22 +910,32 @@ html, body {
   }
 
   /* Simple logo mark + wordmark, floating over the always-visible map sliver */
-  #mobile-brand {
+  #mobile-header {
     display: flex;
     align-items: center;
-    gap: 8px;
+    justify-content: space-between;
+    gap: 12px;
+    height: 16px;
     position: absolute;
     top: 8px;
     left: 8px;
+    right: 8px;
     z-index: 3;
     pointer-events: none;
   }
 
-  #mobile-brand .language-switcher {
-    pointer-events: auto;
+  #mobile-brand {
+    pointer-events: none;
+    height: 16px;
+  }
+
+  .language-switcher--mobile {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    height: 16px;
     margin-top: 0;
-    margin-left: 6px;
-    font-size: calc(var(--font-size-base) * 0.625);
+    pointer-events: auto;
   }
 
   #mobile-brand img {
@@ -905,6 +946,8 @@ html, body {
 
   #mobile-brand span {
     font-size: var(--font-size-base);
+    line-height: 16px;
+    height: 16px;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: -4%;

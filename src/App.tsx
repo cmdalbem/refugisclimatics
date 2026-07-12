@@ -44,10 +44,12 @@ export default function App() {
 
   return (
     <div id="app" className={activeShelter ? 'drawer-open' : ''}>
-      <div id="mobile-brand">
-        <img src="/logo.png" alt="" />
-        <span>{APP_TITLE}</span>
-        <LanguageSwitcher />
+      <div id="mobile-header">
+        <div id="mobile-brand">
+          <img src="/logo.png" alt="" />
+          <span>{APP_TITLE}</span>
+        </div>
+        <LanguageSwitcher variant="mobile" />
       </div>
 
       <Sidebar
