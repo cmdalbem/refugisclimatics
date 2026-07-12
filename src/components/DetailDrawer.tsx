@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import type { Shelter } from '../types';
 import { TYPOLOGY_ICONS, DEFAULT_ICON, FONT_WEIGHT_MAX } from '../constants';
 import PinIcon from './PinIcon';
-import { distanceKm, formatDistance, distanceColor, distanceFontWeight } from '../utils/distance';
+import { distanceKm, distanceFontWeight } from '../utils/distance';
 import { formatLocation } from '../utils/distance';
 import { useIsMobile } from '../hooks/useIsMobile';
 
@@ -119,7 +119,7 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
         </figure>
       )}
 
-      <div className={`detail-body${displayShelter.image_url ? '' : ' detail-body--no-image'}`}>
+      <div className="detail-body">
         <header className="detail-intro">
           <div className="detail-meta">
             <span className="detail-typology">
@@ -130,11 +130,6 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
                   })
                 : t('detailDrawer.fallbackTypology')}
             </span>
-            {km !== null && (
-              <span className="detail-distance" style={{ color: distanceColor(km) }}>
-                {formatDistance(km)}
-              </span>
-            )}
           </div>
 
           <h2 className="detail-name" style={{ fontWeight }}>
@@ -147,6 +142,7 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
         {displayShelter.notice && (
           <section className="detail-block">
             <div className="detail-notice">
+              <PinIcon name="triangle_up_with_exclamation_point" size={20} className="detail-notice-icon" />
               <p>{displayShelter.notice}</p>
             </div>
           </section>

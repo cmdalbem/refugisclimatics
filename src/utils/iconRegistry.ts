@@ -17,6 +17,7 @@ import shoppingBag from '@waysidemapping/pinhead/dist/icons/shopping_bag.svg?raw
 import shoppingCart from '@waysidemapping/pinhead/dist/icons/shopping_cart.svg?raw';
 import squareAcademicCap from '@waysidemapping/pinhead/dist/icons/square_academic_cap.svg?raw';
 import tableWithUmbrella from '@waysidemapping/pinhead/dist/icons/table_with_umbrella.svg?raw';
+import triangleUpWithExclamationPoint from '@waysidemapping/pinhead/dist/icons/triangle_up_with_exclamation_point.svg?raw';
 import x from '@waysidemapping/pinhead/dist/icons/x.svg?raw';
 import { DEFAULT_ICON } from '../constants';
 
@@ -40,6 +41,7 @@ export const ICON_SVGS: Record<string, string> = {
   shopping_cart: shoppingCart,
   square_academic_cap: squareAcademicCap,
   table_with_umbrella: tableWithUmbrella,
+  triangle_up_with_exclamation_point: triangleUpWithExclamationPoint,
   x,
 };
 
