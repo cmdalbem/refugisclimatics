@@ -39,8 +39,14 @@ function AppShell() {
       setMapReady(true);
       return;
     }
-    const id = requestIdleCallback(() => setMapReady(true), { timeout: 1500 });
-    return () => cancelIdleCallback(id);
+    // iOS Safari/WebKit does not implement requestIdleCallback — without a
+    // fallback the map never mounts and mobile shows a blank white screen.
+    if (typeof requestIdleCallback === 'function') {
+      const id = requestIdleCallback(() => setMapReady(true), { timeout: 1500 });
+      return () => cancelIdleCallback(id);
+    }
+    const id = window.setTimeout(() => setMapReady(true), 1);
+    return () => window.clearTimeout(id);
   }, [shelters, isMobile]);
 
   const slugMap = useMemo(() => {
