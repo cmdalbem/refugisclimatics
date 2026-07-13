@@ -769,7 +769,7 @@ html, body {
   width: fit-content;
   max-width: 100%;
   margin-bottom: 12px;
-  padding: 8px 12px;
+  padding: 8px 12px 5px 12px;
   border: var(--border-width) solid var(--border);
 }
 
