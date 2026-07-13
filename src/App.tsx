@@ -3,6 +3,7 @@ import { Navigate, Route, Routes, useNavigate, useParams } from 'react-router-do
 
 import { APP_TITLE } from './constants';
 import { applyPageMeta, homePageMeta, shelterPageMeta } from './utils/seo';
+import { applyStructuredData } from './utils/structuredData';
 import { useGeolocation } from './hooks/useGeolocation';
 import { useIsMobile } from './hooks/useIsMobile';
 import { useShelters } from './hooks/useShelters';
@@ -66,6 +67,10 @@ function AppShell() {
   useEffect(() => {
     applyPageMeta(activeShelter ? shelterPageMeta(activeShelter) : homePageMeta());
   }, [activeShelter]);
+
+  useEffect(() => {
+    applyStructuredData(shelters, activeShelter);
+  }, [shelters, activeShelter]);
 
   const openShelter = useCallback(
     (shelter: Shelter) => {
