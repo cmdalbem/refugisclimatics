@@ -319,28 +319,35 @@ html, body {
   flex-shrink: 0;
 }
 
-.list-status.status-idle {
-  cursor: pointer;
-}
-
+.list-status.status-idle,
 .list-status.status-loading,
 .list-status.status-error {
   color: var(--brand-red);
   cursor: pointer;
 }
 
-.list-status.status-loading {
-  cursor: default;
+.list-status .list-status-icon {
+  flex-shrink: 0;
 }
 
-.list-status.status-loading::before,
-.list-status.status-error::before {
-  content: '';
-  width: 6px;
-  height: 6px;
-  flex-shrink: 0;
-  border-radius: 0;
-  background: var(--brand-red);
+.list-status.status-loading .list-status-icon {
+  animation: geolocation-spin 0.8s linear infinite;
+}
+
+@keyframes geolocation-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.list-status.status-idle:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.list-status.status-loading {
+  cursor: default;
 }
 
 .list-status.status-error:hover {
@@ -352,15 +359,6 @@ html, body {
 .list-status.status-active {
   color: var(--brand-blue);
   cursor: pointer;
-}
-
-.list-status.status-active::before {
-  content: '';
-  width: 6px;
-  height: 6px;
-  flex-shrink: 0;
-  border-radius: 0;
-  background: var(--brand-blue);
 }
 
 .list-status.status-active:hover {
@@ -1344,6 +1342,10 @@ html, body {
   #map-location-btn svg {
     width: 22px;
     height: 22px;
+  }
+
+  #map-location-btn.status-loading .list-status-icon {
+    animation: geolocation-spin 0.8s linear infinite;
   }
 
   #map-location-btn.status-active {

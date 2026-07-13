@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import type { Shelter } from '../types';
 import type { LocationStatus } from '../types';
 import LogoTitle from './LogoTitle';
+import GeolocationStatusIcon from './GeolocationStatusIcon';
 import ShelterList from './ShelterList';
 import LanguageSwitcher from './LanguageSwitcher';
 import ThemeToggle from './ThemeToggle';
@@ -127,7 +128,9 @@ export default function Sidebar({
         type="button"
         className={`list-status status-${locationStatus}`}
         onClick={onLocationButtonClick}
+        aria-busy={locationStatus === 'loading'}
       >
+        <GeolocationStatusIcon status={locationStatus} className="list-status-icon" />
         {locationStatusText}
       </button>
 

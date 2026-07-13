@@ -1,25 +1,11 @@
 import type { LocationStatus } from '../types';
 import { useIsMobile } from '../hooks/useIsMobile';
+import GeolocationStatusIcon from './GeolocationStatusIcon';
 
 interface Props {
   status: LocationStatus;
   statusText: string;
   onClick: () => void;
-}
-
-function LocateIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" aria-hidden>
-      <circle cx="12" cy="12" r="3" fill="currentColor" />
-      <path
-        d="M12 2v3M12 19v3M2 12h3M19 12h3"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="square"
-      />
-      <circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="2" />
-    </svg>
-  );
 }
 
 export default function MapLocationButton({ status, statusText, onClick }: Props) {
@@ -35,7 +21,7 @@ export default function MapLocationButton({ status, statusText, onClick }: Props
       aria-label={statusText}
       aria-busy={status === 'loading'}
     >
-      <LocateIcon />
+      <GeolocationStatusIcon status={status} size={22} className="list-status-icon" />
     </button>
   );
 }
