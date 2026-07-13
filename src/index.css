@@ -1407,7 +1407,7 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: min(420px, calc(100vw - 32px));
+  width: min(450px, calc(100vw - 32px));
   max-height: calc(100dvh - 32px);
   margin: 0;
   padding: 0;
@@ -1471,8 +1471,8 @@ html, body {
 
 .welcome-modal-logo {
   flex-shrink: 0;
-  width: 72px;
-  height: 72px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 
@@ -1503,13 +1503,8 @@ html, body {
   margin-bottom: 0;
 }
 
-.welcome-modal-section-label {
-  margin: 0 0 10px;
-  font-size: var(--font-size-small);
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--text-strong);
+.welcome-modal-variety {
+  margin-bottom: 10px;
 }
 
 .welcome-modal-typologies {
@@ -1590,9 +1585,8 @@ html, body {
 }
 
 .welcome-modal-disclaimer-link {
-  color: var(--text-strong);
-  font-weight: 800;
-  letter-spacing: 0.06em;
+  color: inherit;
+  font-weight: inherit;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
@@ -1628,7 +1622,7 @@ html, body {
   }
 
   .welcome-modal-typologies,
-  .welcome-modal-section-label {
+  .welcome-modal-typologies-hint {
     display: none;
   }
 

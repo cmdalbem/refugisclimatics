@@ -5,10 +5,11 @@
   },
   "welcomeModal": {
     "title": "Què són els refugis climàtics?",
-    "lead": "Els refugis climàtics són espais on protegir-te de la calor a l'estiu i del fred a l'hivern, mentre mantenen el seu ús habitual.",
-    "spaces": "Hi ha espais interiors — biblioteques, centres cívics — i exteriors — parcs, jardins d'interior d'illa. També hi ha microrefugis: comerços i entitats que ofereixen un racó per seure durant una estada curta.",
-    "access": "Són gratuïts (excepte les piscines municipals), accessibles, i la majoria oberts tot l'any. Consulta els horaris abans de desplaçar-te.",
+    "lead": "Els refugis climàtics són espais on protegir-te de la calor a l'estiu i del fred a l'hivern.",
+    "variety": "Hi ha espais interiors, com les biblioteques o els centres cívics, i exteriors, com els parcs o els jardins d'interior d'illa.",
+    "access": "Estan degudament senyalitzats, i la majoria són gratuïts, accessibles i oberts tot l'any, amb serveis com aigua, lavabos o wifi.",
     "typologiesLabel": "Tipus de refugis climàtics",
+    "typologiesHint": "Passa el cursor a sota per veure la resta.",
     "disclaimer": "La xarxa de refugis climàtics és una iniciativa de l'Ajuntament de Barcelona. <officialLink>Més informació a barcelona.cat</officialLink>",
     "dismiss": "Comença a explorar",
     "close": "Tancar"

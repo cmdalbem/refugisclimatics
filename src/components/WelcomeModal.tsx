@@ -64,9 +64,10 @@ export default function WelcomeModal({ ready, onOpenChange }: Props) {
             <div className="welcome-modal-content">
               <div className="welcome-modal-body">
                 <p>{t('welcomeModal.lead')}</p>
-                <p>{t('welcomeModal.spaces')}</p>
-
-                <p className="welcome-modal-section-label">{t('welcomeModal.typologiesLabel')}</p>
+                <p className="welcome-modal-variety">
+                  {t('welcomeModal.variety')}
+                  <span className="welcome-modal-typologies-hint"> {t('welcomeModal.typologiesHint')}</span>
+                </p>
 
                 <Tooltip.Provider delayDuration={0} disableHoverableContent skipDelayDuration={0}>
                   <ul className="welcome-modal-typologies" aria-label={t('welcomeModal.typologiesLabel')}>
