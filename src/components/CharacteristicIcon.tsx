@@ -2,7 +2,7 @@ import type { Icon } from '@phosphor-icons/react';
 import { PawPrintIcon } from '@phosphor-icons/react/dist/csr/PawPrint';
 import { DropIcon } from '@phosphor-icons/react/dist/csr/Drop';
 import { ToiletIcon } from '@phosphor-icons/react/dist/csr/Toilet';
-import { WheelchairMotionIcon } from '@phosphor-icons/react/dist/csr/WheelchairMotion';
+import { WheelchairIcon } from '@phosphor-icons/react/dist/csr/Wheelchair';
 import { WifiHighIcon } from '@phosphor-icons/react/dist/csr/WifiHigh';
 
 const CHARACTERISTIC_ICONS: Record<string, Icon> = {
@@ -10,7 +10,7 @@ const CHARACTERISTIC_ICONS: Record<string, Icon> = {
   'Amb aigua per beure': DropIcon,
   'Con internet para uso público': WifiHighIcon,
   'Puntos de conexión Barcelona WiFi': WifiHighIcon,
-  'Accesible para personas con discapacidad física': WheelchairMotionIcon,
+  'Accesible para personas con discapacidad física': WheelchairIcon,
   'Se admiten animales de compañía': PawPrintIcon,
 };
 
