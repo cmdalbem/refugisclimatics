@@ -59,30 +59,26 @@ export const PRIORITY_CHARACTERISTICS = [
   'Se admiten animales de compañía',
 ];
 
-export const CHARACTERISTIC_ICONS: Record<string, string> = {
-  'Con lavabo': 'womens_and_mens_restroom_symbol',
-  'Amb aigua per beure': 'droplet',
-  'Con internet para uso público': 'wifi',
-  'Puntos de conexión Barcelona WiFi': 'wifi',
-  'Accesible para personas con discapacidad física': 'international_wheelchair_symbol',
-  'Se admiten animales de compañía': 'dog_sitting',
-};
+const WIFI_CHARACTERISTICS = new Set([
+  'Con internet para uso público',
+  'Puntos de conexión Barcelona WiFi',
+]);
 
 export function priorityAmenityIcons(
   characteristics: string[] | undefined,
-): { key: string; icon: string }[] {
+): string[] {
   if (!characteristics?.length) return [];
   const available = new Set(characteristics);
-  const icons: { key: string; icon: string }[] = [];
-  const seenIcons = new Set<string>();
+  const keys: string[] = [];
+  const seenIconGroups = new Set<string>();
   for (const key of PRIORITY_CHARACTERISTICS) {
     if (!available.has(key)) continue;
-    const icon = CHARACTERISTIC_ICONS[key];
-    if (!icon || seenIcons.has(icon)) continue;
-    icons.push({ key, icon });
-    seenIcons.add(icon);
+    const iconGroup = WIFI_CHARACTERISTICS.has(key) ? 'wifi' : key;
+    if (seenIconGroups.has(iconGroup)) continue;
+    keys.push(key);
+    seenIconGroups.add(iconGroup);
   }
-  return icons;
+  return keys;
 }
 
 export const TYPOLOGY_ICONS: Record<string, string> = {
@@ -113,5 +109,5 @@ export const GRADIENT_LAT_MIN = 41.352;
 export const GRADIENT_LAT_MAX = 41.471;
 export const FONT_GRADIENT_MIN_KM = 0.5;
 export const FONT_GRADIENT_MAX_KM = 0.8;
-export const FONT_WEIGHT_MIN = 250;
+export const FONT_WEIGHT_MIN = 300;
 export const FONT_WEIGHT_MAX = 850;

@@ -5,7 +5,7 @@ import { shelterId } from '../utils/distance';
 import { distanceKm, formatDistance, distanceColor, distanceFontWeight } from '../utils/distance';
 import { shelterPath } from '../utils/slug';
 import { FONT_WEIGHT_MAX, priorityAmenityIcons } from '../constants';
-import PinIcon from './PinIcon';
+import CharacteristicIcon from './CharacteristicIcon';
 
 interface Props {
   shelters: Shelter[];
@@ -74,13 +74,13 @@ export default function ShelterList({
                 </div>
                 {amenities.length > 0 && (
                   <div className="shelter-list-amenities">
-                    {amenities.map(({ key, icon }) => (
+                    {amenities.map((key) => (
                       <span
                         key={key}
                         className="shelter-list-amenity"
                         aria-label={t(`characteristics.${key}`, { defaultValue: key })}
                       >
-                        <PinIcon name={icon} size={13} />
+                        <CharacteristicIcon name={key} size={16} />
                       </span>
                     ))}
                   </div>

@@ -835,6 +835,7 @@ html, body {
 
 .detail-directions-icon {
   flex-shrink: 0;
+  transform: rotate(45deg);
 }
 
 .detail-notice {

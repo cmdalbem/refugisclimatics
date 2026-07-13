@@ -1,14 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { Shelter } from '../types';
+import { ArrowSquareUpRightIcon } from '@phosphor-icons/react/dist/csr/ArrowSquareUpRight';
 import {
   TYPOLOGY_ICONS,
   DEFAULT_ICON,
   FONT_WEIGHT_MAX,
   PRIORITY_CHARACTERISTICS,
-  CHARACTERISTIC_ICONS,
 } from '../constants';
 import PinIcon from './PinIcon';
+import CharacteristicIcon from './CharacteristicIcon';
 import { distanceKm, distanceFontWeight } from '../utils/distance';
 import { formatLocation, mapsUrlForShelter } from '../utils/distance';
 
@@ -51,7 +52,6 @@ function Location({ location, mapsUrl }: { location: string; mapsUrl: string | n
 
   return (
     <section className="detail-block">
-      <h3 className="detail-section-title">{t('detailDrawer.directions')}</h3>
       {mapsUrl ? (
         <a
           className="detail-directions"
@@ -59,7 +59,7 @@ function Location({ location, mapsUrl }: { location: string; mapsUrl: string | n
           aria-label={t('detailDrawer.openDirections', { address: location })}
         >
           <span className="detail-directions-address">{location}</span>
-          <PinIcon name="navigation_arrow_top_right" size={18} className="detail-directions-icon" />
+          <ArrowSquareUpRightIcon size={32} className="detail-directions-icon" aria-hidden />
         </a>
       ) : (
         <p className="detail-location">{location}</p>
@@ -196,15 +196,12 @@ export default function DetailDrawer({ shelter, userLocation, onClose }: Props) 
           <section className="detail-block">
             <h3 className="detail-section-title">{t('detailDrawer.characteristics')}</h3>
             <ul className="detail-chars">
-              {sortedCharacteristics.map((c) => {
-                const icon = CHARACTERISTIC_ICONS[c];
-                return (
-                  <li key={c} className="detail-char">
-                    {icon ? <PinIcon name={icon} size={15} className="detail-char-icon" /> : null}
-                    <span>{t(`characteristics.${c}`, { defaultValue: c })}</span>
-                  </li>
-                );
-              })}
+              {sortedCharacteristics.map((c) => (
+                <li key={c} className="detail-char">
+                  <CharacteristicIcon name={c} size={16} className="detail-char-icon" />
+                  <span>{t(`characteristics.${c}`, { defaultValue: c })}</span>
+                </li>
+              ))}
             </ul>
           </section>
         ) : null}
