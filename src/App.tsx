@@ -14,6 +14,7 @@ import Sidebar from './components/Sidebar';
 import DetailDrawer from './components/DetailDrawer';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import ThemeToggle from './components/ThemeToggle';
+import WelcomeModal from './components/WelcomeModal';
 import type { MapViewHandle } from './components/MapView';
 const MapView = lazy(() => import('./components/MapView'));
 
@@ -28,6 +29,8 @@ function AppShell() {
     useGeolocation();
 
   const [activeTypology, setActiveTypology] = useState('');
+
+  const [welcomeOpen, setWelcomeOpen] = useState(false);
 
   const mapViewRef = useRef<MapViewHandle>(null);
 
@@ -92,7 +95,12 @@ function AppShell() {
   }, [userLocation, requestLocation]);
 
   return (
-    <div id="app" className={activeShelter ? 'drawer-open' : ''}>
+    <div
+      id="app"
+      className={[activeShelter && 'drawer-open', welcomeOpen && 'welcome-open']
+        .filter(Boolean)
+        .join(' ')}
+    >
       <div id="mobile-header">
         <div id="mobile-brand">
           <span>{APP_TITLE}</span>
@@ -142,6 +150,11 @@ function AppShell() {
               />
             )}
           </Suspense>
+
+          <WelcomeModal
+            ready={!!shelters && !sheltersError}
+            onOpenChange={setWelcomeOpen}
+          />
         </>
       )}
     </div>

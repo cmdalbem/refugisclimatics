@@ -3,7 +3,7 @@ import { Drawer } from 'vaul';
 import { useTranslation } from 'react-i18next';
 import type { Shelter } from '../types';
 import type { LocationStatus } from '../types';
-import { APP_TITLE } from '../constants';
+import LogoTitle from './LogoTitle';
 import ShelterList from './ShelterList';
 import LanguageSwitcher from './LanguageSwitcher';
 import ThemeToggle from './ThemeToggle';
@@ -113,10 +113,7 @@ export default function Sidebar({
       <header className="panel-header">
         <div className="logo-block">
           <div className="logo-block-main">
-            <h1>
-              {APP_TITLE.split(' ')[0]}{' '}
-              <span className="logo-title-clima">Climàt</span>ics
-            </h1>
+            <LogoTitle />
             <p id="subtitle">{t('sidebar.subtitle')}</p>
           </div>
           <div className="logo-block-controls">

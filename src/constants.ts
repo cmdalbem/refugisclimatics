@@ -26,10 +26,20 @@ export function mapBasemapConfigForTheme(theme: 'light' | 'dark') {
 export const OFFICIAL_SHELTER_NETWORK_URL =
   'https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos';
 
-const MICROREFUGIS_FAQ_URLS: Record<string, string> = {
-  ca: 'https://www.barcelona.cat/barcelona-pel-clima/ca/accions-concretes/xarxa-de-refugis-climatics#i-com-es-un-microrefugi-climatic',
-  es: 'https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos#y-como-es-un-microrrefugio-climatico',
+const SHELTER_NETWORK_URLS: Record<string, string> = {
+  ca: 'https://www.barcelona.cat/barcelona-pel-clima/ca/accions-concretes/xarxa-de-refugis-climatics',
+  es: 'https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos',
 };
+
+const MICROREFUGIS_FAQ_URLS: Record<string, string> = {
+  ca: `${SHELTER_NETWORK_URLS.ca}#i-com-es-un-microrefugi-climatic`,
+  es: `${SHELTER_NETWORK_URLS.es}#y-como-es-un-microrrefugio-climatico`,
+};
+
+export function shelterNetworkUrl(language: string): string {
+  const code = language.split('-')[0];
+  return SHELTER_NETWORK_URLS[code] ?? SHELTER_NETWORK_URLS.es;
+}
 
 export function microrefugisFaqUrl(language: string): string {
   const code = language.split('-')[0];
@@ -39,7 +49,7 @@ export function microrefugisFaqUrl(language: string): string {
 export function mapCustomAttribution(label: string): string {
   return `<a href="${OFFICIAL_SHELTER_NETWORK_URL}" target="_blank" rel="noopener noreferrer">${label}</a>`;
 }
-export const MAP_CENTER: [number, number] = [2.1734, 41.3851];
+export const MAP_CENTER: [number, number] = [2.1695, 41.4064];
 export const MAP_ZOOM = 12;
 export const LABEL_ZOOM_THRESHOLD = 15;
 export const MAP_FLY_PADDING = { top: 80, bottom: 32, left: 32, right: 32 };

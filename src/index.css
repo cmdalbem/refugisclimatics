@@ -270,18 +270,21 @@ html, body {
   pointer-events: auto;
 }
 
-#sidebar h1 {
+#sidebar .logo-title {
+  width: 120px;
+}
+
+.logo-title {
   margin: 0;
   font-size: var(--font-size-display);
-  width: 120px;
   font-weight: 650;
   letter-spacing: -4%;
   text-transform: uppercase;
-  line-height: .9;
+  line-height: 0.9;
   color: #fff;
 }
 
-#sidebar h1 .logo-title-clima {
+.logo-title .logo-title-clima {
   letter-spacing: -8%;
 }
 
@@ -1362,5 +1365,210 @@ html, body {
 
   #map-location-btn:active {
     background: var(--surface-hover);
+  }
+}
+
+/* Welcome modal */
+#app.welcome-open {
+  display: block;
+  position: relative;
+  height: 100%;
+}
+
+#app.welcome-open #mobile-header,
+#app.welcome-open #sidebar,
+#app.welcome-open #detail-drawer,
+#app.welcome-open #map-controls {
+  display: none;
+}
+
+#app.welcome-open #map-area {
+  position: absolute;
+  inset: 0;
+  min-height: 0;
+}
+
+.welcome-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  margin: auto;
+  padding: 0;
+  border: none;
+  background: transparent;
+  max-width: min(480px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  overflow: visible;
+}
+
+.welcome-modal::backdrop {
+  background: rgba(243, 141, 3, 0.78);
+}
+
+[data-theme='dark'] .welcome-modal::backdrop {
+  background: rgba(180, 72, 12, 0.84);
+}
+
+.welcome-modal-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100dvh - 32px);
+  padding: 36px 32px 28px;
+  background: #fffaf6;
+  border: var(--border-width) solid rgba(232, 77, 38, 0.35);
+  box-shadow:
+    0 24px 64px rgba(232, 77, 38, 0.22),
+    0 8px 24px rgba(243, 141, 3, 0.18);
+  overflow: hidden;
+}
+
+[data-theme='dark'] .welcome-modal-panel {
+  background: #1f1712;
+  border-color: rgba(246, 175, 47, 0.35);
+  box-shadow:
+    0 24px 64px rgba(0, 0, 0, 0.45),
+    0 8px 32px rgba(232, 77, 38, 0.2);
+}
+
+.welcome-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: var(--border-width) solid var(--border);
+  border-radius: 0;
+  background: var(--surface);
+  color: var(--text-strong);
+  cursor: pointer;
+}
+
+.welcome-modal-close:hover {
+  background: var(--text-strong);
+  color: var(--text-on-accent);
+}
+
+.welcome-modal-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin: 0 40px 28px 0;
+}
+
+.welcome-modal-logo {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  margin-top: 2px;
+  object-fit: contain;
+}
+
+.welcome-modal-intro {
+  min-width: 0;
+}
+
+.welcome-modal-header .logo-title {
+  color: var(--text-strong);
+}
+
+.welcome-modal-body {
+  overflow-y: auto;
+  min-height: 0;
+  font-size: var(--font-size-base);
+  line-height: 1.45;
+  color: var(--text);
+}
+
+.welcome-modal-body p {
+  margin: 0 0 18px;
+}
+
+.welcome-modal-body p:last-child {
+  margin-bottom: 0;
+}
+
+.welcome-modal-typologies {
+  list-style: none;
+  margin: 4px 0 24px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.welcome-modal-typology {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+}
+
+.welcome-modal-typology-icon {
+  opacity: 0.9;
+}
+
+.welcome-modal-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 18px;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: var(--border-width) solid rgba(243, 141, 3, 0.28);
+}
+
+[data-theme='dark'] .welcome-modal-footer {
+  border-top-color: rgba(246, 175, 47, 0.22);
+}
+
+.welcome-modal-dismiss {
+  flex: none;
+  width: 100%;
+  padding: 14px 18px;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.welcome-modal-disclaimer {
+  margin: 0;
+  font-size: var(--font-size-small);
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
+.welcome-modal-disclaimer a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.welcome-modal-disclaimer a:hover {
+  text-decoration-thickness: 2px;
+}
+
+@media (max-width: 768px) {
+  .welcome-modal {
+    max-width: calc(100vw - 24px);
+    max-height: calc(100dvh - 24px);
+  }
+
+  .welcome-modal-panel {
+    max-height: calc(100dvh - 24px);
+    padding: 28px 24px 24px;
+  }
+
+  .welcome-modal-close {
+    width: 44px;
+    height: 44px;
+    top: 16px;
+    right: 16px;
   }
 }

@@ -3,6 +3,16 @@
     "subtitle": "Refúgios urbanos de Barcelona para se proteger do calor.",
     "listTitle": "Lista de refúgios climáticos"
   },
+  "welcomeModal": {
+    "title": "O que são refúgios climáticos?",
+    "lead": "Os refúgios climáticos são espaços onde você pode se proteger do calor no verão e do frio no inverno, mantendo o uso habitual do local.",
+    "spaces": "Há espaços internos — bibliotecas, centros cívicos — e externos — parques, jardins internos de quarteirão. Também há micro-refúgios: comércios e entidades que oferecem um canto para sentar durante uma estadia curta.",
+    "access": "São gratuitos (exceto as piscinas municipais), acessíveis, e a maioria aberta o ano todo. Consulte os horários antes de ir.",
+    "typologiesLabel": "Tipos de refúgios climáticos",
+    "disclaimer": "A rede de refúgios climáticos é uma iniciativa da Prefeitura de Barcelona. <officialLink>Mais informações em barcelona.cat</officialLink>",
+    "dismiss": "Começar a explorar",
+    "close": "Fechar"
+  },
   "languageSwitcher": {
     "ariaLabel": "Selecionar idioma"
   },
