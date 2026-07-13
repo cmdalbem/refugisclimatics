@@ -1,4 +1,5 @@
 import * as Tooltip from '@radix-ui/react-tooltip';
+import { InfoIcon } from '@phosphor-icons/react/dist/csr/Info';
 import type { Shelter } from '../types';
 import { useTranslation } from 'react-i18next';
 import { TYPOLOGY_ICONS, DEFAULT_ICON, microrefugisFaqUrl } from '../constants';
@@ -54,9 +55,7 @@ export default function FilterBar({ shelters, activeTypology, onTypologyChange }
                     >
                       <PinIcon name={iconName} size={15} />
                       <span>{t(`typology.${typology}`, { defaultValue: typology })}</span>
-                      <span className="pill-info" aria-hidden="true">
-                        i
-                      </span>
+                      <InfoIcon className="pill-info" size={15} weight="bold" aria-hidden />
                       <span className="pill-count">{typologyCounts[typology]}</span>
                     </li>
                   </Tooltip.Trigger>
