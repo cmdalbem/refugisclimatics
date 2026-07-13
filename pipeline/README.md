@@ -12,6 +12,10 @@ by combining two sources:
    accessible, pet-friendly, ...), which aren't in the open dataset. Covers
    564 shelters, including some in neighbouring municipalities.
 
+Stage 5 also derives an access characteristic for every shelter: free entry
+for all typologies except swimming pools (`Piscinas`), which are paid — per
+the official network site.
+
 ## Setup
 
 ```bash

@@ -4,8 +4,11 @@ import { DropIcon } from '@phosphor-icons/react/dist/csr/Drop';
 import { ToiletIcon } from '@phosphor-icons/react/dist/csr/Toilet';
 import { WheelchairIcon } from '@phosphor-icons/react/dist/csr/Wheelchair';
 import { WifiHighIcon } from '@phosphor-icons/react/dist/csr/WifiHigh';
+import { CurrencyEurIcon } from '@phosphor-icons/react/dist/csr/CurrencyEur';
+import { PAID_ACCESS_CHARACTERISTIC } from '../constants';
 
 const CHARACTERISTIC_ICONS: Record<string, Icon> = {
+  [PAID_ACCESS_CHARACTERISTIC]: CurrencyEurIcon,
   'Con lavabo': ToiletIcon,
   'Amb aigua per beure': DropIcon,
   'Con internet para uso público': WifiHighIcon,

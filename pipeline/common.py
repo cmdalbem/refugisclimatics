@@ -51,6 +51,25 @@ TYPOLOGY_CODES = {
     "148414774": "Otro(s)",
 }
 
+# Derived access characteristics (not scraped from CMS). All shelters in the
+# network are free except swimming pools — per the official site.
+FREE_ACCESS_CHARACTERISTIC = "Acceso gratuito"
+PAID_ACCESS_CHARACTERISTIC = "Acceso de pago"
+PAID_ACCESS_TYPOLOGIES = {"Piscinas"}
+
+
+def enrich_characteristics(typology, characteristics):
+    """Append access pricing based on typology, stripping any prior value."""
+    chars = [
+        c
+        for c in (characteristics or [])
+        if c not in (FREE_ACCESS_CHARACTERISTIC, PAID_ACCESS_CHARACTERISTIC)
+    ]
+    if typology in PAID_ACCESS_TYPOLOGIES:
+        return [PAID_ACCESS_CHARACTERISTIC, *chars]
+    return [*chars, FREE_ACCESS_CHARACTERISTIC]
+
+
 REQUEST_HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; refugisclimatics-pipeline/1.0; +https://github.com/)",
 }

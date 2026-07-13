@@ -78,6 +78,8 @@
     "Universidades": "Universities"
   },
   "characteristics": {
+    "Acceso de pago": "Paid entry",
+    "Acceso gratuito": "Free entry",
     "Accesible para personas con discapacidad física": "Wheelchair accessible",
     "Al aire libre": "Outdoors",
     "Amb aigua per beure": "Drinking water available",

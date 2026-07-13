@@ -24,7 +24,15 @@ Barcelona only) but are also listed in unmatched.json for manual review.
 
 import math
 
-from common import DATA_DIR, RAW_DIR, normalize_join_key, read_json, read_json_if_exists, write_json
+from common import (
+    DATA_DIR,
+    RAW_DIR,
+    enrich_characteristics,
+    normalize_join_key,
+    read_json,
+    read_json_if_exists,
+    write_json,
+)
 
 MAX_MATCH_DISTANCE_METERS = 30
 # ~1 m precision; CMS siblings in the same building share one comshiva point.
@@ -223,7 +231,7 @@ def main():
         shelter = {
             "name": cms["name"],
             "typology": cms["typology"],
-            "characteristics": cms["characteristics"],
+            "characteristics": enrich_characteristics(cms["typology"], cms["characteristics"]),
             "opening_hours_raw": cms["opening_hours_raw"],
             "notice": cms["notice"],
             "image_url": cms["image_url"],

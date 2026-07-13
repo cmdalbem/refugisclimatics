@@ -59,8 +59,12 @@ export const DEFAULT_MARKER_COLOR = '#3A84B3';
 export const DEFAULT_ICON = 'map_pin';
 
 // Maps each data typology key to a Pinhead icon id
+export const FREE_ACCESS_CHARACTERISTIC = 'Acceso gratuito';
+export const PAID_ACCESS_CHARACTERISTIC = 'Acceso de pago';
+
 // Priority order for amenity characteristics in detail views (positive only).
 export const PRIORITY_CHARACTERISTICS = [
+  PAID_ACCESS_CHARACTERISTIC,
   'Con lavabo',
   'Amb aigua per beure',
   'Con internet para uso público',
