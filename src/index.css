@@ -399,9 +399,9 @@ html, body {
   justify-content: center;
   align-items: center;
   gap: 4px;
-  padding: 8px 12px;
+  padding: 16px;
   background: var(--surface);
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-base);
   font-weight: 500;
   color: var(--text);
   white-space: nowrap;
@@ -1309,6 +1309,8 @@ html, body {
     flex: 0 0 auto;
     min-width: 0;
     border: var(--border-width) solid var(--border);
+    padding: 13px;
+    font-size: var(--font-size-small);
   }
 
   /* Geolocation lives on the map — hide the list status strip on mobile */
