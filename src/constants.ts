@@ -1,6 +1,11 @@
 export const APP_TITLE = 'Refugis Climàtics';
 export const APP_PAGE_TITLE = `${APP_TITLE} — Barcelona`;
 
+export const SITE_URL = (import.meta.env.VITE_SITE_URL ?? 'https://refugisclimatics.cat').replace(
+  /\/$/,
+  '',
+);
+
 export const MAPBOX_TOKEN =
   'pk.eyJ1IjoiY21kYWxiZW0iLCJhIjoiY2pnbXhjZnplMDJ6MjMzbnk0OGthZGE1ayJ9.n1flNO8ndRYKQcR9wNIT9w';
 export const MAP_STYLE = 'mapbox://styles/cmdalbem/cmrenqask002e01qwgzs22fbh';
