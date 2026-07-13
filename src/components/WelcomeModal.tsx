@@ -8,7 +8,7 @@ import PinIcon from './PinIcon';
 
 const STORAGE_KEY = 'welcome-dismissed';
 // TODO: set back to false before shipping
-const ALWAYS_SHOW_FOR_TESTING = true;
+const ALWAYS_SHOW_FOR_TESTING = false;
 
 const TYPOLOGIES = Object.keys(TYPOLOGY_ICONS).sort((a, b) => a.localeCompare(b, 'es'));
 
