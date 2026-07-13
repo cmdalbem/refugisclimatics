@@ -1,3 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "refugisclimatics.vercel.app" }],
+      "destination": "https://refugisclimatics.cat/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
