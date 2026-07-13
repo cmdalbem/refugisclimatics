@@ -6,6 +6,13 @@ export const SITE_URL = (import.meta.env.VITE_SITE_URL ?? 'https://refugisclimat
   '',
 );
 
+export const META_DESCRIPTION =
+  'Mapa interactiu dels refugis climàtics de Barcelona. Troba biblioteques, parcs, piscines i més per protegir-te de la calor, ordenats per distància.';
+
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/banner.png`;
+export const OG_IMAGE_WIDTH = 1384;
+export const OG_IMAGE_HEIGHT = 742;
+
 export const MAPBOX_TOKEN =
   'pk.eyJ1IjoiY21kYWxiZW0iLCJhIjoiY2pnbXhjZnplMDJ6MjMzbnk0OGthZGE1ayJ9.n1flNO8ndRYKQcR9wNIT9w';
 export const MAP_STYLE = 'mapbox://styles/cmdalbem/cmrenqask002e01qwgzs22fbh';

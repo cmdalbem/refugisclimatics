@@ -1,8 +1,8 @@
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Navigate, Route, Routes, useNavigate, useParams } from 'react-router-dom';
 
-import { APP_PAGE_TITLE, APP_TITLE, SITE_URL } from './constants';
-import { setCanonicalUrl } from './utils/seo';
+import { APP_TITLE } from './constants';
+import { applyPageMeta, homePageMeta, shelterPageMeta } from './utils/seo';
 import { useGeolocation } from './hooks/useGeolocation';
 import { useIsMobile } from './hooks/useIsMobile';
 import { useShelters } from './hooks/useShelters';
@@ -64,10 +64,7 @@ function AppShell() {
   const activeShelterId = activeShelter ? shelterId(activeShelter) : null;
 
   useEffect(() => {
-    document.title = activeShelter
-      ? `${activeShelter.name ?? APP_TITLE} — ${APP_TITLE}`
-      : APP_PAGE_TITLE;
-    setCanonicalUrl(`${SITE_URL}${activeShelter ? shelterPath(activeShelter) : '/'}`);
+    applyPageMeta(activeShelter ? shelterPageMeta(activeShelter) : homePageMeta());
   }, [activeShelter]);
 
   const openShelter = useCallback(
