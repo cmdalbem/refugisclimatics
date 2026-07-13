@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
+import * as Tooltip from '@radix-ui/react-tooltip';
 import { Trans, useTranslation } from 'react-i18next';
 import { shelterNetworkUrl, TYPOLOGY_ICONS, DEFAULT_ICON } from '../constants';
 import LogoTitle from './LogoTitle';
@@ -60,47 +61,80 @@ export default function WelcomeModal({ ready, onOpenChange }: Props) {
               </div>
             </header>
 
-            <div className="welcome-modal-body">
-              <p>{t('welcomeModal.lead')}</p>
-              <p>{t('welcomeModal.spaces')}</p>
+            <div className="welcome-modal-content">
+              <div className="welcome-modal-body">
+                <p>{t('welcomeModal.lead')}</p>
+                <p>{t('welcomeModal.spaces')}</p>
 
-              <ul className="welcome-modal-typologies" aria-label={t('welcomeModal.typologiesLabel')}>
-                {TYPOLOGIES.map(typology => (
-                  <li key={typology} className="welcome-modal-typology">
-                    <PinIcon
-                      name={TYPOLOGY_ICONS[typology] ?? DEFAULT_ICON}
-                      size={20}
-                      className="welcome-modal-typology-icon"
-                    />
-                    <span className="sr-only">
-                      {t(`typology.${typology}`, { defaultValue: typology })}
-                    </span>
-                  </li>
-                ))}
-              </ul>
+                <p className="welcome-modal-section-label">{t('welcomeModal.typologiesLabel')}</p>
 
-              <p>{t('welcomeModal.access')}</p>
+                <Tooltip.Provider delayDuration={0} disableHoverableContent skipDelayDuration={0}>
+                  <ul className="welcome-modal-typologies" aria-label={t('welcomeModal.typologiesLabel')}>
+                    {TYPOLOGIES.map(typology => {
+                      const label = t(`typology.${typology}`, { defaultValue: typology });
+
+                      return (
+                        <li key={typology} className="welcome-modal-typology">
+                          <Tooltip.Root>
+                            <Tooltip.Trigger asChild>
+                              <button
+                                type="button"
+                                className="welcome-modal-typology-trigger"
+                                aria-label={label}
+                              >
+                                <PinIcon
+                                  name={TYPOLOGY_ICONS[typology] ?? DEFAULT_ICON}
+                                  size={20}
+                                  className="welcome-modal-typology-icon"
+                                />
+                              </button>
+                            </Tooltip.Trigger>
+                            <Tooltip.Portal>
+                              <Tooltip.Content
+                                className="pill-tooltip welcome-modal-typology-tooltip"
+                                side="top"
+                                sideOffset={6}
+                                collisionPadding={12}
+                              >
+                                <p className="pill-tooltip-text">{label}</p>
+                                <Tooltip.Arrow asChild>
+                                  <span className="pill-tooltip-arrow">
+                                    <span className="pill-tooltip-arrow-shape" aria-hidden="true" />
+                                  </span>
+                                </Tooltip.Arrow>
+                              </Tooltip.Content>
+                            </Tooltip.Portal>
+                          </Tooltip.Root>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </Tooltip.Provider>
+
+                <p>{t('welcomeModal.access')}</p>
+              </div>
+
+              <footer className="welcome-modal-footer">
+                <Dialog.Close type="button" className="pill active welcome-modal-dismiss">
+                  {t('welcomeModal.dismiss')}
+                </Dialog.Close>
+                <p className="welcome-modal-disclaimer">
+                  <Trans
+                    i18nKey="welcomeModal.disclaimer"
+                    components={{
+                      officialLink: (
+                        <a
+                          className="welcome-modal-disclaimer-link"
+                          href={shelterNetworkUrl(i18n.language)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        />
+                      ),
+                    }}
+                  />
+                </p>
+              </footer>
             </div>
-
-            <footer className="welcome-modal-footer">
-              <Dialog.Close type="button" className="pill active welcome-modal-dismiss">
-                {t('welcomeModal.dismiss')}
-              </Dialog.Close>
-              <p className="welcome-modal-disclaimer">
-                <Trans
-                  i18nKey="welcomeModal.disclaimer"
-                  components={{
-                    officialLink: (
-                      <a
-                        href={shelterNetworkUrl(i18n.language)}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      />
-                    ),
-                  }}
-                />
-              </p>
-            </footer>
           </div>
         </Dialog.Content>
       </Dialog.Portal>
