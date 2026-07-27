@@ -675,13 +675,13 @@ html, body {
 
 .detail-close {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 24px;
+  right: 24px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 35px;
+  height: 35px;
   border: var(--border-width) solid var(--border);
   border-radius: 0;
   background: var(--surface);
@@ -1225,10 +1225,10 @@ html, body {
 
   /* Bigger tap target for close button */
   .detail-close {
-    width: 44px;
-    height: 44px;
-    top: max(12px, env(safe-area-inset-top));
-    right: 12px;
+    width: 35px;
+    height: 35px;
+    top: max(24px, env(safe-area-inset-top));
+    right: 24px;
   }
 
   /* The detail view takes over the whole screen (not another stacked sheet
