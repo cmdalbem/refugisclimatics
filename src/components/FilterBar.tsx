@@ -33,7 +33,7 @@ export default function FilterBar({ shelters, activeTypology, onTypologyChange }
       <div id="filter-bar">
         <ul id="typology-list">
           <li
-            className={`pill${activeTypology === '' ? ' active' : ''}`}
+            className="pill"
             onClick={() => onTypologyChange('')}
           >
             <span>{t('filterBar.all')}</span>
