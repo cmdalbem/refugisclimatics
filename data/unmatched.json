@@ -16,6 +16,14 @@
     "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
   },
   {
+    "name": "Biblioteca Joan Maragall",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/biblioteca-joan-maragall-99400342694",
+    "district": "Sarrià-Sant Gervasi",
+    "address": "Carrer de Sant Gervasi de Cassoles, 85",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
     "name": "Biblioteca Josep Janés",
     "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/biblioteca-josep-janes-95328120348",
     "district": null,
@@ -112,14 +120,6 @@
     "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
   },
   {
-    "name": "Centre Cívic Navas",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/centre-civic-navas-99400305681",
-    "district": "Sant Andreu",
-    "address": "Carrer de Las Navas de Tolosa, 312",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
-  },
-  {
     "name": "Centre Cívic Palmira Domènech",
     "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/centre-civic-palmira-domenech-99400781423",
     "district": null,
@@ -172,22 +172,6 @@
     "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/mercat-de-la-florida-95052183509",
     "district": null,
     "address": "Sevilla, 2",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
-  },
-  {
-    "name": "Museo Picasso",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/museo-picasso-92086001333",
-    "district": "Ciutat Vella",
-    "address": "Carrer de Montcada, 15 - 23",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
-  },
-  {
-    "name": "Oficina de Turisme de Catalunya a Barcelona - Palau de Mar",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/oficina-de-turisme-de-catalunya-a-barcelona-palau-de-mar-99400063661",
-    "district": "Ciutat Vella",
-    "address": "Plaça de Pau Vila, 1 - 5",
     "has_coordinates": true,
     "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
   },
@@ -276,54 +260,6 @@
     "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-descoberta-96159092819",
     "district": null,
     "address": "C. Víctor Hugo, s/n",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
-  },
-  {
-    "name": "Cooperativa Cultural Rocaguinarda SCCL",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/cooperativa-cultural-rocaguinarda-sccl-99400267776",
-    "district": "Horta-Guinardó",
-    "address": "Carrer del Xiprer, 13",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
-  },
-  {
-    "name": "Farmàcia Gómez Sancho",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/farmacia-gomez-sancho-75990229793",
-    "district": "Sarrià-Sant Gervasi",
-    "address": "Passeig de la Bonanova, 105",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
-  },
-  {
-    "name": "Fundació Foto Colectania",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/fundacio-foto-colectania-75990704278",
-    "district": "Ciutat Vella",
-    "address": "Passeig de Picasso, 14",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
-  },
-  {
-    "name": "Llibreria Claret",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/llibreria-claret-75990073987",
-    "district": "Gràcia",
-    "address": "Carrer de Sicília, 410 - 412",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
-  },
-  {
-    "name": "CosmoCaixa Barcelona",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/cosmocaixa-barcelona-97042092100",
-    "district": "Sarrià-Sant Gervasi",
-    "address": "Carrer d'Isaac Newton, 26",
-    "has_coordinates": true,
-    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
-  },
-  {
-    "name": "Llibreria Jaimes",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/llibreria-jaimes-75990063997",
-    "district": "Eixample",
-    "address": "Carrer de València, 318",
     "has_coordinates": true,
     "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
   }
