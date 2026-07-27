@@ -1396,7 +1396,7 @@ html, body {
   position: fixed;
   inset: 0;
   z-index: 300;
-  background: rgba(243, 141, 3, 0.9);
+  background: rgba(243, 141, 3, 0.7);
 }
 
 [data-theme='dark'] .welcome-modal-overlay {
@@ -1409,13 +1409,16 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
   width: min(450px, calc(100vw - 32px));
   max-height: calc(100dvh - 32px);
   margin: 0;
   padding: 0;
-  border: none;
-  background: transparent;
-  overflow: visible;
+  border: var(--border-width) solid var(--border);
+  background: var(--surface);
+  box-shadow: 16px 0 48px var(--drawer-shadow);
+  overflow: hidden;
 }
 
 .welcome-modal:focus {
@@ -1426,10 +1429,7 @@ html, body {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-height: calc(100dvh - 32px);
-  background: var(--surface);
-  border: var(--border-width) solid var(--border);
-  box-shadow: 16px 0 48px var(--drawer-shadow);
+  min-height: 0;
   overflow: hidden;
 }
 
@@ -1437,7 +1437,7 @@ html, body {
   display: flex;
   flex-direction: column;
   min-height: 0;
-  padding: 0 28px 28px;
+  padding: 0 28px 0;
 }
 
 .welcome-modal-close {
@@ -1499,6 +1499,7 @@ html, body {
 
 .welcome-modal-body p {
   margin: 0 0 16px;
+  text-wrap: pretty;
 }
 
 .welcome-modal-body p:last-child {
@@ -1509,7 +1510,11 @@ html, body {
   margin-bottom: 10px;
 }
 
-.welcome-modal-typologies {
+.welcome-modal-access {
+  margin-bottom: 0;
+}
+
+.welcome-modal-icon-grid {
   list-style: none;
   margin: 0 0 20px;
   padding: 0;
@@ -1519,7 +1524,7 @@ html, body {
   border-left: var(--border-width) solid var(--border);
 }
 
-.welcome-modal-typology {
+.welcome-modal-icon-cell {
   display: flex;
   min-height: 40px;
   border-right: var(--border-width) solid var(--border);
@@ -1527,7 +1532,7 @@ html, body {
   background: var(--surface);
 }
 
-.welcome-modal-typology-trigger {
+.welcome-modal-icon-trigger {
   display: flex;
   flex: 1;
   align-items: center;
@@ -1541,11 +1546,11 @@ html, body {
   cursor: default;
 }
 
-.welcome-modal-typology-trigger:hover {
+.welcome-modal-icon-trigger:hover {
   background: var(--surface-hover);
 }
 
-.welcome-modal-typology-tooltip {
+.welcome-modal-icon-tooltip {
   z-index: 400;
   width: auto;
   max-width: min(240px, calc(100vw - 24px));
@@ -1555,7 +1560,7 @@ html, body {
   letter-spacing: -0.01em;
 }
 
-.welcome-modal-typology-tooltip .pill-tooltip-text {
+.welcome-modal-icon-tooltip .pill-tooltip-text {
   margin: 0;
 }
 
@@ -1563,10 +1568,8 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 16px;
-  margin-top: 24px;
-  padding-top: 20px;
-  border-top: var(--border-width) solid var(--border);
+  margin-top: 28px;
+  padding-bottom: 16px;
 }
 
 .welcome-modal-dismiss {
@@ -1580,10 +1583,13 @@ html, body {
 }
 
 .welcome-modal-disclaimer {
+  flex-shrink: 0;
   margin: 0;
+  padding: 0 28px 28px;
   font-size: var(--font-size-small);
   line-height: 1.45;
   color: var(--text-muted);
+  text-wrap: pretty;
 }
 
 .welcome-modal-disclaimer-link {
@@ -1602,10 +1608,18 @@ html, body {
   .welcome-modal {
     width: calc(100vw - 24px);
     max-height: calc(100dvh - 24px);
+    gap: 16px;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    overflow: visible;
   }
 
   .welcome-modal-panel {
-    max-height: calc(100dvh - 24px);
+    min-height: 0;
+    background: var(--surface);
+    border: var(--border-width) solid var(--border);
+    box-shadow: 16px 0 48px var(--drawer-shadow);
   }
 
   .welcome-modal-header {
@@ -1613,7 +1627,11 @@ html, body {
   }
 
   .welcome-modal-content {
-    padding: 0 24px 24px;
+    padding: 0 24px 0;
+  }
+
+  .welcome-modal-footer {
+    padding-bottom: 24px;
   }
 
   .welcome-modal-close {
@@ -1623,12 +1641,22 @@ html, body {
     right: 12px;
   }
 
-  .welcome-modal-typologies,
+  .welcome-modal-icon-grid,
   .welcome-modal-typologies-hint {
     display: none;
   }
 
   .welcome-modal-body {
     font-size: var(--font-size-small);
+  }
+
+  .welcome-modal-disclaimer {
+    padding: 0 8px;
+    color: #111;
+    text-align: center;
+  }
+
+  .welcome-modal-disclaimer-link {
+    color: inherit;
   }
 }

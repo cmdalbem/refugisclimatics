@@ -2,7 +2,11 @@ import { useEffect, useState } from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
 import * as Tooltip from '@radix-ui/react-tooltip';
 import { Trans, useTranslation } from 'react-i18next';
-import { shelterNetworkUrl, TYPOLOGY_ICONS, DEFAULT_ICON } from '../constants';
+import {
+  shelterNetworkUrl,
+  TYPOLOGY_ICONS,
+  DEFAULT_ICON,
+} from '../constants';
 import LogoTitle from './LogoTitle';
 import PinIcon from './PinIcon';
 
@@ -70,29 +74,29 @@ export default function WelcomeModal({ ready, onOpenChange }: Props) {
                 </p>
 
                 <Tooltip.Provider delayDuration={0} disableHoverableContent skipDelayDuration={0}>
-                  <ul className="welcome-modal-typologies" aria-label={t('welcomeModal.typologiesLabel')}>
+                  <ul className="welcome-modal-icon-grid" aria-label={t('welcomeModal.typologiesLabel')}>
                     {TYPOLOGIES.map(typology => {
                       const label = t(`typology.${typology}`, { defaultValue: typology });
 
                       return (
-                        <li key={typology} className="welcome-modal-typology">
+                        <li key={typology} className="welcome-modal-icon-cell">
                           <Tooltip.Root>
                             <Tooltip.Trigger asChild>
                               <button
                                 type="button"
-                                className="welcome-modal-typology-trigger"
+                                className="welcome-modal-icon-trigger"
                                 aria-label={label}
                               >
                                 <PinIcon
                                   name={TYPOLOGY_ICONS[typology] ?? DEFAULT_ICON}
                                   size={20}
-                                  className="welcome-modal-typology-icon"
+                                  className="welcome-modal-icon"
                                 />
                               </button>
                             </Tooltip.Trigger>
                             <Tooltip.Portal>
                               <Tooltip.Content
-                                className="pill-tooltip welcome-modal-typology-tooltip"
+                                className="pill-tooltip welcome-modal-icon-tooltip"
                                 side="top"
                                 sideOffset={6}
                                 collisionPadding={12}
@@ -112,31 +116,32 @@ export default function WelcomeModal({ ready, onOpenChange }: Props) {
                   </ul>
                 </Tooltip.Provider>
 
-                <p>{t('welcomeModal.access')}</p>
+                <p className="welcome-modal-access">{t('welcomeModal.access')}</p>
               </div>
 
               <footer className="welcome-modal-footer">
                 <Dialog.Close type="button" className="pill active welcome-modal-dismiss">
                   {t('welcomeModal.dismiss')}
                 </Dialog.Close>
-                <p className="welcome-modal-disclaimer">
-                  <Trans
-                    i18nKey="welcomeModal.disclaimer"
-                    components={{
-                      officialLink: (
-                        <a
-                          className="welcome-modal-disclaimer-link"
-                          href={shelterNetworkUrl(i18n.language)}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        />
-                      ),
-                    }}
-                  />
-                </p>
               </footer>
             </div>
           </div>
+
+          <p className="welcome-modal-disclaimer">
+            <Trans
+              i18nKey="welcomeModal.disclaimer"
+              components={{
+                officialLink: (
+                  <a
+                    className="welcome-modal-disclaimer-link"
+                    href={shelterNetworkUrl(i18n.language)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  />
+                ),
+              }}
+            />
+          </p>
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>
