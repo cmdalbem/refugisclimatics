@@ -11,12 +11,38 @@ const STORAGE_KEY = 'lang';
 export const SUPPORTED_LANGUAGES = ['ca', 'es', 'en', 'pt-BR'] as const;
 export type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
 
+function matchSupportedLanguage(language: string): SupportedLanguage | null {
+  const exact = SUPPORTED_LANGUAGES.find(code => language === code);
+  if (exact) return exact;
+
+  const base = language.split('-')[0];
+  if (base === 'pt') return 'pt-BR';
+
+  return SUPPORTED_LANGUAGES.find(code => code === base || code.startsWith(`${base}-`)) ?? null;
+}
+
+export function resolveLanguage(language: string): SupportedLanguage {
+  return matchSupportedLanguage(language) ?? 'en';
+}
+
 function getInitialLanguage(): SupportedLanguage {
   const stored = localStorage.getItem(STORAGE_KEY);
   if (stored && SUPPORTED_LANGUAGES.includes(stored as SupportedLanguage)) {
     return stored as SupportedLanguage;
   }
-  return 'ca';
+
+  const candidates = navigator.languages?.length
+    ? navigator.languages
+    : [navigator.language];
+
+  for (const candidate of candidates) {
+    const matched = matchSupportedLanguage(candidate);
+    if (!matched) continue;
+    // Barcelona context: Spanish browser locale → Catalan by default
+    return matched === 'es' ? 'ca' : matched;
+  }
+
+  return 'en';
 }
 
 i18n.use(initReactI18next).init({
@@ -27,7 +53,7 @@ i18n.use(initReactI18next).init({
     'pt-BR': { translation: ptBR },
   },
   lng: getInitialLanguage(),
-  fallbackLng: 'ca',
+  fallbackLng: 'en',
   interpolation: {
     escapeValue: false,
   },

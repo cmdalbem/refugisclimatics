@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import { SUPPORTED_LANGUAGES } from '../i18n';
+import { resolveLanguage, SUPPORTED_LANGUAGES } from '../i18n';
 
 const LANGUAGE_LABELS: Record<(typeof SUPPORTED_LANGUAGES)[number], string> = {
   ca: 'CAT',
@@ -11,10 +11,6 @@ const LANGUAGE_LABELS: Record<(typeof SUPPORTED_LANGUAGES)[number], string> = {
 
 interface Props {
   variant?: 'default' | 'on-gradient' | 'mobile';
-}
-
-function resolveLanguage(language: string): (typeof SUPPORTED_LANGUAGES)[number] {
-  return SUPPORTED_LANGUAGES.find(code => language === code || language.startsWith(`${code}-`)) ?? 'ca';
 }
 
 export default function LanguageSwitcher({ variant = 'default' }: Props) {
