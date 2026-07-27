@@ -5,12 +5,12 @@
   },
   "welcomeModal": {
     "title": "What are climate shelters?",
-    "lead": "Climate shelters are spaces where you can protect yourself from heat in summer and cold in winter.",
+    "lead": "Barcelona’s refugis climàtics (climate shelters) are spaces where you can protect yourself from heat in summer and cold in winter.",
     "variety": "There are indoor spaces, such as libraries or civic centres, and outdoor ones, such as parks or hidden courtyard gardens.",
     "access": "They are clearly signposted, and most are free, accessible, and open all year, with amenities such as drinking water, toilets or wifi.",
     "typologiesLabel": "Types of climate shelters",
     "typologiesHint": "Hover below to see all the others.",
-    "disclaimer": "The climate shelter network is a Barcelona City Council initiative. <officialLink>More information at barcelona.cat</officialLink>",
+    "disclaimer": "The shelter network is a City Council initiative. This app is independent and built on their open data. <officialLink>More information at barcelona.cat</officialLink>",
     "dismiss": "Start exploring",
     "close": "Close"
   },
