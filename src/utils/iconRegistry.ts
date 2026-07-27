@@ -26,7 +26,7 @@ import wifi from '@waysidemapping/pinhead/dist/icons/wifi.svg?raw';
 import x from '@waysidemapping/pinhead/dist/icons/x.svg?raw';
 import { DEFAULT_ICON } from '../constants';
 
-export const ICON_SVGS: Record<string, string> = {
+const ICON_SVGS: Record<string, string> = {
   baby,
   barbell,
   chapel,

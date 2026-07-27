@@ -26,7 +26,7 @@ export function formatDistance(km: number): string {
   return km < 1 ? `${Math.round(km * 1000)}m` : `${km.toFixed(1)}km`;
 }
 
-export function latitudeGradientKm(lat: number): number {
+function latitudeGradientKm(lat: number): number {
   const span = GRADIENT_LAT_MAX - GRADIENT_LAT_MIN;
   const t = span <= 0 ? 0 : Math.min(Math.max((lat - GRADIENT_LAT_MIN) / span, 0), 1);
   return t * COLOR_GRADIENT_MAX_KM;

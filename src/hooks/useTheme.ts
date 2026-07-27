@@ -19,7 +19,7 @@ export function getCurrentTheme(): Theme {
   return (document.documentElement.dataset.theme as Theme | undefined) ?? getStoredTheme();
 }
 
-export function applyTheme(theme: Theme) {
+function applyTheme(theme: Theme) {
   document.documentElement.dataset.theme = theme;
   listeners.forEach(listener => listener());
 }

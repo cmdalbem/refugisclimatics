@@ -23,7 +23,6 @@
   --notice-color: #D97B0A;
   --brand-blue: #3A84B3;
   --brand-red: #E84D26;
-  --gradient-stops: #3A84B3, #839C7A, #C7B640, #F39619, #E84D26;
   --radius: 10px;
   --sidebar-width: 420px;
   --drawer-width: 420px;
@@ -1320,10 +1319,6 @@ html, body {
 
   .theme-toggle--mobile {
     display: inline-flex;
-  }
-
-  [data-theme='dark'] .language-switcher--mobile .language-switcher-select {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 8 5'%3E%3Cpath d='M1 1l3 3 3-3' fill='none' stroke='%23e8e8e6' stroke-width='1' stroke-linecap='square'/%3E%3C/svg%3E");
   }
 
   #map-location-btn {

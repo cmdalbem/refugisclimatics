@@ -23,7 +23,7 @@ export function mapBasemapConfigForTheme(theme: 'light' | 'dark') {
     ? { lightPreset: 'night', theme: 'monochrome' }
     : { lightPreset: 'day', theme: 'faded' };
 }
-export const OFFICIAL_SHELTER_NETWORK_URL =
+const OFFICIAL_SHELTER_NETWORK_URL =
   'https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos';
 
 const SHELTER_NETWORK_URLS: Record<string, string> = {
@@ -58,8 +58,6 @@ export const DRAWER_TRANSITION_MS = 300;
 export const DEFAULT_MARKER_COLOR = '#3A84B3';
 export const DEFAULT_ICON = 'map_pin';
 
-// Maps each data typology key to a Pinhead icon id
-export const FREE_ACCESS_CHARACTERISTIC = 'Acceso gratuito';
 export const PAID_ACCESS_CHARACTERISTIC = 'Acceso de pago';
 
 // Priority order for amenity characteristics in detail views (positive only).
@@ -95,6 +93,7 @@ export function priorityAmenityIcons(
   return keys;
 }
 
+// Maps each data typology key to a Pinhead icon id
 export const TYPOLOGY_ICONS: Record<string, string> = {
   Bibliotecas: 'open_book',
   'Centros comerciales': 'shopping_basket',
@@ -116,7 +115,7 @@ export const TYPOLOGY_ICONS: Record<string, string> = {
   Universidades: 'square_academic_cap',
 };
 
-// Radial gradient: blue (close) → green → yellow → orange → red (far)
+// Distance color: blue (close) → yellow → orange → red (far)
 export const DISTANCE_GRADIENT_STOPS = ['#3187B8', '#F6AF2F', '#F38D03', '#E83E25'];
 export const COLOR_GRADIENT_MAX_KM = 1.5;
 export const GRADIENT_LAT_MIN = 41.352;

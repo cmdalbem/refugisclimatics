@@ -1,7 +1,7 @@
 import type { Shelter } from '../types';
 import { shelterId } from './distance';
 
-export function slugify(text: string): string {
+function slugify(text: string): string {
   return text
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
