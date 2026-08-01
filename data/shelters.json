@@ -202,56 +202,6 @@
     "match_status": "matched"
   },
   {
-    "name": "Biblioteca - Escola d'Enginyeria de Barcelona Est - UPC",
-    "typology": "Bibliotecas",
-    "characteristics": [
-      "Amb aigua per beure",
-      "Con lavabo",
-      "Con internet para uso público",
-      "No se admiten animales de compañía",
-      "Accesible para personas con discapacidad física",
-      "Interior",
-      "Titularidad Pública",
-      "Acceso gratuito"
-    ],
-    "opening_hours_raw": [
-      [
-        "Horari al llarg de l'any",
-        "De dilluns a divendres",
-        "de 08.30 h a 20.30 h"
-      ],
-      [
-        "Estiu 2026 Del 26 juny al 31 juliol",
-        "De dilluns a divendres excepte 31 Julio",
-        "de 08.30 h a 14.00 h"
-      ],
-      [
-        "De l'1 Agosto al 31 Agosto",
-        "Tots els dies tancat",
-        "Tancada"
-      ],
-      [
-        "De l'1 Septiembre al 4 Septiembre",
-        "De dilluns a divendres",
-        "de 08.30 h a 14.00 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/biblioteca-92086019686",
-    "address": "Av Eduard Maristany, 16",
-    "district": "Sant Martí",
-    "neighborhood": "el Besòs i el Maresme",
-    "lat": 41.412651947747435,
-    "lon": 2.2220511148010376,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.412651947747435,2.2220511148010376&hasta_txt=Biblioteca",
-    "contact_type": "E-mail",
-    "contact_value": "biblioteca.eebe@upc.edu",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-period current\" rowspan=1><div><p style=\"margin:0\">Horari al llarg de l'any</p></div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.30&nbsp;h a 20.30&nbsp;h</div></td></tr><tr><td class=\"timetable-period current\" rowspan=1><div><p style=\"margin:0\">Estiu 2026</p><p style=\"margin:0\">Del 26 juny al 31 juliol</p></div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres excepte 31 juliol</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.30&nbsp;h a 14.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period\" rowspan=1><div>De l'1 agost al 31 agost</div></td><td class=\"timetable-day\" rowspan=1><div>Tots els dies tancat</div></td><td class=\"timetable-hour\" rowspan=1><div><p style=\"margin:0\">Tancada</p></div></td></tr><tr><td class=\"timetable-period\" rowspan=1><div>De l'1 setembre al 4 setembre</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.30&nbsp;h a 14.00&nbsp;h</div></td></tr></table>",
-    "register_id": "92086019686",
-    "match_status": "matched"
-  },
-  {
     "name": "Biblioteca - Escola Politècnica Superior d'Edificació de Barcelona - UPC",
     "typology": "Bibliotecas",
     "characteristics": [
@@ -299,6 +249,56 @@
     "contact_value": "https://bibliotecnica.upc.edu/epseb",
     "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-period\" rowspan=1><div><p style=\"margin:0\">Horari al llarg de l'any</p></div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.30&nbsp;h a 20.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period current\" rowspan=1><div><p style=\"margin:0\">Estiu 2026</p><p style=\"margin:0\">Del 23 juny al 31 juliol</p></div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.30&nbsp;h a 14.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period\" rowspan=1><div>De l'1 agost al 31 agost</div></td><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">Tots els dies</p></div></td><td class=\"timetable-hour\" rowspan=1><div><p style=\"margin:0\">Tancada</p></div></td></tr><tr><td class=\"timetable-period\" rowspan=1><div>De l'1 setembre al 4 setembre</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.30&nbsp;h a 14.00&nbsp;h</div></td></tr></table>",
     "register_id": "99400737844",
+    "match_status": "matched"
+  },
+  {
+    "name": "Biblioteca - Escola d'Enginyeria de Barcelona Est - UPC",
+    "typology": "Bibliotecas",
+    "characteristics": [
+      "Amb aigua per beure",
+      "Con lavabo",
+      "Con internet para uso público",
+      "No se admiten animales de compañía",
+      "Accesible para personas con discapacidad física",
+      "Interior",
+      "Titularidad Pública",
+      "Acceso gratuito"
+    ],
+    "opening_hours_raw": [
+      [
+        "Horari al llarg de l'any",
+        "De dilluns a divendres",
+        "de 08.30 h a 20.30 h"
+      ],
+      [
+        "Estiu 2026 Del 26 juny al 31 juliol",
+        "De dilluns a divendres excepte 31 Julio",
+        "de 08.30 h a 14.00 h"
+      ],
+      [
+        "De l'1 Agosto al 31 Agosto",
+        "Tots els dies tancat",
+        "Tancada"
+      ],
+      [
+        "De l'1 Septiembre al 4 Septiembre",
+        "De dilluns a divendres",
+        "de 08.30 h a 14.00 h"
+      ]
+    ],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/biblioteca-92086019686",
+    "address": "Av Eduard Maristany, 16",
+    "district": "Sant Martí",
+    "neighborhood": "el Besòs i el Maresme",
+    "lat": 41.412651947747435,
+    "lon": 2.2220511148010376,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.412651947747435,2.2220511148010376&hasta_txt=Biblioteca",
+    "contact_type": "E-mail",
+    "contact_value": "biblioteca.eebe@upc.edu",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-period current\" rowspan=1><div><p style=\"margin:0\">Horari al llarg de l'any</p></div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.30&nbsp;h a 20.30&nbsp;h</div></td></tr><tr><td class=\"timetable-period current\" rowspan=1><div><p style=\"margin:0\">Estiu 2026</p><p style=\"margin:0\">Del 26 juny al 31 juliol</p></div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres excepte 31 juliol</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.30&nbsp;h a 14.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period\" rowspan=1><div>De l'1 agost al 31 agost</div></td><td class=\"timetable-day\" rowspan=1><div>Tots els dies tancat</div></td><td class=\"timetable-hour\" rowspan=1><div><p style=\"margin:0\">Tancada</p></div></td></tr><tr><td class=\"timetable-period\" rowspan=1><div>De l'1 setembre al 4 setembre</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.30&nbsp;h a 14.00&nbsp;h</div></td></tr></table>",
+    "register_id": "92086019686",
     "match_status": "matched"
   },
   {
@@ -2297,81 +2297,6 @@
     "match_status": "matched"
   },
   {
-    "name": "Biblioteca La Trinitat Vella – José Barbero",
-    "typology": "Bibliotecas",
-    "characteristics": [
-      "Amb aigua per beure",
-      "Con lavabo",
-      "Con internet para uso público",
-      "No se admiten animales de compañía",
-      "Accesible para personas con discapacidad física",
-      "Interior",
-      "Titularidad Pública",
-      "Acceso gratuito"
-    ],
-    "opening_hours_raw": [
-      [
-        "Horari habitual al llarg de l'any",
-        "Dilluns i divendres",
-        "de 15.30 h a 20.00 h"
-      ],
-      [
-        "",
-        "Dimarts, dimecres i dijous excepte dimarts 23 de juny",
-        "de 09.30 h a 13.30 h i de 15.30 h a 20.00 h"
-      ],
-      [
-        "",
-        "Dimarts 23 de juny",
-        "de 09.30 h a 13.30 h"
-      ],
-      [
-        "",
-        "Dissabte",
-        "de 10.00 h a 14.00 h"
-      ],
-      [
-        "Estiu 2026 Del 24 juny al 31 juliol",
-        "Dilluns i divendres",
-        "de 15.30 h a 20.00 h"
-      ],
-      [
-        "",
-        "Dimarts, dimecres i dijous",
-        "de 09.30 h a 13.30 h i de 15.30 h a 20.00 h"
-      ],
-      [
-        "De l'1 Agosto al 31 Agosto",
-        "Tots els dies",
-        "Tancada"
-      ],
-      [
-        "De l'1 Septiembre al 24 Septiembre",
-        "Dilluns i divendres",
-        "de 15.30 h a 20.00 h"
-      ],
-      [
-        "",
-        "Dimarts, dimecres i dijous",
-        "de 09.30 h a 13.30 h i de 15.30 h a 20.00 h"
-      ]
-    ],
-    "notice": "Con motivo de la huelga convocada los sábados, no se podrá garantizar la obertura de las bibliotecas ni tampoco que se puedan llevar a cabo los servicios habituales.",
-    "image_url": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/Biblioteca_Trinitat_Vella_-_Jose_Barbero_IMATGE_PRINCIPAL.760x428.28bba1c9.jpg",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/biblioteca-la-trinitat-vella-jose-barbero-99400287783",
-    "address": "Carrer de Galícia, 16",
-    "district": "Sant Andreu",
-    "neighborhood": "la Trinitat Vella",
-    "lat": 41.44931398700405,
-    "lon": 2.1907655514008186,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.44931398700405,2.1907655514008186&hasta_txt=Biblioteca+La+Trinitat+Vella+–+José+Barbero",
-    "contact_type": "E-mail",
-    "contact_value": "b.barcelona.tv@diba.cat",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-period\" rowspan=4><div><p style=\"margin:0\">Horari habitual</p><p style=\"margin:0\">al llarg de l'any</p></div></td><td class=\"timetable-day\" rowspan=1><div>Dilluns i divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 15.30&nbsp;h a 20.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">Dimarts, dimecres i dijous </p><p style=\"margin:0\">excepte dimarts 23 de juny</p></div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.30&nbsp;h a 13.30&nbsp;h i <br>de 15.30&nbsp;h a 20.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">Dimarts 23 de juny</p></div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.30&nbsp;h a 13.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10.00&nbsp;h a 14.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period current\" rowspan=2><div><p style=\"margin:0\">Estiu 2026</p><p style=\"margin:0\">Del 24 juny al 31 juliol</p></div></td><td class=\"timetable-day\" rowspan=1><div>Dilluns i divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 15.30&nbsp;h a 20.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dimarts, dimecres i dijous</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.30&nbsp;h a 13.30&nbsp;h i <br>de 15.30&nbsp;h a 20.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period\" rowspan=1><div>De l'1 agost al 31 agost</div></td><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">Tots els dies</p></div></td><td class=\"timetable-hour\" rowspan=1><div><p style=\"margin:0\">Tancada</p></div></td></tr><tr><td class=\"timetable-period\" rowspan=2><div>De l'1 setembre al 24 setembre</div></td><td class=\"timetable-day\" rowspan=1><div>Dilluns i divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 15.30&nbsp;h a 20.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dimarts, dimecres i dijous</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.30&nbsp;h a 13.30&nbsp;h i <br>de 15.30&nbsp;h a 20.00&nbsp;h</div></td></tr></table>",
-    "register_id": "99400287783",
-    "match_status": "matched"
-  },
-  {
     "name": "Biblioteca La Vila Olímpica - Xavier Benguerel",
     "typology": "Bibliotecas",
     "characteristics": [
@@ -4036,32 +3961,6 @@
     "match_status": "matched"
   },
   {
-    "name": "Refugi Climàtic - Església Evangèlica Baptista de Gràcia",
-    "typology": "Centros de culto",
-    "characteristics": [
-      "Amb aigua per beure",
-      "Con lavabo",
-      "Accesible para personas con discapacidad física",
-      "Interior",
-      "Acceso gratuito"
-    ],
-    "opening_hours_raw": [],
-    "notice": null,
-    "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/refugi-climatic-99400781746",
-    "address": "Carrer de Verdi, 189 - 195",
-    "district": "Gràcia",
-    "neighborhood": "la Vila de Gràcia",
-    "lat": 41.40818120958115,
-    "lon": 2.1525456960814227,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.40818120958115,2.1525456960814227&hasta_txt=Refugi+Climàtic",
-    "contact_type": null,
-    "contact_value": null,
-    "timetable_raw": "",
-    "register_id": "99400781746",
-    "match_status": "matched"
-  },
-  {
     "name": "Refugi Climàtic - Parròquia de Sant Miquel del Port",
     "typology": "Centros de culto",
     "characteristics": [
@@ -4093,6 +3992,32 @@
     "contact_value": "santmiquel145@arqbcn.org",
     "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>Cada dia</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.45&nbsp;h a 13.00&nbsp;h</div></td></tr></table>",
     "register_id": "99400738065",
+    "match_status": "matched"
+  },
+  {
+    "name": "Refugi Climàtic - Església Evangèlica Baptista de Gràcia",
+    "typology": "Centros de culto",
+    "characteristics": [
+      "Amb aigua per beure",
+      "Con lavabo",
+      "Accesible para personas con discapacidad física",
+      "Interior",
+      "Acceso gratuito"
+    ],
+    "opening_hours_raw": [],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/refugi-climatic-99400781746",
+    "address": "Carrer de Verdi, 189 - 195",
+    "district": "Gràcia",
+    "neighborhood": "la Vila de Gràcia",
+    "lat": 41.40818120958115,
+    "lon": 2.1525456960814227,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.40818120958115,2.1525456960814227&hasta_txt=Refugi+Climàtic",
+    "contact_type": null,
+    "contact_value": null,
+    "timetable_raw": "",
+    "register_id": "99400781746",
     "match_status": "matched"
   },
   {
@@ -7024,6 +6949,52 @@
     "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-period current\" rowspan=1><div><p style=\"margin:0\">De setembre al juliol </p></div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10.00&nbsp;h a 13.30&nbsp;h i <br>de 16.00&nbsp;h a 20.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period\" rowspan=1><div><p style=\"margin:0\">Agost</p></div></td><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">Tancat</p></div></td><td class=\"timetable-hour\" rowspan=1><div><p style=\"margin:0\">.</p></div></td></tr></table>",
     "register_id": "99400201447",
     "match_status": "matched"
+  },
+  {
+    "name": "Casal de Barri Font d'en Fargues",
+    "typology": "Equipos de proximidad",
+    "characteristics": [
+      "Puntos de conexión Barcelona WiFi",
+      "Amb aigua per beure",
+      "Con lavabo",
+      "Con internet para uso público",
+      "No se admiten animales de compañía",
+      "Accesible para personas con discapacidad física",
+      "Interior",
+      "Titularidad Pública",
+      "Acceso gratuito"
+    ],
+    "opening_hours_raw": [
+      [
+        "De l'1 Septiembre al 19 Julio",
+        "De dilluns a divendres",
+        "de 09.00 h a 20.00 h"
+      ],
+      [
+        "Del 20 Julio al 26 Julio",
+        "",
+        "de 09.00 h a 14.00 h"
+      ],
+      [
+        "Del 27 Julio al 31 Agosto",
+        "Tots els dies",
+        "Tancat"
+      ]
+    ],
+    "notice": null,
+    "image_url": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/92086003483-fontdenfargues-petita.jpg",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/casal-de-barri-font-d-en-fargues-92086003483",
+    "address": "Carrer de Pedrell, 67 - 69",
+    "district": "Horta-Guinardó",
+    "neighborhood": "la Font d'en Fargues",
+    "lat": 41.42430368720732,
+    "lon": 2.165216440288791,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.42430368720732,2.165216440288791&hasta_txt=Casal+de+Barri+Font+d'en+Fargues",
+    "contact_type": null,
+    "contact_value": null,
+    "timetable_raw": null,
+    "register_id": null,
+    "match_status": "cms_only"
   },
   {
     "name": "Casal de Barri La Barraca del Carmel",
@@ -11770,49 +11741,6 @@
     "match_status": "matched"
   },
   {
-    "name": "Espai Maria Lluïsa Serralta *Tancat",
-    "typology": "Equipos de proximidad",
-    "characteristics": [
-      "Amb aigua per beure",
-      "Con lavabo",
-      "Con internet para uso público",
-      "Accesible para personas con discapacidad física",
-      "Interior",
-      "Acceso gratuito"
-    ],
-    "opening_hours_raw": [
-      [
-        "",
-        "Dilluns",
-        "de 09.00 h a 14.00 h"
-      ],
-      [
-        "",
-        "Dimarts, dimecres, dijous i divendres",
-        "de 09.00 h a 14.00 h i de 16.00 h a 21.00 h"
-      ],
-      [
-        "",
-        "Dissabte",
-        "de 09.00 h a 14.00 h"
-      ]
-    ],
-    "notice": "Previsió d'entrada en funcionament juliol 2026",
-    "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/espai-maria-lluisa-serralta-tancat-99400780948",
-    "address": "Carrer d'Alonso Cano, 1",
-    "district": "Nou Barris",
-    "neighborhood": "Verdun",
-    "lat": 41.441629240243074,
-    "lon": 2.1730892236070307,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.441629240243074,2.1730892236070307&hasta_txt=Espai+Maria+Lluïsa+Serralta+*Tancat",
-    "contact_type": "Text per a la web de Refugis Climàtics - detalls",
-    "contact_value": "<p>Data prevsita d'obertura: Juliol 2026</p>",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dilluns</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 14.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dimarts, dimecres, dijous i divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 14.00&nbsp;h i <br>de 16.00&nbsp;h a 21.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 14.00&nbsp;h</div></td></tr></table>",
-    "register_id": "99400780948",
-    "match_status": "matched"
-  },
-  {
     "name": "Espai Veïnal Olzinelles",
     "typology": "Equipos de proximidad",
     "characteristics": [
@@ -13011,6 +12939,41 @@
     "match_status": "matched"
   },
   {
+    "name": "Espai amb Jocs d'Aigua - Jardins Sant Joan de Déu",
+    "typology": "Espacios de juegos con agua",
+    "characteristics": [
+      "Amb aigua per beure",
+      "No se admiten animales de compañía",
+      "Sin lavabo",
+      "Sin internet para uso interno",
+      "Accesible para personas con discapacidad física",
+      "Al aire libre",
+      "Titularidad Pública",
+      "Acceso gratuito"
+    ],
+    "opening_hours_raw": [
+      [
+        "Del 29 Mayo al 30 Septiembre",
+        "Tots els dies",
+        "de 10.00 h a 20.00 h"
+      ]
+    ],
+    "notice": null,
+    "image_url": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/Sant_Joan_de_Deu_1.760x428.ef7ef6e9.jpg",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/espai-amb-jocs-d-aigua-99400757466",
+    "address": "Carrer de Constança, 18",
+    "district": "Les Corts",
+    "neighborhood": "les Corts",
+    "lat": 41.38968077805853,
+    "lon": 2.1365174682159362,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.38968077805853,2.1365174682159362&hasta_txt=Espai+amb+Jocs+d'Aigua",
+    "contact_type": "Text per a la web de Refugis Climàtics - detalls",
+    "contact_value": "<p>Durant episodis d'altes temperatures els espais exteriors poden no oferir el confort tèrmic necessari</p>",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"description\">Observacions</th></tr><tr><td class=\"timetable-period current\" rowspan=1><div>Del 29 maig al 30 setembre</div></td><td class=\"timetable-day\" rowspan=1><div>Tots els dies</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10.00&nbsp;h a 20.00&nbsp;h</div></td><td class=\"timetable-description\" rowspan=1><div><p style=\"margin:0\">Quan s’activa el polsador, la instal·lació fa una seqüencia</p><p style=\"margin:0\">de funcionament que dura un temps inferior als 5 minuts</p></div></td></tr></table>",
+    "register_id": "99400757466",
+    "match_status": "matched"
+  },
+  {
     "name": "Espai amb Jocs d'Aigua - Parc Antoni Santiburcio",
     "typology": "Espacios de juegos con agua",
     "characteristics": [
@@ -13044,41 +13007,6 @@
     "contact_value": "<p>Durant episodis d'altes temperatures els espais exteriors poden no oferir el confort tèrmic necessari</p>",
     "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"description\">Observacions</th></tr><tr><td class=\"timetable-period current\" rowspan=1><div><p style=\"margin:0\">De juny a setembre</p></div></td><td class=\"timetable-day\" rowspan=1><div>Tots els dies</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10.00&nbsp;h a 20.00&nbsp;h</div></td><td class=\"timetable-description\" rowspan=1><div><p style=\"margin:0\">Quan s’activa el polsador, la instal·lació fa una seqüencia</p><p style=\"margin:0\">de funcionament que dura un temps inferior als 5 minuts</p></div></td></tr></table>",
     "register_id": "99400780972",
-    "match_status": "matched"
-  },
-  {
-    "name": "Espai amb Jocs d'Aigua - Jardins Sant Joan de Déu",
-    "typology": "Espacios de juegos con agua",
-    "characteristics": [
-      "Amb aigua per beure",
-      "No se admiten animales de compañía",
-      "Sin lavabo",
-      "Sin internet para uso interno",
-      "Accesible para personas con discapacidad física",
-      "Al aire libre",
-      "Titularidad Pública",
-      "Acceso gratuito"
-    ],
-    "opening_hours_raw": [
-      [
-        "Del 29 Mayo al 30 Septiembre",
-        "Tots els dies",
-        "de 10.00 h a 20.00 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/Sant_Joan_de_Deu_1.760x428.ef7ef6e9.jpg",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/espai-amb-jocs-d-aigua-99400757466",
-    "address": "Carrer de Constança, 18",
-    "district": "Les Corts",
-    "neighborhood": "les Corts",
-    "lat": 41.38968077805853,
-    "lon": 2.1365174682159362,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.38968077805853,2.1365174682159362&hasta_txt=Espai+amb+Jocs+d'Aigua",
-    "contact_type": "Text per a la web de Refugis Climàtics - detalls",
-    "contact_value": "<p>Durant episodis d'altes temperatures els espais exteriors poden no oferir el confort tèrmic necessari</p>",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"description\">Observacions</th></tr><tr><td class=\"timetable-period current\" rowspan=1><div>Del 29 maig al 30 setembre</div></td><td class=\"timetable-day\" rowspan=1><div>Tots els dies</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10.00&nbsp;h a 20.00&nbsp;h</div></td><td class=\"timetable-description\" rowspan=1><div><p style=\"margin:0\">Quan s’activa el polsador, la instal·lació fa una seqüencia</p><p style=\"margin:0\">de funcionament que dura un temps inferior als 5 minuts</p></div></td></tr></table>",
-    "register_id": "99400757466",
     "match_status": "matched"
   },
   {
@@ -18166,138 +18094,6 @@
     "match_status": "matched"
   },
   {
-    "name": "Refugi Climàtic Pati d'Escola - Escola Mercè Rodoreda",
-    "typology": "Patios de escuelas",
-    "characteristics": [
-      "Amb aigua per beure",
-      "No se admiten animales de compañía",
-      "Sin lavabo",
-      "Sin internet para uso interno",
-      "Accesible para personas con discapacidad física",
-      "Al aire libre",
-      "Acceso gratuito"
-    ],
-    "opening_hours_raw": [
-      [
-        "De l'1 Junio al 20 Junio",
-        "Dissabte",
-        "d'11.00 h a 14.00 h"
-      ],
-      [
-        "Del 25 Junio al 31 Julio",
-        "Cada dia",
-        "de 18.00 h a 21.00 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/refugi-climatic-pati-d-escola-99400737906",
-    "address": "Carrer del Vesuvi, 35",
-    "district": "Nou Barris",
-    "neighborhood": "la Prosperitat",
-    "lat": 41.445868894480135,
-    "lon": 2.1857245692364806,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.445868894480135,2.1857245692364806&hasta_txt=Refugi+Climàtic+Pati+d'Escola",
-    "contact_type": "E-mail",
-    "contact_value": "a8039471@xtec.cat",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"prices\">Preus</th></tr><tr><td class=\"timetable-period\" rowspan=1><div>De l'1 juny al 20 juny</div></td><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>d'11.00&nbsp;h a 14.00&nbsp;h</div></td><td class=\"timetable-price\" rowspan=2><div>Entrada Gratuïta</div></td></tr><tr><td class=\"timetable-period current\" rowspan=1><div>Del 25 juny al 31 juliol</div></td><td class=\"timetable-day\" rowspan=1><div>Cada dia</div></td><td class=\"timetable-hour\" rowspan=1><div>de 18.00&nbsp;h a 21.00&nbsp;h</div></td></tr></table>",
-    "register_id": "99400737906",
-    "match_status": "colocated"
-  },
-  {
-    "name": "Refugi Climàtic Pati d'Escola - Escola Seat",
-    "typology": "Patios de escuelas",
-    "characteristics": [
-      "Amb aigua per beure",
-      "Con lavabo",
-      "No se admiten animales de compañía",
-      "Sin internet para uso interno",
-      "Accesible para personas con discapacidad física",
-      "Al aire libre",
-      "Acceso gratuito"
-    ],
-    "opening_hours_raw": [
-      [
-        "Juny",
-        "Dissabte 6, 13 i 20 de juny",
-        "de 16.30 h a 19.30 h"
-      ],
-      [
-        "",
-        "Diumenge 7, 14 i 21 juny",
-        "d'11.00 h a 14.00 h"
-      ],
-      [
-        "",
-        "Del 25 juny al 30 de juny",
-        "de 18.00 h a 21.00 h"
-      ],
-      [
-        "Juliol",
-        "Cada dia",
-        "de 18.00 h a 21.00 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/refugi-climatic-pati-d-escola-99400737910",
-    "address": "Passatge d'Antonio Ruiz Villalba, 6",
-    "district": "Sants-Montjuïc",
-    "neighborhood": "la Marina de Port",
-    "lat": 41.36004942767377,
-    "lon": 2.1384266320287693,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.36004942767377,2.1384266320287693&hasta_txt=Refugi+Climàtic+Pati+d'Escola",
-    "contact_type": "E-mail",
-    "contact_value": "ceipseat@xtec.cat",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"prices\">Preus</th></tr><tr><td class=\"timetable-period\" rowspan=3><div><p style=\"margin:0\">Juny</p></div></td><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">Dissabte</p><p style=\"margin:0\">6, 13 i 20 de juny</p></div></td><td class=\"timetable-hour\" rowspan=1><div>de 16.30&nbsp;h a 19.30&nbsp;h</div></td><td class=\"timetable-price\" rowspan=4><div>Entrada Gratuïta</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">Diumenge</p><p style=\"margin:0\">7, 14 i 21 juny</p></div></td><td class=\"timetable-hour\" rowspan=1><div>d'11.00&nbsp;h a 14.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">Del 25 juny al 30 de juny</p></div></td><td class=\"timetable-hour\" rowspan=1><div>de 18.00&nbsp;h a 21.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period current\" rowspan=1><div><p style=\"margin:0\">Juliol</p></div></td><td class=\"timetable-day\" rowspan=1><div>Cada dia</div></td><td class=\"timetable-hour\" rowspan=1><div>de 18.00&nbsp;h a 21.00&nbsp;h</div></td></tr></table>",
-    "register_id": "99400737910",
-    "match_status": "matched"
-  },
-  {
-    "name": "Refugi Climàtic Pati d'Escola - Escola Font d'en Fargas",
-    "typology": "Patios de escuelas",
-    "characteristics": [
-      "Amb aigua per beure",
-      "No se admiten animales de compañía",
-      "Sin lavabo",
-      "Sin internet para uso interno",
-      "No accessible per a persones amb discapacitat física",
-      "Al aire libre",
-      "Acceso gratuito"
-    ],
-    "opening_hours_raw": [
-      [
-        "De l'1 Junio al 30 Junio",
-        "Divendres 5, 12 i 19 de juny",
-        "de 16.30 h a 19.30 h"
-      ],
-      [
-        "",
-        "Diumenge 7, 14 i 21 de juny",
-        "d'11.00 h a 14.00 h i de 16.00 h a 20.00 h"
-      ],
-      [
-        "De l'1 Agosto al 31 Agosto",
-        "Cada dia",
-        "de 18.00 h a 21.00 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/refugi-climatic-pati-d-escola-99400737861",
-    "address": "Passeig de la Font d'en Fargas, 65",
-    "district": "Horta-Guinardó",
-    "neighborhood": "la Font d'en Fargues",
-    "lat": 41.42266294217902,
-    "lon": 2.165237995113779,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.42266294217902,2.165237995113779&hasta_txt=Refugi+Climàtic+Pati+d'Escola",
-    "contact_type": "E-mail",
-    "contact_value": "a8002721@xtec.cat",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"prices\">Preus</th></tr><tr><td class=\"timetable-period\" rowspan=2><div>De l'1 juny al 30 juny</div></td><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">Divendres</p><p style=\"margin:0\">5, 12 i 19 de juny</p></div></td><td class=\"timetable-hour\" rowspan=1><div>de 16.30&nbsp;h a 19.30&nbsp;h</div></td><td class=\"timetable-price\" rowspan=3><div>Entrada Gratuïta</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">Diumenge</p><p style=\"margin:0\">7, 14 i 21 de juny</p></div></td><td class=\"timetable-hour\" rowspan=1><div>d'11.00&nbsp;h a 14.00&nbsp;h i <br>de 16.00&nbsp;h a 20.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period\" rowspan=1><div>De l'1 agost al 31 agost</div></td><td class=\"timetable-day\" rowspan=1><div>Cada dia</div></td><td class=\"timetable-hour\" rowspan=1><div>de 18.00&nbsp;h a 21.00&nbsp;h</div></td></tr></table>",
-    "register_id": "99400737861",
-    "match_status": "matched"
-  },
-  {
     "name": "Refugi Climàtic Pati d'Escola - Escola Torrent de Can Carabassa",
     "typology": "Patios de escuelas",
     "characteristics": [
@@ -18383,6 +18179,138 @@
     "contact_value": "escola@baldirireixac.cat",
     "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"prices\">Preus</th></tr><tr><td class=\"timetable-period\" rowspan=2><div><p style=\"margin:0\">Juny</p></div></td><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">Divendres</p><p style=\"margin:0\">5, 12 i 19 de juny</p></div></td><td class=\"timetable-hour\" rowspan=1><div>de 16.30&nbsp;h a 19.30&nbsp;h</div></td><td  rowspan=1><div></div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">Del 25 juny al 30 de juny</p></div></td><td class=\"timetable-hour\" rowspan=1><div>de 18.00&nbsp;h a 21.00&nbsp;h</div></td><td class=\"timetable-price\" rowspan=2><div>Entrada Gratuïta</div></td></tr><tr><td class=\"timetable-period current\" rowspan=1><div><p style=\"margin:0\">Juliol</p></div></td><td class=\"timetable-day\" rowspan=1><div>Cada dia</div></td><td class=\"timetable-hour\" rowspan=1><div>de 18.00&nbsp;h a 21.00&nbsp;h</div></td></tr></table>",
     "register_id": "99400780866",
+    "match_status": "matched"
+  },
+  {
+    "name": "Refugi Climàtic Pati d'Escola - Escola Font d'en Fargas",
+    "typology": "Patios de escuelas",
+    "characteristics": [
+      "Amb aigua per beure",
+      "No se admiten animales de compañía",
+      "Sin lavabo",
+      "Sin internet para uso interno",
+      "No accessible per a persones amb discapacitat física",
+      "Al aire libre",
+      "Acceso gratuito"
+    ],
+    "opening_hours_raw": [
+      [
+        "De l'1 Junio al 30 Junio",
+        "Divendres 5, 12 i 19 de juny",
+        "de 16.30 h a 19.30 h"
+      ],
+      [
+        "",
+        "Diumenge 7, 14 i 21 de juny",
+        "d'11.00 h a 14.00 h i de 16.00 h a 20.00 h"
+      ],
+      [
+        "De l'1 Agosto al 31 Agosto",
+        "Cada dia",
+        "de 18.00 h a 21.00 h"
+      ]
+    ],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/refugi-climatic-pati-d-escola-99400737861",
+    "address": "Passeig de la Font d'en Fargas, 65",
+    "district": "Horta-Guinardó",
+    "neighborhood": "la Font d'en Fargues",
+    "lat": 41.42266294217902,
+    "lon": 2.165237995113779,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.42266294217902,2.165237995113779&hasta_txt=Refugi+Climàtic+Pati+d'Escola",
+    "contact_type": "E-mail",
+    "contact_value": "a8002721@xtec.cat",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"prices\">Preus</th></tr><tr><td class=\"timetable-period\" rowspan=2><div>De l'1 juny al 30 juny</div></td><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">Divendres</p><p style=\"margin:0\">5, 12 i 19 de juny</p></div></td><td class=\"timetable-hour\" rowspan=1><div>de 16.30&nbsp;h a 19.30&nbsp;h</div></td><td class=\"timetable-price\" rowspan=3><div>Entrada Gratuïta</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">Diumenge</p><p style=\"margin:0\">7, 14 i 21 de juny</p></div></td><td class=\"timetable-hour\" rowspan=1><div>d'11.00&nbsp;h a 14.00&nbsp;h i <br>de 16.00&nbsp;h a 20.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period\" rowspan=1><div>De l'1 agost al 31 agost</div></td><td class=\"timetable-day\" rowspan=1><div>Cada dia</div></td><td class=\"timetable-hour\" rowspan=1><div>de 18.00&nbsp;h a 21.00&nbsp;h</div></td></tr></table>",
+    "register_id": "99400737861",
+    "match_status": "matched"
+  },
+  {
+    "name": "Refugi Climàtic Pati d'Escola - Escola Mercè Rodoreda",
+    "typology": "Patios de escuelas",
+    "characteristics": [
+      "Amb aigua per beure",
+      "No se admiten animales de compañía",
+      "Sin lavabo",
+      "Sin internet para uso interno",
+      "Accesible para personas con discapacidad física",
+      "Al aire libre",
+      "Acceso gratuito"
+    ],
+    "opening_hours_raw": [
+      [
+        "De l'1 Junio al 20 Junio",
+        "Dissabte",
+        "d'11.00 h a 14.00 h"
+      ],
+      [
+        "Del 25 Junio al 31 Julio",
+        "Cada dia",
+        "de 18.00 h a 21.00 h"
+      ]
+    ],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/refugi-climatic-pati-d-escola-99400737906",
+    "address": "Carrer del Vesuvi, 35",
+    "district": "Nou Barris",
+    "neighborhood": "la Prosperitat",
+    "lat": 41.445868894480135,
+    "lon": 2.1857245692364806,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.445868894480135,2.1857245692364806&hasta_txt=Refugi+Climàtic+Pati+d'Escola",
+    "contact_type": "E-mail",
+    "contact_value": "a8039471@xtec.cat",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"prices\">Preus</th></tr><tr><td class=\"timetable-period\" rowspan=1><div>De l'1 juny al 20 juny</div></td><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>d'11.00&nbsp;h a 14.00&nbsp;h</div></td><td class=\"timetable-price\" rowspan=2><div>Entrada Gratuïta</div></td></tr><tr><td class=\"timetable-period current\" rowspan=1><div>Del 25 juny al 31 juliol</div></td><td class=\"timetable-day\" rowspan=1><div>Cada dia</div></td><td class=\"timetable-hour\" rowspan=1><div>de 18.00&nbsp;h a 21.00&nbsp;h</div></td></tr></table>",
+    "register_id": "99400737906",
+    "match_status": "colocated"
+  },
+  {
+    "name": "Refugi Climàtic Pati d'Escola - Escola Seat",
+    "typology": "Patios de escuelas",
+    "characteristics": [
+      "Amb aigua per beure",
+      "Con lavabo",
+      "No se admiten animales de compañía",
+      "Sin internet para uso interno",
+      "Accesible para personas con discapacidad física",
+      "Al aire libre",
+      "Acceso gratuito"
+    ],
+    "opening_hours_raw": [
+      [
+        "Juny",
+        "Dissabte 6, 13 i 20 de juny",
+        "de 16.30 h a 19.30 h"
+      ],
+      [
+        "",
+        "Diumenge 7, 14 i 21 juny",
+        "d'11.00 h a 14.00 h"
+      ],
+      [
+        "",
+        "Del 25 juny al 30 de juny",
+        "de 18.00 h a 21.00 h"
+      ],
+      [
+        "Juliol",
+        "Cada dia",
+        "de 18.00 h a 21.00 h"
+      ]
+    ],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/refugi-climatic-pati-d-escola-99400737910",
+    "address": "Passatge d'Antonio Ruiz Villalba, 6",
+    "district": "Sants-Montjuïc",
+    "neighborhood": "la Marina de Port",
+    "lat": 41.36004942767377,
+    "lon": 2.1384266320287693,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.36004942767377,2.1384266320287693&hasta_txt=Refugi+Climàtic+Pati+d'Escola",
+    "contact_type": "E-mail",
+    "contact_value": "ceipseat@xtec.cat",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"prices\">Preus</th></tr><tr><td class=\"timetable-period\" rowspan=3><div><p style=\"margin:0\">Juny</p></div></td><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">Dissabte</p><p style=\"margin:0\">6, 13 i 20 de juny</p></div></td><td class=\"timetable-hour\" rowspan=1><div>de 16.30&nbsp;h a 19.30&nbsp;h</div></td><td class=\"timetable-price\" rowspan=4><div>Entrada Gratuïta</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">Diumenge</p><p style=\"margin:0\">7, 14 i 21 juny</p></div></td><td class=\"timetable-hour\" rowspan=1><div>d'11.00&nbsp;h a 14.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">Del 25 juny al 30 de juny</p></div></td><td class=\"timetable-hour\" rowspan=1><div>de 18.00&nbsp;h a 21.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period current\" rowspan=1><div><p style=\"margin:0\">Juliol</p></div></td><td class=\"timetable-day\" rowspan=1><div>Cada dia</div></td><td class=\"timetable-hour\" rowspan=1><div>de 18.00&nbsp;h a 21.00&nbsp;h</div></td></tr></table>",
+    "register_id": "99400737910",
     "match_status": "matched"
   },
   {
@@ -18528,45 +18456,6 @@
     "match_status": "matched"
   },
   {
-    "name": "Refugi Climàtic Pati d'Escola - Escola Lluís Vives",
-    "typology": "Patios de escuelas",
-    "characteristics": [
-      "Amb aigua per beure",
-      "No se admiten animales de compañía",
-      "Sin lavabo",
-      "Sin internet para uso interno",
-      "Accesible para personas con discapacidad física",
-      "Al aire libre",
-      "Acceso gratuito"
-    ],
-    "opening_hours_raw": [
-      [
-        "De l'1 Junio al 20 Junio",
-        "Dissabte",
-        "d'11.00 h a 14.00 h i de 16.00 h a 19.00 h"
-      ],
-      [
-        "Del 25 Junio al 31 Agosto",
-        "Cada dia",
-        "de 18.00 h a 21.00 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/refugi-climatic-pati-d-escola-99400758401",
-    "address": "Carrer de Canalejas, 107",
-    "district": "Sants-Montjuïc",
-    "neighborhood": "Sants - Badal",
-    "lat": 41.37186290045591,
-    "lon": 2.1280851779733574,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.37186290045591,2.1280851779733574&hasta_txt=Refugi+Climàtic+Pati+d'Escola",
-    "contact_type": "E-mail",
-    "contact_value": "a8002010@xtec.cat",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"prices\">Preus</th></tr><tr><td class=\"timetable-period\" rowspan=1><div>De l'1 juny al 20 juny</div></td><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>d'11.00&nbsp;h a 14.00&nbsp;h i <br>de 16.00&nbsp;h a 19.00&nbsp;h</div></td><td class=\"timetable-price\" rowspan=2><div>Entrada Gratuïta</div></td></tr><tr><td class=\"timetable-period current\" rowspan=1><div>Del 25 juny al 31 agost</div></td><td class=\"timetable-day\" rowspan=1><div>Cada dia</div></td><td class=\"timetable-hour\" rowspan=1><div>de 18.00&nbsp;h a 21.00&nbsp;h</div></td></tr></table>",
-    "register_id": "99400758401",
-    "match_status": "matched"
-  },
-  {
     "name": "Refugi Climàtic Pati d'Escola - Escola Rius i Taulet",
     "typology": "Patios de escuelas",
     "characteristics": [
@@ -18608,6 +18497,45 @@
     "contact_value": "a8002113@xtec.cat",
     "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"prices\">Preus</th></tr><tr><td class=\"timetable-period\" rowspan=2><div><p style=\"margin:0\">Juny</p></div></td><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">Dissabte</p><p style=\"margin:0\">6, 13 i 20 de juny</p></div></td><td class=\"timetable-hour\" rowspan=1><div>d'11.00&nbsp;h a 14.00&nbsp;h</div></td><td class=\"timetable-price\" rowspan=3><div>Entrada Gratuïta</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div><p style=\"margin:0\">Diumenge</p><p style=\"margin:0\">7, 14 i 21 de juny</p></div></td><td class=\"timetable-hour\" rowspan=1><div>d'11.00&nbsp;h a 14.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period\" rowspan=1><div><p style=\"margin:0\">Agost</p></div></td><td class=\"timetable-day\" rowspan=1><div>Cada dia</div></td><td class=\"timetable-hour\" rowspan=1><div>de 18.00&nbsp;h a 21.00&nbsp;h</div></td></tr></table>",
     "register_id": "99400780755",
+    "match_status": "matched"
+  },
+  {
+    "name": "Refugi Climàtic Pati d'Escola - Escola Lluís Vives",
+    "typology": "Patios de escuelas",
+    "characteristics": [
+      "Amb aigua per beure",
+      "No se admiten animales de compañía",
+      "Sin lavabo",
+      "Sin internet para uso interno",
+      "Accesible para personas con discapacidad física",
+      "Al aire libre",
+      "Acceso gratuito"
+    ],
+    "opening_hours_raw": [
+      [
+        "De l'1 Junio al 20 Junio",
+        "Dissabte",
+        "d'11.00 h a 14.00 h i de 16.00 h a 19.00 h"
+      ],
+      [
+        "Del 25 Junio al 31 Agosto",
+        "Cada dia",
+        "de 18.00 h a 21.00 h"
+      ]
+    ],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/refugi-climatic-pati-d-escola-99400758401",
+    "address": "Carrer de Canalejas, 107",
+    "district": "Sants-Montjuïc",
+    "neighborhood": "Sants - Badal",
+    "lat": 41.37186290045591,
+    "lon": 2.1280851779733574,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.37186290045591,2.1280851779733574&hasta_txt=Refugi+Climàtic+Pati+d'Escola",
+    "contact_type": "E-mail",
+    "contact_value": "a8002010@xtec.cat",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"prices\">Preus</th></tr><tr><td class=\"timetable-period\" rowspan=1><div>De l'1 juny al 20 juny</div></td><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>d'11.00&nbsp;h a 14.00&nbsp;h i <br>de 16.00&nbsp;h a 19.00&nbsp;h</div></td><td class=\"timetable-price\" rowspan=2><div>Entrada Gratuïta</div></td></tr><tr><td class=\"timetable-period current\" rowspan=1><div>Del 25 juny al 31 agost</div></td><td class=\"timetable-day\" rowspan=1><div>Cada dia</div></td><td class=\"timetable-hour\" rowspan=1><div>de 18.00&nbsp;h a 21.00&nbsp;h</div></td></tr></table>",
+    "register_id": "99400758401",
     "match_status": "matched"
   },
   {
@@ -18857,228 +18785,6 @@
     "match_status": "matched"
   },
   {
-    "name": "Piscina Coberta - Centre Esportiu Municipal la Bordeta",
-    "typology": "Piscinas",
-    "characteristics": [
-      "Acceso de pago",
-      "Amb aigua per beure",
-      "Con lavabo",
-      "No se admiten animales de compañía",
-      "Accesible para personas con discapacidad física",
-      "Interior",
-      "Titularidad Pública"
-    ],
-    "opening_hours_raw": [
-      [
-        "",
-        "De dilluns a divendres",
-        "de 07:00 h a 23:00 h"
-      ],
-      [
-        "",
-        "Dissabte, diumenge i festius",
-        "de 08:00 h a 14:30 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-coberta-99400110957",
-    "address": "Carrer de la Noguera Pallaresa, 34 - 42",
-    "district": "Sants-Montjuïc",
-    "neighborhood": "la Bordeta",
-    "lat": 41.37230059209696,
-    "lon": 2.1391868181707934,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.37230059209696,2.1391868181707934&hasta_txt=Piscina+Coberta",
-    "contact_type": "E-mail",
-    "contact_value": "bordeta@atlesesports.cat",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 23:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte, diumenge i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08:00 h a 14:30 h</div></td></tr></table>",
-    "register_id": "99400110957",
-    "match_status": "matched"
-  },
-  {
-    "name": "Piscina Coberta - Centre Esportiu Municipal La Verneda",
-    "typology": "Piscinas",
-    "characteristics": [
-      "Acceso de pago",
-      "Amb aigua per beure",
-      "Con lavabo",
-      "Con internet para uso público",
-      "No se admiten animales de compañía",
-      "Accesible para personas con discapacidad física",
-      "Interior",
-      "Titularidad Pública"
-    ],
-    "opening_hours_raw": [
-      [
-        "",
-        "De dilluns a divendres",
-        "de 07.00 h a 22.30 h"
-      ],
-      [
-        "",
-        "Dissabte",
-        "de 07.00 h a 19.30 h"
-      ],
-      [
-        "",
-        "Diumenge i  festius",
-        "de 08.00 h a 15.30 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-coberta-92086023364",
-    "address": "Carrer de Binèfar, 10 - 14",
-    "district": "Sant Martí",
-    "neighborhood": "la Verneda i la Pau",
-    "lat": 41.42514075029259,
-    "lon": 2.2043634567182906,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.42514075029259,2.2043634567182906&hasta_txt=Piscina+Coberta",
-    "contact_type": "Web",
-    "contact_value": "https://www.asme.cat/cemlaverneda/",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 22.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 19.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 15.30&nbsp;h</div></td></tr></table>",
-    "register_id": "92086023364",
-    "match_status": "matched"
-  },
-  {
-    "name": "Piscina Coberta - Centre Esportiu Municipal Joan Miró",
-    "typology": "Piscinas",
-    "characteristics": [
-      "Acceso de pago",
-      "Amb aigua per beure",
-      "Con lavabo",
-      "No se admiten animales de compañía",
-      "Accesible para personas con discapacidad física",
-      "Parcialment accessible per a persones amb discapacitat física",
-      "Interior",
-      "Titularidad Pública"
-    ],
-    "opening_hours_raw": [
-      [
-        "",
-        "De dilluns a dijous",
-        "de 06.20 h a 22.30 h"
-      ],
-      [
-        "",
-        "Divendres",
-        "de 07.00 h a 22.30 h"
-      ],
-      [
-        "",
-        "Dissabte",
-        "de 08.00 h a 14.30 h i de 17.30 h a 21.00 h"
-      ],
-      [
-        "",
-        "Diumenge i festius",
-        "de 09.00 h a 15.30 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-coberta-1057133310",
-    "address": "Carrer de la Diputació, 15 - 19",
-    "district": "Eixample",
-    "neighborhood": "la Nova Esquerra de l'Eixample",
-    "lat": 41.37845545369519,
-    "lon": 2.1509827380561313,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.37845545369519,2.1509827380561313&hasta_txt=Piscina+Coberta",
-    "contact_type": "Tel.",
-    "contact_value": "934234350",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a dijous</div></td><td class=\"timetable-hour\" rowspan=1><div>de 06.20&nbsp;h a 22.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 22.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 14.30&nbsp;h i <br>de 17.30&nbsp;h a 21.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 15.30&nbsp;h</div></td></tr></table>",
-    "register_id": "1057133310",
-    "match_status": "matched"
-  },
-  {
-    "name": "Piscina Coberta - Centre Esportiu Municipal Vintró - Joan Alentorn",
-    "typology": "Piscinas",
-    "characteristics": [
-      "Acceso de pago",
-      "Amb aigua per beure",
-      "Con lavabo",
-      "No se admiten animales de compañía",
-      "Accesible para personas con discapacidad física",
-      "Interior",
-      "Titularidad Pública"
-    ],
-    "opening_hours_raw": [
-      [
-        "",
-        "De dilluns a divendres",
-        "de 07:00 h a 23:00 h"
-      ],
-      [
-        "",
-        "Dissabte",
-        "de 08:00 h a 20:00 h"
-      ],
-      [
-        "",
-        "Diumenge i  festius",
-        "de 09:00 h a 15:00 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-coberta-99165122406",
-    "address": "Carrer del Consell de Cent, 623 - 629",
-    "district": "Sant Martí",
-    "neighborhood": "el Clot",
-    "lat": 41.406657337510914,
-    "lon": 2.186274818237481,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.406657337510914,2.186274818237481&hasta_txt=Piscina+Coberta",
-    "contact_type": "E-mail",
-    "contact_value": "vintro@asme.cat",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"description\">Observacions</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 23:00 h</div></td><td class=\"timetable-description\" rowspan=3><div><p style=\"margin:0\">Els espais esportius tanquen 30 minuts</p><p style=\"margin:0\">abans de l’hora de tancament de la instal·lació</p></div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08:00 h a 20:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 15:00 h</div></td></tr></table>",
-    "register_id": "99165122406",
-    "match_status": "matched"
-  },
-  {
-    "name": "Piscina Coberta - Centre Esportiu Municipal Parc de la Ciutadella",
-    "typology": "Piscinas",
-    "characteristics": [
-      "Acceso de pago",
-      "Amb aigua per beure",
-      "Con lavabo",
-      "No se admiten animales de compañía",
-      "Accesible para personas con discapacidad física",
-      "Interior",
-      "Titularidad Pública"
-    ],
-    "opening_hours_raw": [
-      [
-        "",
-        "De dilluns a divendres",
-        "de 07:00 h a 23:00 h"
-      ],
-      [
-        "",
-        "Dissabte",
-        "de 08:00 h a 20:00 h"
-      ],
-      [
-        "",
-        "Diumenge i festius",
-        "de 08.00 h a 14.00 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-coberta-99400144112",
-    "address": "Passeig de Circumval·lació, 3",
-    "district": "Ciutat Vella",
-    "neighborhood": "Sant Pere, Santa Caterina i la Ribera",
-    "lat": 41.385171187682445,
-    "lon": 2.186611570051401,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.385171187682445,2.186611570051401&hasta_txt=Piscina+Coberta",
-    "contact_type": null,
-    "contact_value": null,
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 23:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08:00 h a 20:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 14.00&nbsp;h</div></td></tr></table>",
-    "register_id": "99400144112",
-    "match_status": "matched"
-  },
-  {
     "name": "Piscina Coberta - Centre Esportiu Municipal Can Caralleu",
     "typology": "Piscinas",
     "characteristics": [
@@ -19153,6 +18859,50 @@
     "match_status": "matched"
   },
   {
+    "name": "Piscina Coberta - Centre Esportiu Municipal Parc de la Ciutadella",
+    "typology": "Piscinas",
+    "characteristics": [
+      "Acceso de pago",
+      "Amb aigua per beure",
+      "Con lavabo",
+      "No se admiten animales de compañía",
+      "Accesible para personas con discapacidad física",
+      "Interior",
+      "Titularidad Pública"
+    ],
+    "opening_hours_raw": [
+      [
+        "",
+        "De dilluns a divendres",
+        "de 07:00 h a 23:00 h"
+      ],
+      [
+        "",
+        "Dissabte",
+        "de 08:00 h a 20:00 h"
+      ],
+      [
+        "",
+        "Diumenge i festius",
+        "de 08.00 h a 14.00 h"
+      ]
+    ],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-coberta-99400144112",
+    "address": "Passeig de Circumval·lació, 3",
+    "district": "Ciutat Vella",
+    "neighborhood": "Sant Pere, Santa Caterina i la Ribera",
+    "lat": 41.385171187682445,
+    "lon": 2.186611570051401,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.385171187682445,2.186611570051401&hasta_txt=Piscina+Coberta",
+    "contact_type": null,
+    "contact_value": null,
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 23:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08:00 h a 20:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 14.00&nbsp;h</div></td></tr></table>",
+    "register_id": "99400144112",
+    "match_status": "matched"
+  },
+  {
     "name": "Piscina Coberta - Centre Esportiu Municipal del Carmel",
     "typology": "Piscinas",
     "characteristics": [
@@ -19189,6 +18939,184 @@
     "contact_value": "horta@eurofitness.com",
     "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 21.45&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte i diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 14.15&nbsp;h</div></td></tr></table>",
     "register_id": "99400060119",
+    "match_status": "matched"
+  },
+  {
+    "name": "Piscina Coberta - Centre Esportiu Municipal Vintró - Joan Alentorn",
+    "typology": "Piscinas",
+    "characteristics": [
+      "Acceso de pago",
+      "Amb aigua per beure",
+      "Con lavabo",
+      "No se admiten animales de compañía",
+      "Accesible para personas con discapacidad física",
+      "Interior",
+      "Titularidad Pública"
+    ],
+    "opening_hours_raw": [
+      [
+        "",
+        "De dilluns a divendres",
+        "de 07:00 h a 23:00 h"
+      ],
+      [
+        "",
+        "Dissabte",
+        "de 08:00 h a 20:00 h"
+      ],
+      [
+        "",
+        "Diumenge i  festius",
+        "de 09:00 h a 15:00 h"
+      ]
+    ],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-coberta-99165122406",
+    "address": "Carrer del Consell de Cent, 623 - 629",
+    "district": "Sant Martí",
+    "neighborhood": "el Clot",
+    "lat": 41.406657337510914,
+    "lon": 2.186274818237481,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.406657337510914,2.186274818237481&hasta_txt=Piscina+Coberta",
+    "contact_type": "E-mail",
+    "contact_value": "vintro@asme.cat",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"description\">Observacions</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 23:00 h</div></td><td class=\"timetable-description\" rowspan=3><div><p style=\"margin:0\">Els espais esportius tanquen 30 minuts</p><p style=\"margin:0\">abans de l’hora de tancament de la instal·lació</p></div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08:00 h a 20:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 15:00 h</div></td></tr></table>",
+    "register_id": "99165122406",
+    "match_status": "matched"
+  },
+  {
+    "name": "Piscina Coberta - Centre Esportiu Municipal la Bordeta",
+    "typology": "Piscinas",
+    "characteristics": [
+      "Acceso de pago",
+      "Amb aigua per beure",
+      "Con lavabo",
+      "No se admiten animales de compañía",
+      "Accesible para personas con discapacidad física",
+      "Interior",
+      "Titularidad Pública"
+    ],
+    "opening_hours_raw": [
+      [
+        "",
+        "De dilluns a divendres",
+        "de 07:00 h a 23:00 h"
+      ],
+      [
+        "",
+        "Dissabte, diumenge i festius",
+        "de 08:00 h a 14:30 h"
+      ]
+    ],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-coberta-99400110957",
+    "address": "Carrer de la Noguera Pallaresa, 34 - 42",
+    "district": "Sants-Montjuïc",
+    "neighborhood": "la Bordeta",
+    "lat": 41.37230059209696,
+    "lon": 2.1391868181707934,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.37230059209696,2.1391868181707934&hasta_txt=Piscina+Coberta",
+    "contact_type": "E-mail",
+    "contact_value": "bordeta@atlesesports.cat",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 23:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte, diumenge i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08:00 h a 14:30 h</div></td></tr></table>",
+    "register_id": "99400110957",
+    "match_status": "matched"
+  },
+  {
+    "name": "Piscina Coberta - Centre Esportiu Municipal Joan Miró",
+    "typology": "Piscinas",
+    "characteristics": [
+      "Acceso de pago",
+      "Amb aigua per beure",
+      "Con lavabo",
+      "No se admiten animales de compañía",
+      "Accesible para personas con discapacidad física",
+      "Parcialment accessible per a persones amb discapacitat física",
+      "Interior",
+      "Titularidad Pública"
+    ],
+    "opening_hours_raw": [
+      [
+        "",
+        "De dilluns a dijous",
+        "de 06.20 h a 22.30 h"
+      ],
+      [
+        "",
+        "Divendres",
+        "de 07.00 h a 22.30 h"
+      ],
+      [
+        "",
+        "Dissabte",
+        "de 08.00 h a 14.30 h i de 17.30 h a 21.00 h"
+      ],
+      [
+        "",
+        "Diumenge i festius",
+        "de 09.00 h a 15.30 h"
+      ]
+    ],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-coberta-1057133310",
+    "address": "Carrer de la Diputació, 15 - 19",
+    "district": "Eixample",
+    "neighborhood": "la Nova Esquerra de l'Eixample",
+    "lat": 41.37845545369519,
+    "lon": 2.1509827380561313,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.37845545369519,2.1509827380561313&hasta_txt=Piscina+Coberta",
+    "contact_type": "Tel.",
+    "contact_value": "934234350",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a dijous</div></td><td class=\"timetable-hour\" rowspan=1><div>de 06.20&nbsp;h a 22.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 22.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 14.30&nbsp;h i <br>de 17.30&nbsp;h a 21.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 15.30&nbsp;h</div></td></tr></table>",
+    "register_id": "1057133310",
+    "match_status": "matched"
+  },
+  {
+    "name": "Piscina Coberta - Centre Esportiu Municipal La Verneda",
+    "typology": "Piscinas",
+    "characteristics": [
+      "Acceso de pago",
+      "Amb aigua per beure",
+      "Con lavabo",
+      "Con internet para uso público",
+      "No se admiten animales de compañía",
+      "Accesible para personas con discapacidad física",
+      "Interior",
+      "Titularidad Pública"
+    ],
+    "opening_hours_raw": [
+      [
+        "",
+        "De dilluns a divendres",
+        "de 07.00 h a 22.30 h"
+      ],
+      [
+        "",
+        "Dissabte",
+        "de 07.00 h a 19.30 h"
+      ],
+      [
+        "",
+        "Diumenge i  festius",
+        "de 08.00 h a 15.30 h"
+      ]
+    ],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-coberta-92086023364",
+    "address": "Carrer de Binèfar, 10 - 14",
+    "district": "Sant Martí",
+    "neighborhood": "la Verneda i la Pau",
+    "lat": 41.42514075029259,
+    "lon": 2.2043634567182906,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.42514075029259,2.2043634567182906&hasta_txt=Piscina+Coberta",
+    "contact_type": "Web",
+    "contact_value": "https://www.asme.cat/cemlaverneda/",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 22.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 19.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 15.30&nbsp;h</div></td></tr></table>",
+    "register_id": "92086023364",
     "match_status": "matched"
   },
   {
@@ -19291,6 +19219,50 @@
     "match_status": "matched"
   },
   {
+    "name": "Piscina Coberta - Centre Esportiu Municipal Marítim",
+    "typology": "Piscinas",
+    "characteristics": [
+      "Acceso de pago",
+      "Amb aigua per beure",
+      "Con lavabo",
+      "No se admiten animales de compañía",
+      "Accesible para personas con discapacidad física",
+      "Interior",
+      "Titularidad Pública"
+    ],
+    "opening_hours_raw": [
+      [
+        "",
+        "De dilluns a divendres",
+        "de 07.00 h a 23.00 h"
+      ],
+      [
+        "",
+        "Dissabte",
+        "de 08.30 h a 21.00 h"
+      ],
+      [
+        "",
+        "Diumenge i  festius",
+        "de 09.00 h a 16.00 h"
+      ]
+    ],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-coberta-99400322471",
+    "address": "Passeig Marítim de la Barceloneta - Oriol Bohigas, 33",
+    "district": "Ciutat Vella",
+    "neighborhood": "la Barceloneta",
+    "lat": 41.38466275981191,
+    "lon": 2.195470990559355,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.38466275981191,2.195470990559355&hasta_txt=Piscina+Coberta",
+    "contact_type": "E-mail",
+    "contact_value": "maritim@claror.cat",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.30&nbsp;h a 21.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 16.00&nbsp;h</div></td></tr></table>",
+    "register_id": "99400322471",
+    "match_status": "matched"
+  },
+  {
     "name": "Piscina Coberta - Centre Esportiu Municipal Nova Icària",
     "typology": "Piscinas",
     "characteristics": [
@@ -19380,7 +19352,7 @@
     "match_status": "matched"
   },
   {
-    "name": "Piscina Coberta - Centre Esportiu Municipal Marítim",
+    "name": "Piscina Coberta - Centre Esportiu Municipal Trinitat Vella",
     "typology": "Piscinas",
     "characteristics": [
       "Acceso de pago",
@@ -19388,6 +19360,7 @@
       "Con lavabo",
       "No se admiten animales de compañía",
       "Accesible para personas con discapacidad física",
+      "Parcialment accessible per a persones amb discapacitat física",
       "Interior",
       "Titularidad Pública"
     ],
@@ -19400,113 +19373,27 @@
       [
         "",
         "Dissabte",
-        "de 08.30 h a 21.00 h"
+        "de 08.00 h a 20.00 h"
       ],
       [
         "",
         "Diumenge i  festius",
-        "de 09.00 h a 16.00 h"
+        "de 08.00 h a 14.30 h"
       ]
     ],
     "notice": null,
     "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-coberta-99400322471",
-    "address": "Passeig Marítim de la Barceloneta - Oriol Bohigas, 33",
-    "district": "Ciutat Vella",
-    "neighborhood": "la Barceloneta",
-    "lat": 41.38466275981191,
-    "lon": 2.195470990559355,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.38466275981191,2.195470990559355&hasta_txt=Piscina+Coberta",
-    "contact_type": "E-mail",
-    "contact_value": "maritim@claror.cat",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.30&nbsp;h a 21.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 16.00&nbsp;h</div></td></tr></table>",
-    "register_id": "99400322471",
-    "match_status": "matched"
-  },
-  {
-    "name": "Piscina Coberta - Centre Esportiu Municipal Can Ricart",
-    "typology": "Piscinas",
-    "characteristics": [
-      "Acceso de pago",
-      "Amb aigua per beure",
-      "Con lavabo",
-      "No se admiten animales de compañía",
-      "Accesible para personas con discapacidad física",
-      "Interior",
-      "Titularidad Pública"
-    ],
-    "opening_hours_raw": [
-      [
-        "",
-        "De dilluns a divendres",
-        "de 07.00 h a 22.00 h"
-      ],
-      [
-        "",
-        "Dissabte",
-        "de 09:00 h a 20:00 h"
-      ],
-      [
-        "",
-        "Diumenge i  festius",
-        "de 09.00 h a 14.30 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-coberta-99400164786",
-    "address": "Carrer de Sant Oleguer, 10",
-    "district": "Ciutat Vella",
-    "neighborhood": "Sant Pere, Santa Caterina i la Ribera",
-    "lat": 41.377025357932496,
-    "lon": 2.170618325416911,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.377025357932496,2.170618325416911&hasta_txt=Piscina+Coberta",
-    "contact_type": "E-mail",
-    "contact_value": "infocanricart@lleuresport.cat",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 22.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 20:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 14.30&nbsp;h</div></td></tr></table>",
-    "register_id": "99400164786",
-    "match_status": "matched"
-  },
-  {
-    "name": "Piscina Coberta - Centre Esportiu Municipal Estació del Nord",
-    "typology": "Piscinas",
-    "characteristics": [
-      "Acceso de pago",
-      "No se admiten animales de compañía",
-      "Accesible para personas con discapacidad física",
-      "Interior",
-      "Titularidad Pública"
-    ],
-    "opening_hours_raw": [
-      [
-        "",
-        "De dilluns a divendres",
-        "de 07:00 h a 22:45 h"
-      ],
-      [
-        "",
-        "Dissabte",
-        "de 08:00 h a 19:45 h"
-      ],
-      [
-        "",
-        "Diumenge i  festius",
-        "de 09:00 h a 14:45 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-coberta-99133121652",
-    "address": "Carrer de Nàpols, 42",
-    "district": "Eixample",
-    "neighborhood": "el Fort Pienc",
-    "lat": 41.39303851153649,
-    "lon": 2.1824125001011443,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.39303851153649,2.1824125001011443&hasta_txt=Piscina+Coberta",
-    "contact_type": "Web",
-    "contact_value": "https://eurofitness.com/centres/eurofitness-estacio-del-nord-cem-estacio-del-nord/",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 22:45 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08:00 h a 19:45 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 14:45 h</div></td></tr></table>",
-    "register_id": "99133121652",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-coberta-92086010810",
+    "address": "Via de Bàrcino, 84 - 86",
+    "district": "Sant Andreu",
+    "neighborhood": "la Trinitat Vella",
+    "lat": 41.45145178550841,
+    "lon": 2.193108007408489,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.45145178550841,2.193108007408489&hasta_txt=Piscina+Coberta",
+    "contact_type": "Tel.",
+    "contact_value": "933113701",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"description\">Observacions</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 23.00&nbsp;h</div></td><td class=\"timetable-description\" rowspan=3><div><p style=\"margin:0\">Els espais esportius tanquen 30 minuts abans </p><p style=\"margin:0\">de l’hora de tancament de la instal·lació</p></div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 20.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 14.30&nbsp;h</div></td></tr></table>",
+    "register_id": "92086010810",
     "match_status": "matched"
   },
   {
@@ -19554,15 +19441,12 @@
     "match_status": "matched"
   },
   {
-    "name": "Piscina Coberta - Centre Esportiu Municipal Trinitat Vella",
+    "name": "Piscina Coberta - Centre Esportiu Municipal Estació del Nord",
     "typology": "Piscinas",
     "characteristics": [
       "Acceso de pago",
-      "Amb aigua per beure",
-      "Con lavabo",
       "No se admiten animales de compañía",
       "Accesible para personas con discapacidad física",
-      "Parcialment accessible per a persones amb discapacitat física",
       "Interior",
       "Titularidad Pública"
     ],
@@ -19570,32 +19454,76 @@
       [
         "",
         "De dilluns a divendres",
-        "de 07.00 h a 23.00 h"
+        "de 07:00 h a 22:45 h"
       ],
       [
         "",
         "Dissabte",
-        "de 08.00 h a 20.00 h"
+        "de 08:00 h a 19:45 h"
       ],
       [
         "",
         "Diumenge i  festius",
-        "de 08.00 h a 14.30 h"
+        "de 09:00 h a 14:45 h"
       ]
     ],
     "notice": null,
     "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-coberta-92086010810",
-    "address": "Via de Bàrcino, 84 - 86",
-    "district": "Sant Andreu",
-    "neighborhood": "la Trinitat Vella",
-    "lat": 41.45145178550841,
-    "lon": 2.193108007408489,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.45145178550841,2.193108007408489&hasta_txt=Piscina+Coberta",
-    "contact_type": "Tel.",
-    "contact_value": "933113701",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"description\">Observacions</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 23.00&nbsp;h</div></td><td class=\"timetable-description\" rowspan=3><div><p style=\"margin:0\">Els espais esportius tanquen 30 minuts abans </p><p style=\"margin:0\">de l’hora de tancament de la instal·lació</p></div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 20.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 14.30&nbsp;h</div></td></tr></table>",
-    "register_id": "92086010810",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-coberta-99133121652",
+    "address": "Carrer de Nàpols, 42",
+    "district": "Eixample",
+    "neighborhood": "el Fort Pienc",
+    "lat": 41.39303851153649,
+    "lon": 2.1824125001011443,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.39303851153649,2.1824125001011443&hasta_txt=Piscina+Coberta",
+    "contact_type": "Web",
+    "contact_value": "https://eurofitness.com/centres/eurofitness-estacio-del-nord-cem-estacio-del-nord/",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 22:45 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08:00 h a 19:45 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 14:45 h</div></td></tr></table>",
+    "register_id": "99133121652",
+    "match_status": "matched"
+  },
+  {
+    "name": "Piscina Coberta - Centre Esportiu Municipal Can Ricart",
+    "typology": "Piscinas",
+    "characteristics": [
+      "Acceso de pago",
+      "Amb aigua per beure",
+      "Con lavabo",
+      "No se admiten animales de compañía",
+      "Accesible para personas con discapacidad física",
+      "Interior",
+      "Titularidad Pública"
+    ],
+    "opening_hours_raw": [
+      [
+        "",
+        "De dilluns a divendres",
+        "de 07.00 h a 22.00 h"
+      ],
+      [
+        "",
+        "Dissabte",
+        "de 09:00 h a 20:00 h"
+      ],
+      [
+        "",
+        "Diumenge i  festius",
+        "de 09.00 h a 14.30 h"
+      ]
+    ],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-coberta-99400164786",
+    "address": "Carrer de Sant Oleguer, 10",
+    "district": "Ciutat Vella",
+    "neighborhood": "Sant Pere, Santa Caterina i la Ribera",
+    "lat": 41.377025357932496,
+    "lon": 2.170618325416911,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.377025357932496,2.170618325416911&hasta_txt=Piscina+Coberta",
+    "contact_type": "E-mail",
+    "contact_value": "infocanricart@lleuresport.cat",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 22.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 20:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 14.30&nbsp;h</div></td></tr></table>",
+    "register_id": "99400164786",
     "match_status": "matched"
   },
   {
@@ -19635,6 +19563,51 @@
     "contact_value": "aebonpastor@hotmail.com",
     "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 22:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>dissabtes i diumenges i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 14:00 h</div></td></tr></table>",
     "register_id": "99400322487",
+    "match_status": "matched"
+  },
+  {
+    "name": "Piscina Descoberta - Centre Esportiu Municipal de Sant Sebastià",
+    "typology": "Piscinas",
+    "characteristics": [
+      "Acceso de pago",
+      "Amb aigua per beure",
+      "Con lavabo",
+      "No se admiten animales de compañía",
+      "Accesible para personas con discapacidad física",
+      "Al aire libre",
+      "Interior",
+      "Titularidad Pública"
+    ],
+    "opening_hours_raw": [
+      [
+        "",
+        "De dilluns a divendres",
+        "de 06.30 h a 22.30 h"
+      ],
+      [
+        "",
+        "Dissabte",
+        "de 07.00 h a 22.30 h"
+      ],
+      [
+        "",
+        "Diumenge i festius del 3 de maig al 30 de setembre",
+        "de 08.00 h a 20.00 h"
+      ]
+    ],
+    "notice": null,
+    "image_url": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/98110133629-imatges%2Cdir%2Ceq%2Cfilmoffice%2Ci_98110133629.jpg",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-descoberta-98110133629",
+    "address": "Plaça del Mar, 1",
+    "district": "Ciutat Vella",
+    "neighborhood": "la Barceloneta",
+    "lat": 41.3754657408768,
+    "lon": 2.1898545572534602,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.3754657408768,2.1898545572534602&hasta_txt=Piscina+Descoberta",
+    "contact_type": "Web",
+    "contact_value": "https://www.cnab.cat/",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-period\" rowspan=3><div>De l'1 octubre al 30 abril</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 06.30&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 17.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period current\" rowspan=3><div>De l'1 maig al 30 setembre</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 06.30&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 20.00&nbsp;h</div></td></tr></table>",
+    "register_id": "97302140150",
     "match_status": "matched"
   },
   {
@@ -19689,48 +19662,43 @@
     "match_status": "colocated"
   },
   {
-    "name": "Piscina Descoberta - Centre Esportiu Municipal de Sant Sebastià",
+    "name": "Piscina Descoberta - Centre Municipal Tennis Vall Hebron",
     "typology": "Piscinas",
     "characteristics": [
       "Acceso de pago",
       "Amb aigua per beure",
       "Con lavabo",
+      "Con internet para uso público",
       "No se admiten animales de compañía",
       "Accesible para personas con discapacidad física",
       "Al aire libre",
-      "Interior",
       "Titularidad Pública"
     ],
     "opening_hours_raw": [
       [
-        "",
+        "Estiu 2026: Del 8 juny al 13 setembre",
         "De dilluns a divendres",
-        "de 06.30 h a 22.30 h"
+        "de 10.00 h a 20.00 h"
       ],
       [
         "",
-        "Dissabte",
-        "de 07.00 h a 22.30 h"
-      ],
-      [
-        "",
-        "Diumenge i festius del 3 de maig al 30 de setembre",
-        "de 08.00 h a 20.00 h"
+        "Dissabte, diumenge i festius",
+        "de 10.00 h a 19.00 h"
       ]
     ],
     "notice": null,
-    "image_url": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/98110133629-imatges%2Cdir%2Ceq%2Cfilmoffice%2Ci_98110133629.jpg",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-descoberta-98110133629",
-    "address": "Plaça del Mar, 1",
-    "district": "Ciutat Vella",
-    "neighborhood": "la Barceloneta",
-    "lat": 41.3754657408768,
-    "lon": 2.1898545572534602,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.3754657408768,2.1898545572534602&hasta_txt=Piscina+Descoberta",
-    "contact_type": "Web",
-    "contact_value": "https://www.cnab.cat/",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-period\" rowspan=3><div>De l'1 octubre al 30 abril</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 06.30&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 17.00&nbsp;h</div></td></tr><tr><td class=\"timetable-period current\" rowspan=3><div>De l'1 maig al 30 setembre</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 06.30&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 20.00&nbsp;h</div></td></tr></table>",
-    "register_id": "97302140150",
+    "image_url": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/99400110881-piscitennishebron.jpg",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-descoberta-99400110881",
+    "address": "Passeig de la Vall d'Hebron, 178 - 196",
+    "district": "Horta-Guinardó",
+    "neighborhood": "la Vall d'Hebron",
+    "lat": 41.42974749223056,
+    "lon": 2.1454720519149793,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.42974749223056,2.1454720519149793&hasta_txt=Piscina+Descoberta",
+    "contact_type": "E-mail",
+    "contact_value": "atencioclients.vallhebron@eurofitness.com",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"prices\">Preus</th></tr><tr><td class=\"timetable-period current\" rowspan=2><div><p style=\"margin:0\">Estiu 2026:</p><p style=\"margin:0\">Del 8 juny al 13 setembre</p></div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10.00&nbsp;h a 20.00&nbsp;h</div></td><td class=\"timetable-price\" rowspan=2><div>Entrada general de: 5.12 a 9 € <p style=\"margin:0\">Entrada general (a partir de 12 anys) 9 €</p><p style=\"margin:0\">Infants de 4 a 11 anys: 5,12 €</p><p style=\"margin:0\">Infants fins a 3 anys: gratuït</p><p style=\"margin:0\"><br></p><p style=\"margin:0\">Abonaments Adults (a partir de 12 anys): 67.06 €</p><p style=\"margin:0\">Abonament Intantil (de 4 a 11 anys): 47.55 €</p><p style=\"margin:0\"><br></p></div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte, diumenge i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10.00&nbsp;h a 19.00&nbsp;h</div></td></tr></table>",
+    "register_id": "99400110881",
     "match_status": "matched"
   },
   {
@@ -19774,71 +19742,6 @@
     "match_status": "matched"
   },
   {
-    "name": "Piscina Descoberta - Centre Municipal Tennis Vall Hebron",
-    "typology": "Piscinas",
-    "characteristics": [
-      "Acceso de pago",
-      "Amb aigua per beure",
-      "Con lavabo",
-      "Con internet para uso público",
-      "No se admiten animales de compañía",
-      "Accesible para personas con discapacidad física",
-      "Al aire libre",
-      "Titularidad Pública"
-    ],
-    "opening_hours_raw": [
-      [
-        "Estiu 2026: Del 8 juny al 13 setembre",
-        "De dilluns a divendres",
-        "de 10.00 h a 20.00 h"
-      ],
-      [
-        "",
-        "Dissabte, diumenge i festius",
-        "de 10.00 h a 19.00 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/99400110881-piscitennishebron.jpg",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-descoberta-99400110881",
-    "address": "Passeig de la Vall d'Hebron, 178 - 196",
-    "district": "Horta-Guinardó",
-    "neighborhood": "la Vall d'Hebron",
-    "lat": 41.42974749223056,
-    "lon": 2.1454720519149793,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.42974749223056,2.1454720519149793&hasta_txt=Piscina+Descoberta",
-    "contact_type": "E-mail",
-    "contact_value": "atencioclients.vallhebron@eurofitness.com",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"prices\">Preus</th></tr><tr><td class=\"timetable-period current\" rowspan=2><div><p style=\"margin:0\">Estiu 2026:</p><p style=\"margin:0\">Del 8 juny al 13 setembre</p></div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10.00&nbsp;h a 20.00&nbsp;h</div></td><td class=\"timetable-price\" rowspan=2><div>Entrada general de: 5.12 a 9 € <p style=\"margin:0\">Entrada general (a partir de 12 anys) 9 €</p><p style=\"margin:0\">Infants de 4 a 11 anys: 5,12 €</p><p style=\"margin:0\">Infants fins a 3 anys: gratuït</p><p style=\"margin:0\"><br></p><p style=\"margin:0\">Abonaments Adults (a partir de 12 anys): 67.06 €</p><p style=\"margin:0\">Abonament Intantil (de 4 a 11 anys): 47.55 €</p><p style=\"margin:0\"><br></p></div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte, diumenge i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10.00&nbsp;h a 19.00&nbsp;h</div></td></tr></table>",
-    "register_id": "99400110881",
-    "match_status": "matched"
-  },
-  {
-    "name": "Piscina Descoberta - Complex Esportiu Municipal de Can Zam",
-    "typology": "Piscinas",
-    "characteristics": [
-      "Acceso de pago",
-      "Accesible para personas con discapacidad física",
-      "Al aire libre",
-      "Titularidad Pública"
-    ],
-    "opening_hours_raw": [],
-    "notice": null,
-    "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-descoberta-96159092819",
-    "address": "C. Víctor Hugo, s/n",
-    "district": null,
-    "neighborhood": null,
-    "lat": 41.4555353,
-    "lon": 2.2025905,
-    "comshiva_url": null,
-    "contact_type": null,
-    "contact_value": null,
-    "timetable_raw": null,
-    "register_id": null,
-    "match_status": "cms_only"
-  },
-  {
     "name": "Piscina Descoberta - Centre Esportiu Municipal Can Toda",
     "typology": "Piscinas",
     "characteristics": [
@@ -19877,6 +19780,31 @@
     "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"prices\">Preus</th></tr><tr><td class=\"timetable-period current\" rowspan=2><div><p style=\"margin:0\">Estiu 2026:</p><p style=\"margin:0\">Del 16 maig al 15 octubre</p></div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 21.00&nbsp;h</div></td><td class=\"timetable-price\" rowspan=2><div><p style=\"margin:0\">Preu adult: 15.10 €</p><p style=\"margin:0\">Preu infant, gent gran o monoparental: 9.60 €</p><p style=\"margin:0\"><br></p><p style=\"margin:0\">Descomptes per la compra de 2 o més entrades</p><p style=\"margin:0\">o venint acompanya d'un soci:</p><p style=\"margin:0\">Preu adult: 11.75 €</p><p style=\"margin:0\">Preu infant, gent gran o monoparental: 6.75 €</p><p style=\"margin:0\"><br></p><p style=\"margin:0\"><br></p><p style=\"margin:0\"><br></p></div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 15.30&nbsp;h</div></td></tr></table>",
     "register_id": "92086003372",
     "match_status": "matched"
+  },
+  {
+    "name": "Piscina Descoberta - Complex Esportiu Municipal de Can Zam",
+    "typology": "Piscinas",
+    "characteristics": [
+      "Acceso de pago",
+      "Accesible para personas con discapacidad física",
+      "Al aire libre",
+      "Titularidad Pública"
+    ],
+    "opening_hours_raw": [],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-descoberta-96159092819",
+    "address": "C. Víctor Hugo, s/n",
+    "district": null,
+    "neighborhood": null,
+    "lat": 41.4555353,
+    "lon": 2.2025905,
+    "comshiva_url": null,
+    "contact_type": null,
+    "contact_value": null,
+    "timetable_raw": null,
+    "register_id": null,
+    "match_status": "cms_only"
   },
   {
     "name": "Piscina Descoberta - Centre Esportiu Municipal Guinardó",
@@ -19967,6 +19895,60 @@
     "match_status": "matched"
   },
   {
+    "name": "Piscina Descoberta - Centre Esportiu Municipal Bac de Roda",
+    "typology": "Piscinas",
+    "characteristics": [
+      "Acceso de pago",
+      "Amb aigua per beure",
+      "Con lavabo",
+      "No se admiten animales de compañía",
+      "Accesible para personas con discapacidad física",
+      "Al aire libre",
+      "Titularidad Pública"
+    ],
+    "opening_hours_raw": [
+      [
+        "Estiu 2026: Del 4 maig al 31 maig",
+        "De dilluns a divendres",
+        "d'11.00 h a 15.00 h"
+      ],
+      [
+        "",
+        "Dissabte, diumenge i festius",
+        "de 10.00 h a 16.00 h"
+      ],
+      [
+        "De l'1 Junio al 6 Septiembre",
+        "Cada dia i festius",
+        "de 10.00 h a 20.00 h"
+      ],
+      [
+        "Del 7 Septiembre al 27 Septiembre",
+        "De dilluns a divendres",
+        "d'11.00 h a 15.00 h"
+      ],
+      [
+        "",
+        "Dissabte, diumenge i festius",
+        "d'11.00 h a 19.00 h"
+      ]
+    ],
+    "notice": null,
+    "image_url": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/descoberta_bac_de_roda.760x428.b01a5a1f.jpg",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-descoberta-99400110882",
+    "address": "Rambla de Guipúscoa, 23 - 25",
+    "district": "Sant Martí",
+    "neighborhood": "Sant Martí de Provençals",
+    "lat": 41.414350023455754,
+    "lon": 2.194069526567754,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.414350023455754,2.194069526567754&hasta_txt=Piscina+Descoberta",
+    "contact_type": "E-mail",
+    "contact_value": "info@bacderodasport.com",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 06:30 h a 23:30 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>dissabtes</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08:00 h a 21:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>diumenges i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 20:00 h</div></td></tr></table>",
+    "register_id": "99400038777",
+    "match_status": "matched"
+  },
+  {
     "name": "Piscina Descoberta - Centre Esportiu Municipal Can Caralleu",
     "typology": "Piscinas",
     "characteristics": [
@@ -20039,60 +20021,6 @@
     "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"description\">Observacions</th></tr><tr><td class=\"timetable-period\" rowspan=3><div><p style=\"margin:0\">De setembre a juny</p></div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 06.45&nbsp;h a 22.30&nbsp;h</div></td><td class=\"timetable-description\" rowspan=9><div>Aforament limitat</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 20.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.30&nbsp;h a 15.30&nbsp;h</div></td></tr><tr><td class=\"timetable-period\" rowspan=3><div>Juliol</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 06.45&nbsp;h a 22.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 20.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 15.30&nbsp;h</div></td></tr><tr><td class=\"timetable-period\" rowspan=3><div>Agost</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 06.45&nbsp;h a 21.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 20.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 15.30&nbsp;h</div></td></tr></table>",
     "register_id": "99400228653",
     "match_status": "colocated"
-  },
-  {
-    "name": "Piscina Descoberta - Centre Esportiu Municipal Bac de Roda",
-    "typology": "Piscinas",
-    "characteristics": [
-      "Acceso de pago",
-      "Amb aigua per beure",
-      "Con lavabo",
-      "No se admiten animales de compañía",
-      "Accesible para personas con discapacidad física",
-      "Al aire libre",
-      "Titularidad Pública"
-    ],
-    "opening_hours_raw": [
-      [
-        "Estiu 2026: Del 4 maig al 31 maig",
-        "De dilluns a divendres",
-        "d'11.00 h a 15.00 h"
-      ],
-      [
-        "",
-        "Dissabte, diumenge i festius",
-        "de 10.00 h a 16.00 h"
-      ],
-      [
-        "De l'1 Junio al 6 Septiembre",
-        "Cada dia i festius",
-        "de 10.00 h a 20.00 h"
-      ],
-      [
-        "Del 7 Septiembre al 27 Septiembre",
-        "De dilluns a divendres",
-        "d'11.00 h a 15.00 h"
-      ],
-      [
-        "",
-        "Dissabte, diumenge i festius",
-        "d'11.00 h a 19.00 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/descoberta_bac_de_roda.760x428.b01a5a1f.jpg",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-descoberta-99400110882",
-    "address": "Rambla de Guipúscoa, 23 - 25",
-    "district": "Sant Martí",
-    "neighborhood": "Sant Martí de Provençals",
-    "lat": 41.414350023455754,
-    "lon": 2.194069526567754,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.414350023455754,2.194069526567754&hasta_txt=Piscina+Descoberta",
-    "contact_type": "E-mail",
-    "contact_value": "info@bacderodasport.com",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 06:30 h a 23:30 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>dissabtes</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08:00 h a 21:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>diumenges i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 20:00 h</div></td></tr></table>",
-    "register_id": "99400038777",
-    "match_status": "matched"
   },
   {
     "name": "Piscina Esportiva Coberta - Centre Esportiu Municipal Can Cuyàs",
@@ -20343,15 +20271,14 @@
     "match_status": "matched"
   },
   {
-    "name": "Piscines Cobertes - Centre Esportiu Municipal Horta",
+    "name": "Piscines Cobertes - Centre Esportiu Municipal Cotxeres",
     "typology": "Piscinas",
     "characteristics": [
       "Acceso de pago",
       "Amb aigua per beure",
       "Con lavabo",
-      "Con internet para uso público",
       "No se admiten animales de compañía",
-      "No accessible per a persones amb discapacitat física",
+      "Accesible para personas con discapacidad física",
       "Interior",
       "Titularidad Pública"
     ],
@@ -20359,32 +20286,32 @@
       [
         "",
         "De dilluns a divendres",
-        "de 07:00 h a 23:00 h"
+        "de 07.00 h a 23.00 h"
       ],
       [
         "",
         "Dissabte",
-        "de 08:00 h a 20:00 h"
+        "de 08.00 h a 20.00 h"
       ],
       [
         "",
         "Diumenge i  festius",
-        "de 09:00 h a 14:00 h"
+        "de 09.00 h a 14.00 h"
       ]
     ],
     "notice": null,
-    "image_url": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/93307114429-Piscina-Polivalent-Coberta---Centre-Esportiu-Municipal-Horta.jpg",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-cobertes-93307114429",
-    "address": "Carrer de Feliu i Codina, 27",
-    "district": "Horta-Guinardó",
-    "neighborhood": "Horta",
-    "lat": 41.43474287058415,
-    "lon": 2.1608551476985176,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.43474287058415,2.1608551476985176&hasta_txt=Piscines+Cobertes",
-    "contact_type": "E-mail",
-    "contact_value": "info@hortaesportiva.cat",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 23:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08:00 h a 20:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 14:00 h</div></td></tr></table>",
-    "register_id": "93307114429",
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-cobertes-99400276356",
+    "address": "Carrer de Ramon Albó, 41 - 57",
+    "district": "Nou Barris",
+    "neighborhood": "Vilapicina i la Torre Llobeta",
+    "lat": 41.42617989131543,
+    "lon": 2.17708962955002,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.42617989131543,2.17708962955002&hasta_txt=Piscines+Cobertes",
+    "contact_type": "Web",
+    "contact_value": "https://www.duinclub.com/club/gimnasio-duin-cotxeres-borbo/",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 20.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 14.00&nbsp;h</div></td></tr></table>",
+    "register_id": "99400276356",
     "match_status": "matched"
   },
   {
@@ -20497,14 +20424,15 @@
     "match_status": "colocated"
   },
   {
-    "name": "Piscines Cobertes - Centre Esportiu Municipal Cotxeres",
+    "name": "Piscines Cobertes - Centre Esportiu Municipal Horta",
     "typology": "Piscinas",
     "characteristics": [
       "Acceso de pago",
       "Amb aigua per beure",
       "Con lavabo",
+      "Con internet para uso público",
       "No se admiten animales de compañía",
-      "Accesible para personas con discapacidad física",
+      "No accessible per a persones amb discapacitat física",
       "Interior",
       "Titularidad Pública"
     ],
@@ -20512,32 +20440,32 @@
       [
         "",
         "De dilluns a divendres",
-        "de 07.00 h a 23.00 h"
+        "de 07:00 h a 23:00 h"
       ],
       [
         "",
         "Dissabte",
-        "de 08.00 h a 20.00 h"
+        "de 08:00 h a 20:00 h"
       ],
       [
         "",
         "Diumenge i  festius",
-        "de 09.00 h a 14.00 h"
+        "de 09:00 h a 14:00 h"
       ]
     ],
     "notice": null,
-    "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-cobertes-99400276356",
-    "address": "Carrer de Ramon Albó, 41 - 57",
-    "district": "Nou Barris",
-    "neighborhood": "Vilapicina i la Torre Llobeta",
-    "lat": 41.42617989131543,
-    "lon": 2.17708962955002,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.42617989131543,2.17708962955002&hasta_txt=Piscines+Cobertes",
-    "contact_type": "Web",
-    "contact_value": "https://www.duinclub.com/club/gimnasio-duin-cotxeres-borbo/",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 20.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 14.00&nbsp;h</div></td></tr></table>",
-    "register_id": "99400276356",
+    "image_url": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/93307114429-Piscina-Polivalent-Coberta---Centre-Esportiu-Municipal-Horta.jpg",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-cobertes-93307114429",
+    "address": "Carrer de Feliu i Codina, 27",
+    "district": "Horta-Guinardó",
+    "neighborhood": "Horta",
+    "lat": 41.43474287058415,
+    "lon": 2.1608551476985176,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.43474287058415,2.1608551476985176&hasta_txt=Piscines+Cobertes",
+    "contact_type": "E-mail",
+    "contact_value": "info@hortaesportiva.cat",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 23:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08:00 h a 20:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 14:00 h</div></td></tr></table>",
+    "register_id": "93307114429",
     "match_status": "matched"
   },
   {
@@ -20629,76 +20557,6 @@
     "match_status": "matched"
   },
   {
-    "name": "Piscines Cobertes - Centre Esportiu Municipal Claror",
-    "typology": "Piscinas",
-    "characteristics": [
-      "Acceso de pago",
-      "Amb aigua per beure",
-      "Con lavabo",
-      "No se admiten animales de compañía",
-      "Accesible para personas con discapacidad física",
-      "Parcialment accessible per a persones amb discapacitat física",
-      "Interior",
-      "Titularidad Pública"
-    ],
-    "opening_hours_raw": [
-      [
-        "De l'1 Septiembre al 30 Junio",
-        "De dilluns a divendres",
-        "de 07.00 h a 23.00 h"
-      ],
-      [
-        "",
-        "Dissabte",
-        "de 08.30 h a 20.30 h"
-      ],
-      [
-        "",
-        "Diumenge i  festius",
-        "de 09.00 h a 15.30 h"
-      ],
-      [
-        "De l'1 Julio al 31 Julio",
-        "De dilluns a divendres",
-        "de 07.00 h a 23.00 h"
-      ],
-      [
-        "",
-        "Dissabte",
-        "de 08.30 h a 15.00 h i de 17.00 h a 20.30 h"
-      ],
-      [
-        "",
-        "Diumenge",
-        "de 09.00 h a 15.30 h"
-      ],
-      [
-        "De l'1 Agosto al 31 Agosto",
-        "De dilluns a divendres",
-        "de 07.00 h a 23.00 h"
-      ],
-      [
-        "",
-        "Dissabte",
-        "de 09.00 h a 15.00 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/92086020201-sardenya_55.jpg",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-cobertes-92086020201",
-    "address": "Carrer de Sardenya, 333 - 335",
-    "district": "Gràcia",
-    "neighborhood": "el Camp d'en Grassot i Gràcia Nova",
-    "lat": 41.40461843293717,
-    "lon": 2.171526851144368,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.40461843293717,2.171526851144368&hasta_txt=Piscines+Cobertes",
-    "contact_type": "E-mail",
-    "contact_value": "esportiuclaror@claror.cat",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-period\" rowspan=3><div>De l'1 setembre al 30 juny</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.30&nbsp;h a 20.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 15.30&nbsp;h</div></td></tr><tr><td class=\"timetable-period current\" rowspan=3><div>De l'1 juliol al 31 juliol</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.30&nbsp;h a 15.00&nbsp;h i <br>de 17.00&nbsp;h a 20.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 15.30&nbsp;h</div></td></tr><tr><td class=\"timetable-period\" rowspan=2><div>De l'1 agost al 31 agost</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 15.00&nbsp;h</div></td></tr></table>",
-    "register_id": "92086020201",
-    "match_status": "matched"
-  },
-  {
     "name": "Piscines Cobertes - Centre Esportiu Municipal Guinardó",
     "typology": "Piscinas",
     "characteristics": [
@@ -20782,6 +20640,76 @@
     "match_status": "matched"
   },
   {
+    "name": "Piscines Cobertes - Centre Esportiu Municipal Claror",
+    "typology": "Piscinas",
+    "characteristics": [
+      "Acceso de pago",
+      "Amb aigua per beure",
+      "Con lavabo",
+      "No se admiten animales de compañía",
+      "Accesible para personas con discapacidad física",
+      "Parcialment accessible per a persones amb discapacitat física",
+      "Interior",
+      "Titularidad Pública"
+    ],
+    "opening_hours_raw": [
+      [
+        "De l'1 Septiembre al 30 Junio",
+        "De dilluns a divendres",
+        "de 07.00 h a 23.00 h"
+      ],
+      [
+        "",
+        "Dissabte",
+        "de 08.30 h a 20.30 h"
+      ],
+      [
+        "",
+        "Diumenge i  festius",
+        "de 09.00 h a 15.30 h"
+      ],
+      [
+        "De l'1 Julio al 31 Julio",
+        "De dilluns a divendres",
+        "de 07.00 h a 23.00 h"
+      ],
+      [
+        "",
+        "Dissabte",
+        "de 08.30 h a 15.00 h i de 17.00 h a 20.30 h"
+      ],
+      [
+        "",
+        "Diumenge",
+        "de 09.00 h a 15.30 h"
+      ],
+      [
+        "De l'1 Agosto al 31 Agosto",
+        "De dilluns a divendres",
+        "de 07.00 h a 23.00 h"
+      ],
+      [
+        "",
+        "Dissabte",
+        "de 09.00 h a 15.00 h"
+      ]
+    ],
+    "notice": null,
+    "image_url": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/92086020201-sardenya_55.jpg",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-cobertes-92086020201",
+    "address": "Carrer de Sardenya, 333 - 335",
+    "district": "Gràcia",
+    "neighborhood": "el Camp d'en Grassot i Gràcia Nova",
+    "lat": 41.40461843293717,
+    "lon": 2.171526851144368,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.40461843293717,2.171526851144368&hasta_txt=Piscines+Cobertes",
+    "contact_type": "E-mail",
+    "contact_value": "esportiuclaror@claror.cat",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-period\" rowspan=3><div>De l'1 setembre al 30 juny</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.30&nbsp;h a 20.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 15.30&nbsp;h</div></td></tr><tr><td class=\"timetable-period current\" rowspan=3><div>De l'1 juliol al 31 juliol</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.30&nbsp;h a 15.00&nbsp;h i <br>de 17.00&nbsp;h a 20.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 15.30&nbsp;h</div></td></tr><tr><td class=\"timetable-period\" rowspan=2><div>De l'1 agost al 31 agost</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 23.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 15.00&nbsp;h</div></td></tr></table>",
+    "register_id": "92086020201",
+    "match_status": "matched"
+  },
+  {
     "name": "Piscines Cobertes - Centre Esportiu Municipal Bac de Roda",
     "typology": "Piscinas",
     "characteristics": [
@@ -20824,66 +20752,6 @@
     "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 06:30 h a 23:30 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>dissabtes</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08:00 h a 21:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>diumenges i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 20:00 h</div></td></tr></table>",
     "register_id": "98056162156",
     "match_status": "colocated"
-  },
-  {
-    "name": "Piscines Cobertes - Centre Esportiu Municipal Can Toda",
-    "typology": "Piscinas",
-    "characteristics": [
-      "Acceso de pago",
-      "Amb aigua per beure",
-      "Con lavabo",
-      "No se admiten animales de compañía",
-      "Accesible para personas con discapacidad física",
-      "No accessible per a persones amb discapacitat física",
-      "Interior",
-      "Titularidad Pública"
-    ],
-    "opening_hours_raw": [
-      [
-        "de l'1 d'octubre al 31 de maig",
-        "De dilluns a divendres",
-        "de 07:00 h a 23:00 h"
-      ],
-      [
-        "",
-        "dissabtes",
-        "de 07:00 h a 21:30 h"
-      ],
-      [
-        "",
-        "diumenges i festius",
-        "de 07:00 h a 15:00 h"
-      ],
-      [
-        "de l'1 de juny al 30 de setembre",
-        "De dilluns a divendres",
-        "de 07:00 h a 23:00 h"
-      ],
-      [
-        "",
-        "dissabtes",
-        "de 07:00 h a 21:30 h"
-      ],
-      [
-        "",
-        "diumenges i festius",
-        "de 07:00 h a 16:00 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/92086003371-Piscines-Cobertes---Centre-Esportiu-Municipal-Can-Toda2.jpg",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-cobertes-92086003371",
-    "address": "Carrer d'Ana María Matute Ausejo, 25 - 27",
-    "district": "Gràcia",
-    "neighborhood": "la Salut",
-    "lat": 41.41535438536336,
-    "lon": 2.158160977129535,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.41535438536336,2.158160977129535&hasta_txt=Piscines+Cobertes",
-    "contact_type": "E-mail",
-    "contact_value": "cnc@cncatalunya.cat",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-period\" rowspan=3><div>de l'1 d'octubre<br>al 31 de maig</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 23:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>dissabtes</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 21:30 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>diumenges i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 15:00 h</div></td></tr><tr><td class=\"timetable-period\" rowspan=3><div>de l'1 de juny<br>al 30 de setembre</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 23:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>dissabtes</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 21:30 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>diumenges i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 16:00 h</div></td></tr></table>",
-    "register_id": "92086003371",
-    "match_status": "matched"
   },
   {
     "name": "Piscines Cobertes - Centre Esportiu Municipal Sagrada Família",
@@ -20955,6 +20823,110 @@
     "match_status": "matched"
   },
   {
+    "name": "Piscines Cobertes - Centre Esportiu Municipal Can Toda",
+    "typology": "Piscinas",
+    "characteristics": [
+      "Acceso de pago",
+      "Amb aigua per beure",
+      "Con lavabo",
+      "No se admiten animales de compañía",
+      "Accesible para personas con discapacidad física",
+      "No accessible per a persones amb discapacitat física",
+      "Interior",
+      "Titularidad Pública"
+    ],
+    "opening_hours_raw": [
+      [
+        "de l'1 d'octubre al 31 de maig",
+        "De dilluns a divendres",
+        "de 07:00 h a 23:00 h"
+      ],
+      [
+        "",
+        "dissabtes",
+        "de 07:00 h a 21:30 h"
+      ],
+      [
+        "",
+        "diumenges i festius",
+        "de 07:00 h a 15:00 h"
+      ],
+      [
+        "de l'1 de juny al 30 de setembre",
+        "De dilluns a divendres",
+        "de 07:00 h a 23:00 h"
+      ],
+      [
+        "",
+        "dissabtes",
+        "de 07:00 h a 21:30 h"
+      ],
+      [
+        "",
+        "diumenges i festius",
+        "de 07:00 h a 16:00 h"
+      ]
+    ],
+    "notice": null,
+    "image_url": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/92086003371-Piscines-Cobertes---Centre-Esportiu-Municipal-Can-Toda2.jpg",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-cobertes-92086003371",
+    "address": "Carrer d'Ana María Matute Ausejo, 25 - 27",
+    "district": "Gràcia",
+    "neighborhood": "la Salut",
+    "lat": 41.41535438536336,
+    "lon": 2.158160977129535,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.41535438536336,2.158160977129535&hasta_txt=Piscines+Cobertes",
+    "contact_type": "E-mail",
+    "contact_value": "cnc@cncatalunya.cat",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"period\">Període</th><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-period\" rowspan=3><div>de l'1 d'octubre<br>al 31 de maig</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 23:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>dissabtes</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 21:30 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>diumenges i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 15:00 h</div></td></tr><tr><td class=\"timetable-period\" rowspan=3><div>de l'1 de juny<br>al 30 de setembre</div></td><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 23:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>dissabtes</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 21:30 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>diumenges i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 16:00 h</div></td></tr></table>",
+    "register_id": "92086003371",
+    "match_status": "matched"
+  },
+  {
+    "name": "Piscines Cobertes - Centre Esportiu Municipal Maresme",
+    "typology": "Piscinas",
+    "characteristics": [
+      "Acceso de pago",
+      "Amb aigua per beure",
+      "Con lavabo",
+      "No se admiten animales de compañía",
+      "Accesible para personas con discapacidad física",
+      "Interior",
+      "Titularidad Pública"
+    ],
+    "opening_hours_raw": [
+      [
+        "",
+        "De dilluns a divendres",
+        "de 07:00 h a 23:00 h"
+      ],
+      [
+        "",
+        "dissabtes",
+        "de 09:00 h a 20:00 h"
+      ],
+      [
+        "",
+        "diumenges i festius",
+        "de 09:00 h a 15:00 h"
+      ]
+    ],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-cobertes-99400036999",
+    "address": "Carrer de Pallars, 484",
+    "district": "Sant Martí",
+    "neighborhood": "el Besòs i el Maresme",
+    "lat": 41.41320887379512,
+    "lon": 2.2139788925517574,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.41320887379512,2.2139788925517574&hasta_txt=Piscines+Cobertes",
+    "contact_type": "Informació",
+    "contact_value": "933083553",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"description\">Observacions</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 23:00 h</div></td><td class=\"timetable-description\" rowspan=3><div><br>Tancat el 25 de desembre i l'1 de gener</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>dissabtes</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 20:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>diumenges i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 15:00 h</div></td></tr></table>",
+    "register_id": "99400036999",
+    "match_status": "matched"
+  },
+  {
     "name": "Piscines Cobertes - Centre Esportiu Municipal Les Corts",
     "typology": "Piscinas",
     "characteristics": [
@@ -21004,6 +20976,49 @@
     "match_status": "matched"
   },
   {
+    "name": "Piscines Cobertes - Centre Esportiu Municipal Putxet",
+    "typology": "Piscinas",
+    "characteristics": [
+      "Acceso de pago",
+      "Amb aigua per beure",
+      "Con lavabo",
+      "No se admiten animales de compañía",
+      "Accesible para personas con discapacidad física",
+      "Interior"
+    ],
+    "opening_hours_raw": [
+      [
+        "",
+        "De dilluns a divendres",
+        "de 07.00 h a 22.30 h"
+      ],
+      [
+        "",
+        "Dissabte",
+        "de 08.00 h a 20.00 h"
+      ],
+      [
+        "",
+        "Diumenge i  festius",
+        "de 09.00 h a 14.30 h"
+      ]
+    ],
+    "notice": null,
+    "image_url": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/99400247088-centreesportiumunicipalputget-piscina.jpg",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-cobertes-99400247088",
+    "address": "Carrer de Marmellà, 23",
+    "district": "Sarrià-Sant Gervasi",
+    "neighborhood": "el Putxet i el Farró",
+    "lat": 41.40972803896788,
+    "lon": 2.141295887779283,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.40972803896788,2.141295887779283&hasta_txt=Piscines+Cobertes",
+    "contact_type": "E-mail",
+    "contact_value": "info@putxetsport.cat",
+    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 22.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 20.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 14.30&nbsp;h</div></td></tr></table>",
+    "register_id": "99400247088",
+    "match_status": "matched"
+  },
+  {
     "name": "Piscines Cobertes - Centre Esportiu Municipal Júpiter",
     "typology": "Piscinas",
     "characteristics": [
@@ -21045,93 +21060,6 @@
     "contact_value": "https://jupitersport.cat/",
     "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 23:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 20:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 15:00 h</div></td></tr></table>",
     "register_id": "99400110897",
-    "match_status": "matched"
-  },
-  {
-    "name": "Piscines Cobertes - Centre Esportiu Municipal Maresme",
-    "typology": "Piscinas",
-    "characteristics": [
-      "Acceso de pago",
-      "Amb aigua per beure",
-      "Con lavabo",
-      "No se admiten animales de compañía",
-      "Accesible para personas con discapacidad física",
-      "Interior",
-      "Titularidad Pública"
-    ],
-    "opening_hours_raw": [
-      [
-        "",
-        "De dilluns a divendres",
-        "de 07:00 h a 23:00 h"
-      ],
-      [
-        "",
-        "dissabtes",
-        "de 09:00 h a 20:00 h"
-      ],
-      [
-        "",
-        "diumenges i festius",
-        "de 09:00 h a 15:00 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-cobertes-99400036999",
-    "address": "Carrer de Pallars, 484",
-    "district": "Sant Martí",
-    "neighborhood": "el Besòs i el Maresme",
-    "lat": 41.41320887379512,
-    "lon": 2.2139788925517574,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.41320887379512,2.2139788925517574&hasta_txt=Piscines+Cobertes",
-    "contact_type": "Informació",
-    "contact_value": "933083553",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th><th class=\"description\">Observacions</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07:00 h a 23:00 h</div></td><td class=\"timetable-description\" rowspan=3><div><br>Tancat el 25 de desembre i l'1 de gener</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>dissabtes</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 20:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>diumenges i festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09:00 h a 15:00 h</div></td></tr></table>",
-    "register_id": "99400036999",
-    "match_status": "matched"
-  },
-  {
-    "name": "Piscines Cobertes - Centre Esportiu Municipal Putxet",
-    "typology": "Piscinas",
-    "characteristics": [
-      "Acceso de pago",
-      "Amb aigua per beure",
-      "Con lavabo",
-      "No se admiten animales de compañía",
-      "Accesible para personas con discapacidad física",
-      "Interior"
-    ],
-    "opening_hours_raw": [
-      [
-        "",
-        "De dilluns a divendres",
-        "de 07.00 h a 22.30 h"
-      ],
-      [
-        "",
-        "Dissabte",
-        "de 08.00 h a 20.00 h"
-      ],
-      [
-        "",
-        "Diumenge i  festius",
-        "de 09.00 h a 14.30 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": "https://estatics-nasia.dtibcn.cat/nasia-pro/media/99400247088-centreesportiumunicipalputget-piscina.jpg",
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscines-cobertes-99400247088",
-    "address": "Carrer de Marmellà, 23",
-    "district": "Sarrià-Sant Gervasi",
-    "neighborhood": "el Putxet i el Farró",
-    "lat": 41.40972803896788,
-    "lon": 2.141295887779283,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.40972803896788,2.141295887779283&hasta_txt=Piscines+Cobertes",
-    "contact_type": "E-mail",
-    "contact_value": "info@putxetsport.cat",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 07.00&nbsp;h a 22.30&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 20.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Diumenge i  festius</div></td><td class=\"timetable-hour\" rowspan=1><div>de 09.00&nbsp;h a 14.30&nbsp;h</div></td></tr></table>",
-    "register_id": "99400247088",
     "match_status": "matched"
   },
   {
@@ -21322,6 +21250,49 @@
     "timetable_raw": "",
     "register_id": "99400783479",
     "match_status": "matched"
+  },
+  {
+    "name": "Assegurances Mapfre *Clot",
+    "typology": "Microrefugis",
+    "characteristics": [
+      "Amb aigua per beure",
+      "Con lavabo",
+      "Se admiten animales de compañía",
+      "Sin internet para uso interno",
+      "Accesible para personas con discapacidad física",
+      "Interior",
+      "Acceso gratuito"
+    ],
+    "opening_hours_raw": [
+      [
+        "",
+        "De dilluns a dijous",
+        "de 09.00 h a 14.00 h i de 16.00 h a 19.00 h",
+        "",
+        ""
+      ],
+      [
+        "",
+        "Divendres",
+        "de 09.00 h a 15.00 h",
+        "",
+        ""
+      ]
+    ],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/assegurances-mapfre-clot-99400785557",
+    "address": "Carrer del Clot, 40",
+    "district": "Sant Martí",
+    "neighborhood": "el Clot",
+    "lat": 41.40692034827144,
+    "lon": 2.1878710917174127,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.40692034827144,2.1878710917174127&hasta_txt=Assegurances+Mapfre+*Clot",
+    "contact_type": null,
+    "contact_value": null,
+    "timetable_raw": null,
+    "register_id": null,
+    "match_status": "cms_only"
   },
   {
     "name": "Associació Catalana de Recursos Assistencials",
@@ -21719,6 +21690,34 @@
     "match_status": "matched"
   },
   {
+    "name": "Calçats Queisalós",
+    "typology": "Microrefugis",
+    "characteristics": [
+      "Amb aigua per beure",
+      "Con lavabo",
+      "Se admiten animales de compañía",
+      "Sin internet para uso interno",
+      "Accesible para personas con discapacidad física",
+      "Interior",
+      "Acceso gratuito"
+    ],
+    "opening_hours_raw": [],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/calcats-queisalos-99400785534",
+    "address": "Carrer de l'Hospital, 15 - 17",
+    "district": "Ciutat Vella",
+    "neighborhood": "el Raval",
+    "lat": 41.381004302481784,
+    "lon": 2.172603609673827,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.381004302481784,2.172603609673827&hasta_txt=Calçats+Queisalós",
+    "contact_type": null,
+    "contact_value": null,
+    "timetable_raw": null,
+    "register_id": null,
+    "match_status": "cms_only"
+  },
+  {
     "name": "Carns i embotits \"Ca la Nuri\"",
     "typology": "Microrefugis",
     "characteristics": [
@@ -21751,6 +21750,41 @@
     "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 14.30&nbsp;h i <br>de 17.00&nbsp;h a 20.00&nbsp;h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 08.00&nbsp;h a 14.30&nbsp;h</div></td></tr></table>",
     "register_id": "99400766167",
     "match_status": "matched"
+  },
+  {
+    "name": "Casa Cupra Raval",
+    "typology": "Microrefugis",
+    "characteristics": [
+      "Amb aigua per beure",
+      "Con lavabo",
+      "Con internet para uso público",
+      "Accesible para personas con discapacidad física",
+      "Interior",
+      "Acceso gratuito"
+    ],
+    "opening_hours_raw": [
+      [
+        "",
+        "De dilluns a dissabte",
+        "de 09.00 h a 20.30 h",
+        "",
+        ""
+      ]
+    ],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/casa-cupra-raval-99400649393",
+    "address": "Passeig de Gràcia, 109 - 111",
+    "district": "Gràcia",
+    "neighborhood": "la Vila de Gràcia",
+    "lat": 41.3967577377418,
+    "lon": 2.1587118322314436,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.3967577377418,2.1587118322314436&hasta_txt=Casa+Cupra+Raval",
+    "contact_type": null,
+    "contact_value": null,
+    "timetable_raw": null,
+    "register_id": null,
+    "match_status": "cms_only"
   },
   {
     "name": "Centre d'Atenció Primària Roger de Flor",
@@ -21990,44 +22024,6 @@
     "contact_value": "https://dental-santjordi.com/",
     "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dilluns a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10.00&nbsp;h a 14.00&nbsp;h i <br>de 15.00&nbsp;h a 20.00&nbsp;h</div></td></tr></table>",
     "register_id": "99400664990",
-    "match_status": "matched"
-  },
-  {
-    "name": "Cooperativa Cultural Rocaguinarda SCCL",
-    "typology": "Microrefugis",
-    "characteristics": [
-      "Acceso gratuito"
-    ],
-    "opening_hours_raw": [
-      [
-        "",
-        "Dilluns",
-        "de 17:00 h a 20:00 h"
-      ],
-      [
-        "",
-        "De dimarts a divendres",
-        "de 10:30 h a 13:30 h i de 17:00 h a 20:00 h"
-      ],
-      [
-        "",
-        "Dissabte",
-        "de 10:30 h a 13:30 h"
-      ]
-    ],
-    "notice": null,
-    "image_url": null,
-    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/cooperativa-cultural-rocaguinarda-sccl-99400267776",
-    "address": "Carrer del Xiprer, 13",
-    "district": "Horta-Guinardó",
-    "neighborhood": "el Guinardó",
-    "lat": 41.41716770399177,
-    "lon": 2.17834534774565,
-    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.41716770399177,2.17834534774565&hasta_txt=Cooperativa+Cultural+Rocaguinarda+SCCL",
-    "contact_type": "E-mail",
-    "contact_value": "coop@rocaguinarda.org",
-    "timetable_raw": "<table class=\"timetable-table\"><tr class=\"timetable-header\"><th class=\"weekdays\">Dies</th><th class=\"hours\">Hores</th></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dilluns</div></td><td class=\"timetable-hour\" rowspan=1><div>de 17:00 h a 20:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>De dimarts a divendres</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10:30 h a 13:30 h i<BR>de 17:00 h a 20:00 h</div></td></tr><tr><td class=\"timetable-day\" rowspan=1><div>Dissabte</div></td><td class=\"timetable-hour\" rowspan=1><div>de 10:30 h a 13:30 h</div></td></tr></table>",
-    "register_id": "99400267776",
     "match_status": "matched"
   },
   {
@@ -23290,6 +23286,106 @@
     "timetable_raw": "",
     "register_id": "75990073987",
     "match_status": "matched"
+  },
+  {
+    "name": "Llibreria Documenta",
+    "typology": "Microrefugis",
+    "characteristics": [
+      "Amb aigua per beure",
+      "Con lavabo",
+      "Con internet para uso público",
+      "Se admiten animales de compañía",
+      "Accesible para personas con discapacidad física",
+      "Interior",
+      "Acceso gratuito"
+    ],
+    "opening_hours_raw": [
+      [
+        "",
+        "De dilluns a divendres",
+        "de 09.30 h a 20.30 h",
+        "",
+        ""
+      ],
+      [
+        "",
+        "Dissabte",
+        "de 10.00 h a 20.30 h",
+        "",
+        ""
+      ],
+      [
+        "",
+        "Diumenge",
+        "d'11.30 h a 14.30 h i de 17.30 h a 20.30 h",
+        "",
+        ""
+      ]
+    ],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/llibreria-documenta-75990033151",
+    "address": "Carrer de Pau Claris, 144",
+    "district": "Eixample",
+    "neighborhood": "la Dreta de l'Eixample",
+    "lat": 41.39393567498606,
+    "lon": 2.1657618830553353,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.39393567498606,2.1657618830553353&hasta_txt=Llibreria+Documenta",
+    "contact_type": null,
+    "contact_value": null,
+    "timetable_raw": null,
+    "register_id": null,
+    "match_status": "cms_only"
+  },
+  {
+    "name": "Llibreria Nausicaä Còmics",
+    "typology": "Microrefugis",
+    "characteristics": [
+      "Amb aigua per beure",
+      "Se admiten animales de compañía",
+      "Sin lavabo",
+      "Sin internet para uso interno",
+      "Accesible para personas con discapacidad física",
+      "Interior",
+      "Acceso gratuito"
+    ],
+    "opening_hours_raw": [
+      [
+        "De setembre a juliol",
+        "Dilluns",
+        "de 16.30 h a 20.30 h",
+        "",
+        ""
+      ],
+      [
+        "",
+        "De dimarts a dissabte",
+        "de 10.30 h a 13.30 h i de 16.30 h a 20.30 h",
+        "",
+        ""
+      ],
+      [
+        "Agost",
+        "Tots els dies",
+        "Tancada",
+        "",
+        ""
+      ]
+    ],
+    "notice": null,
+    "image_url": null,
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/llibreria-nausicaa-comics-99400771109",
+    "address": "Carrer de Cartagena, 312",
+    "district": "Eixample",
+    "neighborhood": "la Sagrada Família",
+    "lat": 41.41057292422543,
+    "lon": 2.175310384052964,
+    "comshiva_url": "https://com-shi-va.barcelona.cat/es/planifica_tu_ruta?desde=&hasta=41.41057292422543,2.175310384052964&hasta_txt=Llibreria+Nausicaä+Còmics",
+    "contact_type": null,
+    "contact_value": null,
+    "timetable_raw": null,
+    "register_id": null,
+    "match_status": "cms_only"
   },
   {
     "name": "Llibreria The Book Bar",

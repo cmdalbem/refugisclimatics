@@ -80,6 +80,14 @@
     "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
   },
   {
+    "name": "Casal de Barri Font d'en Fargues",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/casal-de-barri-font-d-en-fargues-92086003483",
+    "district": "Horta-Guinardó",
+    "address": "Carrer de Pedrell, 67 - 69",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
     "name": "Casal de Gent Gran de Via Trajana",
     "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/casal-de-gent-gran-de-via-trajana-99400781450",
     "district": null,
@@ -260,6 +268,46 @@
     "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/piscina-descoberta-96159092819",
     "district": null,
     "address": "C. Víctor Hugo, s/n",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Assegurances Mapfre *Clot",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/assegurances-mapfre-clot-99400785557",
+    "district": "Sant Martí",
+    "address": "Carrer del Clot, 40",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Calçats Queisalós",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/calcats-queisalos-99400785534",
+    "district": "Ciutat Vella",
+    "address": "Carrer de l'Hospital, 15 - 17",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Casa Cupra Raval",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/casa-cupra-raval-99400649393",
+    "district": "Gràcia",
+    "address": "Passeig de Gràcia, 109 - 111",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Llibreria Documenta",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/llibreria-documenta-75990033151",
+    "district": "Eixample",
+    "address": "Carrer de Pau Claris, 144",
+    "has_coordinates": true,
+    "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
+  },
+  {
+    "name": "Llibreria Nausicaä Còmics",
+    "detail_url": "https://www.barcelona.cat/barcelona-pel-clima/es/acciones-concretas/red-de-refugios-climaticos/listado-refugios/llibreria-nausicaa-comics-99400771109",
+    "district": "Eixample",
+    "address": "Carrer de Cartagena, 312",
     "has_coordinates": true,
     "reason": "no confident match found in CKAN dataset (likely outside Barcelona city)"
   }
