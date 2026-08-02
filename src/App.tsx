@@ -1,5 +1,6 @@
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Navigate, Route, Routes, useNavigate, useParams } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 
 import { APP_TITLE } from './constants';
 import { applyPageMeta, homePageMeta, shelterPageMeta } from './utils/seo';
@@ -163,10 +164,13 @@ function AppShell() {
 
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<AppShell />} />
-      <Route path="/refugi/:slug" element={<AppShell />} />
-      <Route path="*" element={<Navigate to="/" replace />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<AppShell />} />
+        <Route path="/refugi/:slug" element={<AppShell />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+      <Analytics />
+    </>
   );
 }
